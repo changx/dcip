@@ -39,4 +39,12 @@ for u in https://ftp.apnic.net/apnic/whois/apnic.db.inetnum.gz \
          https://ftp.ripe.net/ripe/dbase/split/ripe.db.inet6num.gz; do
   curl -sfL -m 1200 -R -z "$(basename $u)" -O "$u"
 done
+
+# China labels: NRO combined delegation stats (all RIRs) and DB-IP Lite country geolocation.
+# DB-IP Lite is CC BY 4.0: show "IP Geolocation by DB-IP" (https://db-ip.com) where it is used.
+curl -sfL -m 600 -o nro-delegated-stats https://ftp.ripe.net/pub/stats/ripencc/nro-stats/latest/nro-delegated-stats
+curl -sfL -m 600 -o dbip-country-lite.csv.gz \
+  "https://download.db-ip.com/free/dbip-country-lite-$(date -u +%Y-%m).csv.gz" \
+  || curl -sfL -m 600 -o dbip-country-lite.csv.gz \
+  "https://download.db-ip.com/free/dbip-country-lite-$(date -u -d '-1 month' +%Y-%m).csv.gz"
 echo "fetch ok"

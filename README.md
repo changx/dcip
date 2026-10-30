@@ -7,7 +7,9 @@
    If bgp.tools shows a login page for the tag exports from your IP, set `BGPT_VIA=<ssh-host>` to fetch the tag CSVs through another host.
 2. `systemd-run --user --scope -p MemoryMax=6G python3 build.py`. This writes `out/`.
    The first run parses RIPE/APNIC whois (about 5 minutes). Later runs use `data/whois_hosting.cache`.
-3. `./check.py 155.254.126.0/24 1.2.3.4`. This shows which lists cover an address.
+3. `systemd-run --user --scope -p MemoryMax=6G python3 china.py`. This writes the `china-*` lists and adds China carrier overseas space to `combined`. Run it after `build.py`.
+4. `./selftest.py`. Every line must show `ok`.
+5. `./check.py 155.254.126.0/24 1.2.3.4`. This shows which lists cover an address.
 
 ## Query visitor IPs
 
@@ -89,9 +91,35 @@ If nginx is behind a proxy, configure `real_ip_header` and `set_real_ip_from` fi
 
 China carrier ASNs: 4134, 4809, 23764 (China Telecom); 4837, 9929, 10099, 19174 (China Unicom); 9808, 58453, 58807 (China Mobile).
 
+## China labels (`china.py`)
+
+"China" follows 28 CFR 202.208: the PRC including Hong Kong and Macau.
+
+| File | Rule | Use |
+| --- | --- | --- |
+| `china-geo` | DB-IP Lite country is CN, HK or MO | Compliance |
+| `china-registered` | RIR delegation country is CN, HK or MO (NRO stats) | Compliance |
+| `china-entity-asn` | Origin ASN is registered in CN/HK/MO, has a Chinese group name (Alibaba, Tencent, Huawei, ByteDance, Baidu, China Telecom/Unicom/Mobile and others), or is a China carrier international ASN. Names are in `china-asn.csv`. | Compliance |
+| `china-carrier-overseas` | All prefixes of CTG 23764, CMI 58453/58807, CUG 10099, CU Americas 19174; prefixes of CN2 4809 and CUII 9929 outside CN registration. Also added to `combined`. | Datacenter gap fill |
+| `china-optimized-dc` | Datacenter ASNs that are China-line networks (see `china-line-asn.csv`): Rule A — connects to a China carrier, < 100 bilateral BGP peers, < 100 customers, ≤ 8192 /24s, not eyeball. Rule B — buys China carrier transit, connects to CT, CU and CM, < 300 customers. Plus customers of Rule A networks with ≤ 5 providers and ≤ 2048 /24s. | Risk |
+| `china-compliance` | `geo` ∪ `registered` ∪ `entity-asn` | Compliance screen |
+| `china-risk` | `compliance` ∪ `optimized-dc` | Risk signal |
+
+Decision order for a visitor IP:
+
+1. Hit in `china-compliance`: treat as China-related for compliance (location in CN/HK/MO, or a Chinese entity network).
+2. Hit in `china-optimized-dc` only: a China-line VPS/proxy. Combine with client signals (time zone `Asia/Shanghai`, `zh-CN`) to estimate a user in China.
+3. No hit: no IP evidence. Residential proxies stay invisible to any static list.
+
+An IP hit is evidence, not a legal determination. 28 CFR 202.211 defines covered persons by residence, ownership and control, so use IP labels with KYC and contract data.
+
+DB-IP Lite is CC BY 4.0. Show "IP Geolocation by DB-IP" (https://db-ip.com) where its data is used.
+
 ## Known limits
 
-- Overseas IDC ranges that the China carriers announce from their own ASNs are not split out in whois. They are not in `combined`.
+- China carrier overseas space has almost no rDNS, so IDC, enterprise DIA and transit inside it cannot be split. All of it is in `combined`.
+- `china-optimized-dc` is a topology heuristic. On a hold-out check it flagged Contabo Asia and Gcore (direct China links, not China-line products) and missed JINX (HK, covered by `china-compliance`) and Nexeon. Use it as a weighted signal.
+- DB-IP Lite and RIR registration are country-level and can lag real use by weeks.
 - ARIN whois bulk data needs an agreement, so `whois-hosting` has no ARIN space.
 - CAIDA misses many private CN2/CMI interconnects, so China adjacency is a lower bound.
 - `hosting-downstream` includes some enterprises whose only upstream is a hosting provider.

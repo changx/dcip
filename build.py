@@ -131,10 +131,13 @@ def cone(a, limit=None):
 
 adj = {}  # asn -> how it reaches China carriers
 for c, label in CHINA_CARRIERS.items():
+    for n in customers[c]:  # buys transit from the China carrier: CN2 GIA / CMI / 9929 lines
+        if n not in CHINA_CARRIERS:
+            adj.setdefault(n, f"transit:{label}")
+for c, label in CHINA_CARRIERS.items():
     for n in neighbours[c]:
-        if n in CHINA_CARRIERS:
-            continue
-        adj.setdefault(n, f"direct:{label}")
+        if n not in CHINA_CARRIERS:
+            adj.setdefault(n, f"peer:{label}")
 direct = set(adj)
 
 # ---------- classify ----------
