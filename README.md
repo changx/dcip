@@ -1,53 +1,98 @@
-# dcip — datacenter / VPN IP list with a China-adjacent tier
+# dcip — datacenter, VPN, China-related and Meta IP lists
 
-## Run
+Rebuilt from public BGP, RIR and classification data. Every list is plain CIDR text, one prefix per line, with separate IPv4 and IPv6 files.
 
-1. `BGPT_UA='myproject - me@example.com' ./fetch.sh`. This downloads all inputs into `data/`.
-   bgp.tools asks for a contact address in the User-Agent.
-   If bgp.tools shows a login page for the tag exports from your IP, set `BGPT_VIA=<ssh-host>` to fetch the tag CSVs through another host.
-2. `systemd-run --user --scope -p MemoryMax=6G python3 build.py`. This writes `out/`.
-   The first run parses RIPE/APNIC whois (about 5 minutes). Later runs use `data/whois_hosting.cache`.
-3. `systemd-run --user --scope -p MemoryMax=6G python3 china.py`. This writes the `china-*` lists and adds China carrier overseas space to `combined`. Run it after `build.py`.
-4. `./selftest.py`. Every line must show `ok`.
-5. `./check.py 155.254.126.0/24 1.2.3.4`. This shows which lists cover an address.
+## Use the lists
 
-## Query visitor IPs
+### 1. Pick the lists
 
-Use `out/combined-ipv4.txt` and `out/combined-ipv6.txt`. A hit means the IP is datacenter space.
-Use the real client IP. Behind Cloudflare or a reverse proxy, read `CF-Connecting-IP` or a trusted `X-Forwarded-For`, not `remote_addr`.
+| Label | Files | Meaning | Action |
+| --- | --- | --- | --- |
+| `china` | `china-compliance-ipv4.txt`, `china-compliance-ipv6.txt` | Location in CN/HK/MO, or a Chinese entity network | Compliance flow |
+| `china_dc` | `china-optimized-dc-ipv4.txt`, `china-optimized-dc-ipv6.txt` | China-line VPS/IDC (CN2, CMI, 9929 style) | Risk signal; combine with client signals |
+| `meta` | `meta-ipv4.txt`, `meta-ipv6.txt` | Meta servers (crawler, webhooks) | Usually allow |
+| `datacenter` | `combined-ipv4.txt`, `combined-ipv6.txt` | Datacenter, hosting, commercial VPN space | Background risk signal |
 
-### In application code (Python)
+Download from one of these places:
 
-Load the files once at startup. Each lookup is one binary search.
+- Latest commit: `https://raw.githubusercontent.com/changx/dcip/main/out/<file>`
+- A fixed release: `gh release download <tag> -R changx/dcip -p '<file>'` (see the Releases page)
+
+Pin a release tag in production if you need reproducible results.
+
+### 2. Get the real client IP
+
+Behind Cloudflare, read `CF-Connecting-IP`. Behind another reverse proxy, read a trusted `X-Forwarded-For`. Do not use the TCP peer address, because it is the proxy.
+
+### 3. Label each IP (Python)
+
+Load the lists once at startup. Each lookup is one binary search per list.
 
 ```python
-import bisect, ipaddress
+import bisect, ipaddress, urllib.request
+
+BASE = "https://raw.githubusercontent.com/changx/dcip/main/out/"
+LISTS = {
+    "china":      ["china-compliance-ipv4.txt", "china-compliance-ipv6.txt"],
+    "china_dc":   ["china-optimized-dc-ipv4.txt", "china-optimized-dc-ipv6.txt"],
+    "meta":       ["meta-ipv4.txt", "meta-ipv6.txt"],
+    "datacenter": ["combined-ipv4.txt", "combined-ipv6.txt"],
+}
 
 class IPSet:
-    def __init__(self, *files):
-        nets = [ipaddress.ip_network(l) for f in files for l in open(f).read().split()]
-        self.v = {4: [], 6: []}
-        for n in sorted(nets, key=lambda n: (n.version, int(n.network_address))):
-            self.v[n.version].append((int(n.network_address), int(n.broadcast_address)))
-        self.starts = {k: [s for s, _ in r] for k, r in self.v.items()}
+    def __init__(self, cidrs):
+        nets = sorted((ipaddress.ip_network(c) for c in cidrs),
+                      key=lambda n: (n.version, int(n.network_address)))
+        self.r = {4: [], 6: []}
+        for n in nets:
+            self.r[n.version].append((int(n.network_address), int(n.broadcast_address)))
+        self.s = {v: [a for a, _ in r] for v, r in self.r.items()}
 
     def __contains__(self, ip):
         a = ipaddress.ip_address(ip)
-        i = bisect.bisect_right(self.starts[a.version], int(a)) - 1
-        return i >= 0 and self.v[a.version][i][1] >= int(a)
+        i = bisect.bisect_right(self.s[a.version], int(a)) - 1
+        return i >= 0 and self.r[a.version][i][1] >= int(a)
 
-dc = IPSet("out/combined-ipv4.txt", "out/combined-ipv6.txt")
-"155.254.126.10" in dc   # True
+def fetch(name):
+    return urllib.request.urlopen(BASE + name, timeout=60).read().decode().split()
+
+SETS = {label: IPSet(c for f in files for c in fetch(f)) for label, files in LISTS.items()}
+
+def labels(ip):
+    return [label for label, s in SETS.items() if ip in s]
+
+labels("157.240.1.1")     # ['meta', 'datacenter']
+labels("155.254.126.10")  # ['china', 'china_dc', 'datacenter']
 ```
+
+Reload the lists once a week. If a download fails, keep the lists already in memory.
+
+### 4. Decide
+
+1. `meta` matches: Meta infrastructure. Allow it unless the request is abnormal.
+2. `china` matches: China-related for compliance. Send the request to your compliance flow.
+3. `china_dc` matches without `china`: a China-line proxy or VPS. A browser time zone of `Asia/Shanghai` or `zh-CN` language makes a user in China likely.
+4. Only `datacenter` matches: datacenter or VPN egress. Add risk weight; do not block on this alone.
+5. No match: no IP evidence. Residential proxies are not visible to any static list.
+
+An IP match is evidence, not a legal determination. 28 CFR 202.211 defines covered persons by residence, ownership and control, so combine IP labels with KYC and contract data.
 
 ### In nginx
 
-1. Convert the list: `awk '{print $1" 1;"}' out/combined-ipv4.txt out/combined-ipv6.txt > /etc/nginx/dc.conf`
-2. In the `http` block, add `geo $is_dc { default 0; include /etc/nginx/dc.conf; }`.
-3. In the `location` block, add `proxy_set_header X-Is-DC $is_dc;`.
+1. Make one map file per label. Example for `china`:
+   `awk '{print $1" 1;"}' china-compliance-ipv4.txt china-compliance-ipv6.txt > /etc/nginx/ip-china.conf`
+2. In the `http` block, add one `geo` block per label:
+   `geo $ip_china { default 0; include /etc/nginx/ip-china.conf; }`
+   Repeat with `$ip_china_dc`, `$ip_meta` and `$ip_dc`.
+3. In the `location` block, pass the labels to the backend:
+   `proxy_set_header X-IP-China $ip_china;` and the same for the other variables.
 4. Run `nginx -t`, then `nginx -s reload`.
 
 If nginx is behind a proxy, configure `real_ip_header` and `set_real_ip_from` first. Otherwise `geo` checks the proxy IP.
+
+### Check one address from the command line
+
+`./check.py 155.254.126.10 2a03:2880::1` prints every list in `out/` that covers the address.
 
 ### VPN
 
@@ -60,10 +105,19 @@ If nginx is behind a proxy, configure `real_ip_header` and `set_real_ip_from` fi
 | Known VPN ranges | X4BNet `output/vpn/ipv4.txt` |
 | Residential proxies (real home IPs) | No static list works. Use a commercial service (Spur, IPinfo Privacy, ipapi.is) or behaviour signals. |
 
-### Advice
+Geolocation in `china-geo` (part of `china-compliance`): IP Geolocation by DB-IP (https://db-ip.com), CC BY 4.0.
 
-- Use a hit as a risk signal, not as an automatic block. Corporate egress, cloud crawlers and API clients also use datacenter IPs.
-- Rebuild weekly. BGP announcements and IP leases change quickly.
+## Rebuild
+
+1. `BGPT_UA='myproject - me@example.com' ./fetch.sh`. This downloads all inputs into `data/`.
+   bgp.tools asks for a contact address in the User-Agent.
+   If bgp.tools shows a login page for the tag exports from your IP, set `BGPT_VIA=<ssh-host>` to fetch the tag CSVs through another host.
+2. `systemd-run --user --scope -p MemoryMax=6G python3 build.py`. This writes `out/`.
+   The first run parses RIPE/APNIC whois (about 5 minutes). Later runs use `data/whois_hosting.cache`.
+3. `systemd-run --user --scope -p MemoryMax=6G python3 china.py`. This writes the `china-*` lists and adds China carrier overseas space to `combined`. Run it after `build.py`.
+4. `./selftest.py`. The last line must be `0 unexpected result(s)`.
+
+Rebuild weekly. BGP announcements and IP leases change quickly.
 
 ## Sources
 
@@ -96,17 +150,6 @@ China carrier ASNs: 4134, 4809, 23764 (China Telecom); 4837, 9929, 10099, 19174 
 | File | Rule |
 | --- | --- |
 | `meta-ipv4.txt` / `meta-ipv6.txt` | Every BGP prefix of AS32934 (main), AS63293 (CDN) and AS54115 (corporate). Meta's crawler (`facebookexternalhit`) and webhooks come from here. Meta caches inside ISP networks (FNA) use ISP addresses and are not included. |
-
-## Label visitor IPs
-
-Load each list once and return every label that matches. Base URL: `https://raw.githubusercontent.com/changx/dcip/main/out/`.
-
-| Label | Files | Action |
-| --- | --- | --- |
-| `china` | `china-compliance-ipv4/6.txt` | Compliance flow (CN/HK/MO location or Chinese entity network) |
-| `china_dc` | `china-optimized-dc-ipv4/6.txt` | Risk signal; combine with `Asia/Shanghai` time zone and `zh-CN` |
-| `meta` | `meta-ipv4/6.txt` | Meta servers; usually allow |
-| `datacenter` | `combined-ipv4/6.txt` | Background risk signal |
 
 ## China labels (`china.py`)
 

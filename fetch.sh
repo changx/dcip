@@ -8,7 +8,7 @@ UA="${BGPT_UA:-dcip-ip-list - set BGPT_UA to 'project - you@example.com'}"
 C=https://publicdata.caida.org/datasets
 
 curl -sfL -A "$UA" -o asns.csv https://bgp.tools/asns.csv
-TAGS="vpsh vpn cdn dsl mobile"
+TAGS="vpsh vpn cdn dsl mobile ddosm"
 if [ -n "${BGPT_VIA:-}" ]; then
   ssh "$BGPT_VIA" "cd /tmp && for t in $TAGS; do curl -sfL -A '$UA' -o bgpt_\$t.csv https://bgp.tools/tags/\$t.csv; done"
   for t in $TAGS; do scp -q "$BGPT_VIA:/tmp/bgpt_$t.csv" .; done

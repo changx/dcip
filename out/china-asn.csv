@@ -75,7 +75,7 @@ asn,name,reason,dc_tier
 4837,China Unicom Backbone,rir-registered:CN,
 4839,NAP2 at CERNET located in Shanghai,rir-registered:CN,
 4840,NAP3 at CERNET located in Guangzhou,rir-registered:CN,
-4842,Tianhai InfoTech,rir-registered:CN,
+4842,Tianhai InfoTech,rir-registered:CN,downstream
 4843,China MST's High Speed Router Test Network,rir-registered:CN,
 4847,China Telecom Beijing Province Network,rir-registered:CN,
 4848,Cheung Yuk Tong Aaron,rir-registered:HK,
@@ -188,7 +188,7 @@ asn,name,reason,dc_tier
 9726,Internet Service Provider,rir-registered:HK,
 9729,iAdvantage Limited,rir-registered:HK,review
 9732,"Digital Policy Office, HKSARG",rir-registered:HK,
-9735,Hong Kong Domain Name Registration Co. Ltd,rir-registered:HK,downstream
+9735,Hong Kong Domain Name Registration Co. Ltd,rir-registered:HK,
 9740,Telstra Global - Customer AS Number,rir-registered:HK,
 9744,XLC GLOBAL,rir-registered:HK,
 9793,Smart-bets.com Lmited,rir-registered:HK,
@@ -405,7 +405,7 @@ asn,name,reason,dc_tier
 24059,China Mobile communications corporation,rir-registered:CN,
 24077,TMHK Global Transit,rir-registered:HK,review
 24099,Layerlinks Global Lmited,rir-registered:HK,
-24112,Standard Chartered Bank (Hong Kong) Limited,rir-registered:HK,downstream
+24112,Standard Chartered Bank (Hong Kong) Limited,rir-registered:HK,
 24124,Tianhai InfoTech,rir-registered:CN,
 24133,21vianet(China) Inc.,rir-registered:CN,
 24134,"Huanan (Guangzhou) Business Management Co., Ltd.",rir-registered:CN,
@@ -521,7 +521,7 @@ asn,name,reason,dc_tier
 24575,DRAGONLAB,rir-registered:CN,
 34567,Next Limited,rir-registered:HK,
 34806,ASLINE LIMITED,rir-registered:HK,
-34813,JENTEC LIMITED,rir-registered:HK,downstream
+34813,JENTEC LIMITED,rir-registered:HK,
 34947,Alibaba Travel Company (LTD),chinese-group-name,
 35820,"G3S Technologies Co., Limited",rir-registered:HK,
 36408,CDNetworks Inc.,chinese-group-name,core
@@ -667,7 +667,7 @@ asn,name,reason,dc_tier
 39753,Kai Liu,rir-registered:CN,
 40366,CDNetworks Inc.,chinese-group-name,core
 41665,WJY (Hong Kong) Limited,rir-registered:HK,core
-41717,Telfly Technology Limited,rir-registered:HK,downstream
+41717,Telfly Technology Limited,rir-registered:HK,
 41780,Bin Wang,rir-registered:CN,
 42413,Address Limited,rir-registered:HK,
 42960,VH Global Limited,rir-registered:HK,
@@ -787,9 +787,9 @@ asn,name,reason,dc_tier
 50159,Next Limited,rir-registered:HK,
 50308,Address Limited,rir-registered:HK,
 50922,SHI Li Li,rir-registered:CN,downstream
-51089,SnapStack Limited,rir-registered:HK,downstream
+51089,SnapStack Limited,rir-registered:HK,review
 51847,Nearoute Limited,rir-registered:HK,core
-51928,SHIZHE XU,rir-registered:CN,
+51928,SHIZHE XU,rir-registered:CN,downstream
 55000,XNNET LIMITED,rir-registered:HK,
 55331,Forewin Telecom Group Limited,rir-registered:HK,downstream
 55334,Access Solutions Limited,rir-registered:HK,
@@ -1731,7 +1731,7 @@ asn,name,reason,dc_tier
 133465,Duke Kunshan University,rir-registered:CN,
 133467,SN TECHNOLOGY LIMITED,rir-registered:HK,
 133475,New York University ASN,rir-registered:CN,core
-133478,"Tencent Cloud Computing (Beijing) Co., Ltd",rir-registered:CN,downstream
+133478,"Tencent Cloud Computing (Beijing) Co., Ltd",rir-registered:CN,
 133484,Tung Wah College Limited,rir-registered:HK,
 133485,Gameloft Limited,rir-registered:HK,
 133486,DXC Technology Australia Pty Limited,rir-registered:HK,
@@ -1756,7 +1756,7 @@ asn,name,reason,dc_tier
 133545,"HONG KONG G&S TRADING CO., LIMITED",rir-registered:HK,
 133549,Global Cloud DataCenter,rir-registered:HK,
 133550,SHANGHAI ZHONGCHUAN INFORMATION TECHNOLOGY Ltd.,rir-registered:CN,
-133555,DOORPOST Limited,rir-registered:CN,
+133555,DOORPOST Limited,rir-registered:CN,downstream
 133558,aBitCool Broadband Beijing Inc.,rir-registered:CN,
 133559,aBitCool Broadband Beijing Inc.,rir-registered:CN,
 133560,aBitCool Broadband Beijing Inc.,rir-registered:CN,
@@ -1891,7 +1891,7 @@ asn,name,reason,dc_tier
 134483,Ying Jie Sheng (HK) Electronic Limited,rir-registered:HK,
 134485,NORTH STAR TECHNOLOGY COMPANY LIMITED,rir-registered:HK,
 134488,CTJ's Global Network,rir-registered:CN,
-134492,Guosheng IDC lease,rir-registered:HK,downstream
+134492,Guosheng IDC lease,rir-registered:HK,
 134510,HANFU TRADING LIMITED,rir-registered:HK,
 134511,HOMAX INDUSTRIES LIMITED,rir-registered:HK,
 134518,RETN Hong Kong,rir-registered:HK,china-adjacent
@@ -1932,7 +1932,7 @@ asn,name,reason,dc_tier
 134719,RICH TIMER INDUSTRIAL LIMITED,rir-registered:HK,
 134721,TELSTRA PBS LIMITED,rir-registered:HK,review
 134727,Ping Network Limited,rir-registered:HK,
-134729,JOINT POWER TECHNOLOGY LIMITED,rir-registered:HK,downstream
+134729,JOINT POWER TECHNOLOGY LIMITED,rir-registered:HK,
 134741,POLYGAIN INTERNATIONAL GROUP LIMITED,rir-registered:HK,
 134742,EUROPORT TECHNOLOGY LIMITED,rir-registered:HK,
 134751,"WEIYU TECHNOLOGY CO., LIMITED",rir-registered:HK,
@@ -2164,7 +2164,7 @@ asn,name,reason,dc_tier
 137256,CatIO Network,rir-registered:CN,
 137260,Bit Exchange Systems Limited,rir-registered:HK,
 137263,NETEASE HONG KONG LIMITED,rir-registered:HK,
-137264,Wingmark Matrix (Wuhan) Computer Systems Co Ltd,rir-registered:CN,downstream
+137264,Wingmark Matrix (Wuhan) Computer Systems Co Ltd,rir-registered:CN,
 137266,CHINATELECOM Hubei province Wuhan 5G network,rir-registered:CN,
 137280,Kingsoft cloud corporation limited,rir-registered:HK,core
 137283,I LAYER LIMITED,rir-registered:HK,
@@ -2206,7 +2206,7 @@ asn,name,reason,dc_tier
 137701,"CHINANET 5G IOT, Nanjing node",rir-registered:CN,
 137702,China Telecom Nanjing IDC Network,rir-registered:CN,core
 137709,"Beijing LinkedIn Information Technology Co.,Ltd",rir-registered:CN,
-137710,"Net God Information Technology (Beijing) Co., Ltd.",rir-registered:CN,downstream
+137710,"Net God Information Technology (Beijing) Co., Ltd.",rir-registered:CN,
 137711,"Shanghai GongQi Network Technology Co., Ltd",rir-registered:CN,
 137712,,rir-registered:CN,
 137713,,rir-registered:CN,
@@ -2828,8 +2828,8 @@ asn,name,reason,dc_tier
 140596,"SHENZHEN TUTENG NETWORK CO.,LTD",rir-registered:CN,
 140597,Primewan Limited,rir-registered:HK,
 140614,"ASIA-ISP CO., LIMITED",rir-registered:HK,downstream
-140630,JSLINK INTERNATIONAL CORPORATION,rir-registered:HK,downstream
-140633,BILIBILI HK LIMITED,rir-registered:CN,downstream
+140630,JSLINK INTERNATIONAL CORPORATION,rir-registered:HK,
+140633,BILIBILI HK LIMITED,rir-registered:CN,
 140634,CodecCloud (HK) Limited,rir-registered:HK,
 140636,China Telecom,rir-registered:CN,
 140638,China Telecom,rir-registered:CN,
@@ -2925,7 +2925,7 @@ asn,name,reason,dc_tier
 141419,CHINA MOBILE INTERNATIONAL (THAILAND) LTD.,rir-registered:HK,review
 141425,China Mobile Group Guangdong communications corporation,rir-registered:CN,
 141429,Agatha Network,rir-registered:CN,
-141444,Wicked Networks Limited,rir-registered:HK,downstream
+141444,Wicked Networks Limited,rir-registered:HK,
 141445,Phoenix Network,rir-registered:CN,
 141475,CENTERLINK GLOBAL TELECOM LIMITED,rir-registered:HK,
 141679,China Telecom Beijing Tianjin Hebei Big Data Industry Park Branch,rir-registered:CN,
@@ -7193,7 +7193,7 @@ asn,name,reason,dc_tier
 146810,Shanghai Hewlett-Packard Co. Ltd. Dalian Branch,rir-registered:CN,
 146811,"Beijing Beiqing Cloud Technology Co., Ltd.",rir-registered:CN,
 146812,"Deutsche Bank (China) Co., Ltd. Shanghai Branch",rir-registered:CN,
-146813,Shanghai Suiji Networks Tech. Co. Ltd.,rir-registered:CN,downstream
+146813,Shanghai Suiji Networks Tech. Co. Ltd.,rir-registered:CN,
 146814,"Hong Kong University of Science and Technology, Dongchung Town,",rir-registered:CN,
 146815,"Qingdao Zhonghai Dilian Information Technology Co., Ltd",rir-registered:CN,
 146816,"Guizhou Moutai Winery (Group) Co., Ltd.",rir-registered:CN,
@@ -7235,7 +7235,7 @@ asn,name,reason,dc_tier
 147002,VMShell Inc.,rir-registered:HK,downstream
 147008,Shenzhen Dianjiang Technology Co Ltd,rir-registered:CN,
 147010,"RYUSEI GROUP CO.,LIMITED",rir-registered:HK,
-147019,jiii,rir-registered:HK,downstream
+147019,jiii,rir-registered:HK,review
 147038,China Telecom,rir-registered:CN,
 147047,Yuet Au Yeung,rir-registered:HK,
 147048,Feiran Qin,rir-registered:HK,
@@ -7248,7 +7248,7 @@ asn,name,reason,dc_tier
 148982,Bijie Qiulin Information Technology,rir-registered:CN,
 148983,"Ningbo Rongxin Ansheng Machinery Co., Ltd.",rir-registered:CN,
 148987,"DINGLU CO., LIMITED",rir-registered:HK,
-148990,"CHENGYI CO., LIMITED",rir-registered:HK,downstream
+148990,"CHENGYI CO., LIMITED",rir-registered:HK,
 148995,HK JIUYUN INFINITE TRADE LIMITED,rir-registered:HK,
 148996,GLOBAL COMMUNICATION NETWORK LIMITED,rir-registered:HK,review
 149002,"HONG KONG ORIENTAL SCIENCE AND TECHNOLOGY CO., LIMITED",rir-registered:HK,
@@ -7290,7 +7290,7 @@ asn,name,reason,dc_tier
 149500,Shane Renshaw,rir-registered:HK,
 149502,NEAROUTE LIMITED,rir-registered:HK,downstream
 149510,Feng Libo,rir-registered:CN,
-149511,"Yamu Technologies Co., Ltd.",rir-registered:CN,
+149511,"Yamu Technologies Co., Ltd.",rir-registered:CN,downstream
 149625,NETCLOUD INTERNATIONAL DATA CENTRE LIMITED,rir-registered:HK,core
 149626,Easy Communications International Technology Limited,rir-registered:HK,
 149628,HONG KONG BRIDGE INFO-TECH LIMITED,rir-registered:HK,
@@ -7349,7 +7349,7 @@ asn,name,reason,dc_tier
 150741,WEBSITE TECHNOLOGY LIMITED,rir-registered:HK,
 150776,Glocell Limited,rir-registered:HK,
 150785,Polarish Co,rir-registered:HK,
-150788,Alternative Enterprises,rir-registered:HK,
+150788,Alternative Enterprises,rir-registered:HK,downstream
 150800,HUANGYUN,rir-registered:HK,
 150803,HONG KONG YALIAN SCIENCE TECHNOLOGY INFORMATION DEVELOPMENT CO LIMITED,rir-registered:HK,
 151020,AT&T TAO Cloud Access Node,bgptools-cc:HK,
@@ -7363,7 +7363,7 @@ asn,name,reason,dc_tier
 151185,China Telecom Xiangyang IDC Network,rir-registered:CN,core
 151187,Shen Jiale,rir-registered:CN,
 151194,Zhu Yucheng,rir-registered:CN,
-151196,JunYun Limited,rir-registered:HK,downstream
+151196,JunYun Limited,rir-registered:HK,
 151202,Suzhou Honoka Technology Co Ltd,rir-registered:CN,
 151206,"HK CLOUD DATA CO., LIMITED",rir-registered:HK,
 151216,,rir-registered:CN,
@@ -7550,7 +7550,7 @@ asn,name,reason,dc_tier
 152112,CTCSCI TECH LIMITED,rir-registered:HK,
 152118,Shenzhen Moesys Computer System Co Ltd,rir-registered:CN,
 152120,China Unicom TianJing GaoCun IDC network,rir-registered:CN,
-152121,Atto Digital Information Technology (Hong Kong) Limited,rir-registered:HK,downstream
+152121,Atto Digital Information Technology (Hong Kong) Limited,rir-registered:HK,
 152128,Leisure and Cultural Services Department,rir-registered:HK,
 152134,Zoro Limited,rir-registered:CN,
 152136,Hong Kong International School,rir-registered:HK,
@@ -7587,7 +7587,7 @@ asn,name,reason,dc_tier
 152911,SY ICT,rir-registered:CN,
 152918,Liberally Network LLC,rir-registered:HK,review
 152919,ICONNECT,rir-registered:HK,
-152920,Zhao Chenglin,rir-registered:CN,
+152920,Zhao Chenglin,rir-registered:CN,downstream
 152921,Yu Dong,rir-registered:CN,
 152922,Zhang Fuyu,rir-registered:CN,
 152930,Lin Xiangliang,rir-registered:CN,
@@ -7652,7 +7652,7 @@ asn,name,reason,dc_tier
 153995,Townlink Limited,rir-registered:HK,
 154010,NiuNiu IDC,rir-registered:CN,
 154045,Winning Partner Software Development Limited,rir-registered:HK,
-154107,DigitalLink Global Network Limited,rir-registered:HK,downstream
+154107,DigitalLink Global Network Limited,rir-registered:HK,
 154114,APEXLINK TECHNOLOGIES LIMITED,rir-registered:HK,core
 154155,"Suzhou Yesong Information Technology Co., Ltd",rir-registered:CN,
 154162,ISIF LIMITED,rir-registered:HK,
@@ -7694,7 +7694,7 @@ asn,name,reason,dc_tier
 154811,ZTABOX LIMITED,rir-registered:HK,
 154826,ANYLINK HK LIMITED,rir-registered:HK,
 154832,HaloCloud Network Limited,rir-registered:HK,
-154840,HONG KONG NETFORCE LIMITED,rir-registered:HK,downstream
+154840,HONG KONG NETFORCE LIMITED,rir-registered:HK,
 154877,"Guangzhou Zhuoxun Network Technology Co., Ltd",rir-registered:CN,
 155000,"Beian Digital Network Technology Co., Ltd.",rir-registered:CN,
 155002,"Beian Digital Network Technology Co., Ltd.",rir-registered:CN,
@@ -7724,7 +7724,7 @@ asn,name,reason,dc_tier
 198516,Yi Huang,rir-registered:CN,
 198527,Haolin Li,rir-registered:CN,
 198587,"Changsha xingting communication co., ltd",rir-registered:CN,
-198588,"Hangzhou Tungsten Cloud Technology Co., Ltd.",rir-registered:CN,downstream
+198588,"Hangzhou Tungsten Cloud Technology Co., Ltd.",rir-registered:CN,
 198681,Jinquan Zeng,rir-registered:CN,
 198805,SORAADS LIMITED,rir-registered:HK,
 198810,AIGC MOBILE LIMITED,rir-registered:HK,downstream
@@ -7733,7 +7733,7 @@ asn,name,reason,dc_tier
 199310,XIN BING XIAN,rir-registered:CN,
 199340,"HONG,GUANWAN",rir-registered:HK,
 199353,Gao Yuheng,rir-registered:CN,
-199392,SHIZHENG NIE,rir-registered:CN,
+199392,SHIZHENG NIE,rir-registered:CN,downstream
 199406,Jin Han Shen trading as Yinyun Network Technology Studio,rir-registered:CN,
 199506,Baidu (Hong Kong) Limited,rir-registered:HK,
 199683,Wales Wang,rir-registered:HK,
@@ -7746,7 +7746,7 @@ asn,name,reason,dc_tier
 199967,Think Huge Ltd,rir-registered:HK,
 200021,Tianhong Peng,rir-registered:CN,
 200103,XUAN ZHU,rir-registered:CN,
-200213,TAPCOM TECHNOLOGY LIMITED,rir-registered:HK,downstream
+200213,TAPCOM TECHNOLOGY LIMITED,rir-registered:HK,
 200221,Kam Yiu Wong,rir-registered:HK,
 200256,Yue Cao,rir-registered:CN,
 200263,Noveting Limited,rir-registered:HK,
@@ -7768,7 +7768,7 @@ asn,name,reason,dc_tier
 201674,Wen ZhangYu,rir-registered:CN,
 201705,Xinrun Li,rir-registered:CN,
 201724,HCS LIMITED,rir-registered:HK,
-201763,U FAI CHAN,rir-registered:MO,
+201763,U FAI CHAN,rir-registered:MO,downstream
 201770,Ji Tianyu Trading as Chengdu Chenghua District Suanwei Space Information Technology Studio,rir-registered:CN,
 201892,CLEAR WHITE TECHNOLOGIES LIMITED,rir-registered:HK,
 201944,HaoRan Liu,rir-registered:CN,
@@ -7903,16 +7903,16 @@ asn,name,reason,dc_tier
 211647,Miaoku Network Technology Limited,rir-registered:HK,
 211721,HUANG YUCHAO,rir-registered:CN,
 211759,Miku Network Technology Limited,rir-registered:HK,core
-211843,Nanjing Tiankai Information Technology Co.Ltd.,rir-registered:CN,
+211843,Nanjing Tiankai Information Technology Co.Ltd.,rir-registered:CN,downstream
 211931,"Xinye Grass Technology Co., Limited",rir-registered:HK,
 211968,Chenran MU,rir-registered:CN,
 211992,Wei Tang,rir-registered:CN,
 212053,ShiJI Tong,rir-registered:CN,
 212147,Proactivity Group Limited,rir-registered:HK,
 212164,Jiaxian He,rir-registered:CN,
-212237,Changgong Zhang,rir-registered:CN,
+212237,Changgong Zhang,rir-registered:CN,downstream
 212371,"Huizhou HuiGu CloudTech Co., Ltd.",rir-registered:CN,downstream
-212532,XIAO YANG WEN RUI,rir-registered:CN,
+212532,XIAO YANG WEN RUI,rir-registered:CN,downstream
 212558,GLOBALNET SYSTEMS LIMITED,rir-registered:HK,downstream
 212690,Enyu Li,rir-registered:CN,
 212793,Xiwei Ye,rir-registered:CN,
@@ -7935,7 +7935,7 @@ asn,name,reason,dc_tier
 213625,Xuluo Chen,rir-registered:CN,
 213639,"Gumi Manufacturing Co., Limited",rir-registered:HK,
 213700,Yuhan Wang,rir-registered:CN,
-213766,"KAAL TECH CO., LIMITED",rir-registered:HK,downstream
+213766,"KAAL TECH CO., LIMITED",rir-registered:HK,
 213782,Chang Xin,rir-registered:CN,
 213802,Tianfeng (Hong Kong) Communications Limited,rir-registered:HK,
 213806,ChenFeng Ma,rir-registered:CN,
@@ -7964,12 +7964,12 @@ asn,name,reason,dc_tier
 214669,"STARLIGHT TECH TRADING CO., LIMITED",rir-registered:HK,review
 214704,Xin Zhao,rir-registered:CN,
 214740,WENTAO FEI,rir-registered:CN,
-214743,Cogento Backbone Limited,rir-registered:HK,downstream
+214743,Cogento Backbone Limited,rir-registered:HK,
 214759,LEKAI ZHAO,rir-registered:CN,
 214760,LS4KDC LIMITED,rir-registered:HK,downstream
 214785,369 IntoNet Limited,rir-registered:HK,
 214871,Jiping Yu,rir-registered:CN,
-214899,Ye Liliang,rir-registered:CN,
+214899,Ye Liliang,rir-registered:CN,downstream
 214921,Yisong Wang,rir-registered:CN,
 214933,Bingxin Liu,rir-registered:CN,
 214937,Eleven Holdings Limited,rir-registered:HK,
@@ -8046,7 +8046,7 @@ asn,name,reason,dc_tier
 218919,NETWORK EXPRESS TECHNOLOGY LIMITED,rir-registered:HK,downstream
 218943,PrimeEdge Technology Innovations Limited,rir-registered:HK,
 218955,LOCKLINE NETWORKS LIMITED,rir-registered:HK,
-218968,NovaLink Integrated Networks Limited,rir-registered:HK,downstream
+218968,NovaLink Integrated Networks Limited,rir-registered:HK,
 218969,ZHICHENG YANG,rir-registered:HK,
 218985,YU WANG,rir-registered:CN,
 219001,E-LARGE (HONG KONG) LIMITED,rir-registered:HK,downstream

@@ -45,6 +45,10 @@ TESTS = [
      [16509, 8075, 15169, 396982, 24940, 14061, 16276, 20473, 63949, 47583,
       32934, 63293, 199524, 49544, 34549]),
     ("combined-ipv4.txt", "Meta (Facebook, CDN)", "high", [32934, 63293]),
+    ("combined-ipv4.txt", "Cloudflare (incl. WARP), Vultr, Akamai Prolexic", "high", [13335, 20473, 32787]),
+    ("combined-ipv4.txt", "Cox (cable ISP, bgp.tools class Content)", "low", [22773]),
+    ("combined-ipv4.txt", "DDoS-protected enterprises (Ahold, Vonage, UniCredit, American Airlines)",
+     "low", [26539, 22343, 197636, 29982]),
     ("meta-ipv4.txt", "Meta ASNs", "high", [32934, 63293, 54115]),
     ("meta-ipv4.txt", "non-Meta networks", "low", [16509, 15169, 8075, 7922, 4134]),
 ]

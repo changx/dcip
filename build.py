@@ -62,7 +62,7 @@ def tag(t):
         sys.exit(f"tag file {p} is empty or not CSV (bgp.tools login wall?)")
     return s
 
-T = {t: tag(t) for t in ("vpsh", "vpn", "cdn", "dsl", "mobile")}
+T = {t: tag(t) for t in ("vpsh", "vpn", "cdn", "dsl", "mobile", "ddosm")}
 
 def x4b_asns(p):
     s = set()
@@ -166,8 +166,13 @@ def is_soft_eyeball(a):
     return klass.get(a) == "Eyeball"
 
 def is_big_carrier(a):
+    # Many CAIDA customers usually means a transit carrier. Mid-size Content networks are the
+    # exception: Cloudflare (Magic Transit/BYOIP) and Vultr (BYOIP) have >300 customers.
+    # Large Content-class networks such as Cox (cable ISP) stay excluded.
+    many_customers = len(customers[a]) > CONE_LIMIT and not (
+        klass.get(a) == "Content" and size[a] <= 16384)
     return klass.get(a) == "T1" or (klass.get(a) == "Carrier" and size[a] > BIG_CARRIER_24S) \
-        or len(customers[a]) > CONE_LIMIT
+        or many_customers
 
 tier = {}
 candidates = (set(name) | set(adj) | x4b_dc | x4b_vpn | asdb_host | pdb_content) - set(CHINA_CARRIERS)
@@ -200,7 +205,10 @@ for a in candidates - set(tier):
     ups, downs = providers[a], customers[a]
     if len(downs) >= 2 and len(downs & core) * 2 >= len(downs) and not is_big_carrier(a):
         r.append("customers-mostly-hosting")
-    if ups and ups <= core and 0 < size[a] <= DOWNSTREAM_MAX_24S:
+    # DDoS-protection providers (bgp.tools tag ddosm: Cloudflare Magic Transit, Prolexic,
+    # Incapsula, AWS Shield) announce enterprise networks (banks, airlines, offices).
+    # Such customers are not hosting, so a ddosm upstream blocks this inference.
+    if ups and ups <= core and not ups & T["ddosm"] and 0 < size[a] <= DOWNSTREAM_MAX_24S:
         # Every upstream is a hosting network: a VPS / proxy / IP-transit reseller.
         tier[a] = ("downstream", r + ["all-upstreams-hosting"])
     elif "customers-mostly-hosting" in r and a not in adj:
