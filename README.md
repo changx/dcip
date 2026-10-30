@@ -91,6 +91,23 @@ If nginx is behind a proxy, configure `real_ip_header` and `set_real_ip_from` fi
 
 China carrier ASNs: 4134, 4809, 23764 (China Telecom); 4837, 9929, 10099, 19174 (China Unicom); 9808, 58453, 58807 (China Mobile).
 
+## Organisation lists
+
+| File | Rule |
+| --- | --- |
+| `meta-ipv4.txt` / `meta-ipv6.txt` | Every BGP prefix of AS32934 (main), AS63293 (CDN) and AS54115 (corporate). Meta's crawler (`facebookexternalhit`) and webhooks come from here. Meta caches inside ISP networks (FNA) use ISP addresses and are not included. |
+
+## Label visitor IPs
+
+Load each list once and return every label that matches. Base URL: `https://raw.githubusercontent.com/changx/dcip/main/out/`.
+
+| Label | Files | Action |
+| --- | --- | --- |
+| `china` | `china-compliance-ipv4/6.txt` | Compliance flow (CN/HK/MO location or Chinese entity network) |
+| `china_dc` | `china-optimized-dc-ipv4/6.txt` | Risk signal; combine with `Asia/Shanghai` time zone and `zh-CN` |
+| `meta` | `meta-ipv4/6.txt` | Meta servers; usually allow |
+| `datacenter` | `combined-ipv4/6.txt` | Background risk signal |
+
 ## China labels (`china.py`)
 
 "China" follows 28 CFR 202.208: the PRC including Hong Kong and Macau.
