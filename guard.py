@@ -6,8 +6,11 @@ at a Git ref (default HEAD). Size is measured as address space, not line count,
 because collapsing can merge many lines into one:
 IPv4 in /24 equivalents, IPv6 in /48 equivalents.
 
-Fails (exit 1) when a list is missing, new, empty, or its size changed by more
-than --max-change (default 0.15). Prints one line per list.
+Fails (exit 1) when a consumer list (combined, meta, china-*) is missing, new,
+empty, or its size changed by more than --max-change (default 0.15). The
+intermediate tiers that only feed combined are reported but never fail: their
+IPv6 size is dominated by a few /29 leases and swings far more than combined.
+Prints one line per list.
 
 Usage: python3 guard.py [--base REF] [--max-change 0.15]
 """
@@ -15,6 +18,8 @@ import argparse, ipaddress, subprocess, sys
 from pathlib import Path
 
 R = Path(__file__).resolve().parent
+INFO_ONLY = ("datacenter-core", "hosting-downstream", "china-adjacent", "whois-hosting",
+             "mixed-isp-hosting", "review")
 
 
 def size(text, v):
@@ -47,9 +52,14 @@ def main():
             bad += 1
             continue
         change = (s_new - s_old) / s_old if s_old else 1.0
+        info = name.rsplit("-ipv", 1)[0] in INFO_ONLY
         ok = abs(change) <= a.max_change
-        bad += not ok
-        print(f"{'ok ' if ok else 'BAD'} {name}: {s_old:,.0f} -> {s_new:,.0f} ({change:+.1%})")
+        if info:
+            tag = "ok " if ok else "info"
+        else:
+            bad += not ok
+            tag = "ok " if ok else "BAD"
+        print(f"{tag} {name}: {s_old:,.0f} -> {s_new:,.0f} ({change:+.1%})")
     print(f"guard: {bad} list(s) outside ±{a.max_change:.0%}")
     sys.exit(1 if bad else 0)
 
