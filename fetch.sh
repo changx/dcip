@@ -47,4 +47,6 @@ curl -sfL -m 600 -o dbip-country-lite.csv.gz \
   "https://download.db-ip.com/free/dbip-country-lite-$(date -u +%Y-%m).csv.gz" \
   || curl -sfL -m 600 -o dbip-country-lite.csv.gz \
   "https://download.db-ip.com/free/dbip-country-lite-$(date -u -d '-1 month' +%Y-%m).csv.gz"
+# Meta's registered routes (RADB AS-FACEBOOK), merged into out/meta-* by build.py.
+python3 ../radb.py radb-meta.json
 echo "fetch ok"

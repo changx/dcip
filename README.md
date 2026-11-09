@@ -129,6 +129,7 @@ Rebuild weekly. BGP announcements and IP leases change quickly.
 | PeeringDB `net` | `info_type` Content |
 | CAIDA as-rel2 | AS relationships: China carrier adjacency, upstream inference |
 | CAIDA RouteViews pfx2as (v4/v6) | Prefix to origin AS |
+| RADB `AS-FACEBOOK` (whois.radb.net) | Meta's registered route/route6 objects for the Meta list |
 | APNIC + RIPE inetnum/inet6num bulk | Sub-allocations named IDC/hosting/VPS/colo |
 
 ## Tiers
@@ -149,7 +150,7 @@ China carrier ASNs: 4134, 4809, 23764 (China Telecom); 4837, 9929, 10099, 19174 
 
 | File | Rule |
 | --- | --- |
-| `meta-ipv4.txt` / `meta-ipv6.txt` | Every BGP prefix of AS32934 (main), AS63293 (CDN) and AS54115 (corporate). Meta's crawler (`facebookexternalhit`) and webhooks come from here. Meta caches inside ISP networks (FNA) use ISP addresses and are not included. |
+| `meta-ipv4.txt` / `meta-ipv6.txt` | Every BGP prefix of AS32934 (main), AS63293 (CDN) and AS54115 (corporate), plus every RADB route/route6 object of the `AS-FACEBOOK` AS-SET members (`radb.py`, saved as `data/radb-meta.json`; adds AS11917 WhatsApp and AS34825). RADB holds registered routes, so it also covers Meta space that is not announced in BGP at build time, such as `57.136.0.0/19`. Meta's crawler (`facebookexternalhit`) and webhooks come from here. Meta caches inside ISP networks (FNA) use ISP addresses and are not included. |
 
 ## China labels (`china.py`)
 

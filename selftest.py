@@ -61,4 +61,16 @@ for fname, label, exp, asns in TESTS:
         ok = s is None or (s >= 0.9 if exp == "high" else s <= 0.05)
         fails += not ok
         print(f"  {'ok ' if ok else 'BAD'} AS{a}: " + ("no prefixes" if s is None else f"{s:6.1%}"))
+
+# Every registered Meta RADB route must be covered by the Meta lists.
+import json
+radb = json.load(open(R / "data/radb-meta.json"))
+for v in (4, 6):
+    meta = list(ipaddress.collapse_addresses(
+        ipaddress.ip_network(x) for x in (R / "out" / f"meta-ipv{v}.txt").read_text().split()))
+    missing = [x for x in radb[f"ipv{v}"]
+               if not any(ipaddress.ip_network(x).subnet_of(m) for m in meta)]
+    fails += bool(missing)
+    print(f"== meta-ipv{v}.txt: RADB AS-FACEBOOK routes covered: "
+          f"{len(radb[f'ipv{v}']) - len(missing)}/{len(radb[f'ipv{v}'])}" + (f" BAD {missing[:5]}" if missing else " ok"))
 print(f"{fails} unexpected result(s)")
