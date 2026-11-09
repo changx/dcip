@@ -277,37 +277,23 @@ write("combined", pfx["core"] + pfx["downstream"] + pfx["china-adjacent"] + pfx[
 write("mixed-isp-hosting", pfx["mixed"])
 write("review", pfx["review"])
 
-# Organisation lists: every prefix that the organisation's ASNs announce in BGP, plus the
-# organisation's registered RADB routes. Meta: AS32934 main network, AS63293 CDN, AS54115
-# corporate; radb.py adds the members of AS-FACEBOOK (e.g. AS11917 WhatsApp) and their
-# route/route6 objects, which can cover space that is registered but not announced now.
+# Organisation lists come from the organisation's registered RADB routes only. radb.py
+# expands AS-FACEBOOK (AS32934 main, AS63293 CDN, AS54115 corporate, AS11917 WhatsApp,
+# AS34825) to its route/route6 objects. These cover every Meta prefix announced in BGP
+# and also registered space that is not announced now; selftest.py checks the BGP side.
 # Off-net caches inside ISPs are not included.
-ORG_ASNS = {"meta": {32934, 63293, 54115}}
 RADB = {"meta": D / "radb-meta.json"}
-radb_nets = defaultdict(list)
 for o, path in RADB.items():
     r = json.load(open(path))
     if not r.get("ipv4") or not r.get("ipv6"):
         sys.exit(f"{path}: empty RADB address family; rerun fetch.sh")
-    ORG_ASNS[o] |= set(r["asns"])
+    nets = []
     for x in r["ipv4"] + r["ipv6"]:
         n = ipaddress.ip_network(x, strict=False)
         if n.prefixlen == 0 or n.is_private:
             sys.exit(f"{path}: refusing {n}")
-        radb_nets[o].append(n)
-org = defaultdict(list)
-for fn in ("rv4.pfx2as.gz", "rv6.pfx2as.gz"):
-    with gzip.open(D / fn, "rt") as f:
-        for line in f:
-            p, l, origins = line.split()
-            asns = {int(x) for x in re.split(r"[_,]", origins) if x.isdigit()}
-            for o, members in ORG_ASNS.items():
-                if asns & members:
-                    org[o].append(ipaddress.ip_network(f"{p}/{l}", strict=False))
-for o in ORG_ASNS:
-    if not org[o]:
-        sys.exit(f"org list {o} is empty: check pfx2as input")
-    write(o, org[o] + radb_nets[o])
+        nets.append(n)
+    write(o, nets)
 
 with open(OUT / "asn.csv", "w", newline="") as f:
     w = csv.writer(f)

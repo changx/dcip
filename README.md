@@ -151,7 +151,7 @@ China carrier ASNs: 4134, 4809, 23764 (China Telecom); 4837, 9929, 10099, 19174 
 
 | File | Rule |
 | --- | --- |
-| `meta-ipv4.txt` / `meta-ipv6.txt` | Every BGP prefix of AS32934 (main), AS63293 (CDN) and AS54115 (corporate), plus every RADB route/route6 object of the `AS-FACEBOOK` AS-SET members (`radb.py`, saved as `data/radb-meta.json`; adds AS11917 WhatsApp and AS34825). RADB holds registered routes, so it also covers Meta space that is not announced in BGP at build time, such as `57.136.0.0/19`. Meta's crawler (`facebookexternalhit`) and webhooks come from here. Meta caches inside ISP networks (FNA) use ISP addresses and are not included. |
+| `meta-ipv4.txt` / `meta-ipv6.txt` | Every RADB route/route6 object of the `AS-FACEBOOK` AS-SET members: AS32934 (main), AS63293 (CDN), AS54115 (corporate), AS11917 (WhatsApp) and AS34825 (`radb.py`, saved as `data/radb-meta.json`). RADB holds registered routes. It covers every prefix that these ASNs announce in BGP, and also Meta space that is not announced at build time, such as `57.136.0.0/19`. `selftest.py` fails if RADB covers less than 90% of the BGP-announced Meta space. Meta's crawler (`facebookexternalhit`) and webhooks come from here. Meta caches inside ISP networks (FNA) use ISP addresses and are not included. |
 
 ## China labels (`china.py`)
 
