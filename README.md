@@ -116,8 +116,9 @@ Geolocation in `china-geo` (part of `china-compliance`): IP Geolocation by DB-IP
    The first run parses RIPE/APNIC whois (about 5 minutes). Later runs use `data/whois_hosting.cache`.
 3. `systemd-run --user --scope -p MemoryMax=6G python3 china.py`. This writes the `china-*` lists and adds China carrier overseas space to `combined`. Run it after `build.py`.
 4. `./selftest.py`. The last line must be `0 unexpected result(s)`.
+5. `./guard.py`. It compares each `out/` list with the last commit by address space (IPv4 /24s, IPv6 /48s) and fails when a list is missing, new, empty, or changed by more than 15% (`--max-change`). Review such a change by hand before publishing it.
 
-Rebuild weekly. BGP announcements and IP leases change quickly.
+The lists are rebuilt and published daily. BGP announcements, RADB routes and IP leases change quickly.
 
 ## Sources
 
