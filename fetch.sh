@@ -17,7 +17,16 @@ else
 fi
 
 curl -sSfL --retry 3 --retry-delay 30 --retry-all-errors -o asdb.csv https://asdb.stanford.edu/static-website/data/2026-03_categorized_ases.csv
-curl -sSfL --retry 3 --retry-delay 30 --retry-all-errors -o pdb_net.json 'https://www.peeringdb.com/api/net?fields=asn,name,info_type,info_types,website'
+# PeeringDB throttles anonymous bulk queries (HTTP 429). Its data changes slowly, so a
+# failed download keeps the previous file when it is less than 7 days old.
+if curl -sSfL --retry 3 --retry-delay 30 --retry-all-errors -o pdb_net.json.tmp 'https://www.peeringdb.com/api/net?fields=asn,name,info_type,info_types,website'; then
+  mv pdb_net.json.tmp pdb_net.json
+elif [ -s pdb_net.json ] && [ $(( $(date +%s) - $(stat -c %Y pdb_net.json) )) -lt 604800 ]; then
+  rm -f pdb_net.json.tmp
+  echo "warning: PeeringDB download failed; keeping pdb_net.json from $(date -u -r pdb_net.json +%FT%TZ)" >&2
+else
+  echo "PeeringDB download failed and no pdb_net.json newer than 7 days" >&2; exit 1
+fi
 
 rel=$(curl -sSf --retry 3 --retry-delay 30 --retry-all-errors $C/as-relationships/serial-2/ | grep -o '[0-9]\{8\}.as-rel2.txt.bz2' | sort -u | tail -1)
 curl -sSf --retry 3 --retry-delay 30 --retry-all-errors $C/as-relationships/serial-2/$rel | bunzip2 > as-rel2.txt
