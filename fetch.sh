@@ -19,7 +19,7 @@ fi
 curl -sSfL --retry 3 --retry-delay 30 --retry-all-errors -o asdb.csv https://asdb.stanford.edu/static-website/data/2026-03_categorized_ases.csv
 # PeeringDB throttles anonymous bulk queries (HTTP 429). Its data changes slowly, so a
 # failed download keeps the previous file when it is less than 7 days old.
-if curl -sSfL --retry 3 --retry-delay 30 --retry-all-errors -o pdb_net.json.tmp 'https://www.peeringdb.com/api/net?fields=asn,name,info_type,info_types,website'; then
+if curl -sSfL --retry 3 --retry-delay 30 --retry-all-errors --retry-max-time 180 --max-time 120 -o pdb_net.json.tmp 'https://www.peeringdb.com/api/net?fields=asn,name,info_type,info_types,website'; then
   mv pdb_net.json.tmp pdb_net.json
 elif [ -s pdb_net.json ] && [ $(( $(date +%s) - $(stat -c %Y pdb_net.json) )) -lt 604800 ]; then
   rm -f pdb_net.json.tmp
