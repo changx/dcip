@@ -15,14 +15,14 @@ asn,name,why,dc_tier,v4_24s
 963,N963 PTE. LTD.,small-direct:CT+CU,core,144.0
 967,,customer-of:AS932,,56.0
 976,,customer-of:AS18013,,15.0
-979,NetLab Global,small-direct:CT+CU,core,1016.0
+979,NetLab Global,small-direct:CT+CU,core,1000.0
 983,Akari Networks LLC,small-direct:CM+CT,review,4.0
 997,Beyotta Services LLP,small-direct:CT,review,22.0
 1004,,customer-of:AS35200,,3.0
-1014,NetLab Global,customer-of:AS979,review,168.0
+1014,NetLab Global,customer-of:AS979,review,167.0
 1024,12393239 Canada Inc,customer-of:AS53667,downstream,1.0
 1050,Onvox LLC,customer-of:AS53667,downstream,2.0
-1054,Zont LLC,small-direct:CU,review,43.0
+1054,Zont LLC,small-direct:CU,review,42.0
 1248,HERE Global BV,customer-of:AS9957,review,179.0
 1351,,customer-of:AS11164,,256.0
 1640,,customer-of:AS25645,,131.0
@@ -192,7 +192,7 @@ asn,name,why,dc_tier,v4_24s
 9289,,customer-of:AS10103,,1.0
 9292,,customer-of:AS17547,,104.0
 9293,NTT Com Asia Limited,small-direct:CM+CT+CU,review,998.0
-9294,GNET INC.,small-direct:CM+CT,review,1959.0
+9294,GNET INC.,small-direct:CM+CT,review,1980.0
 9302,,customer-of:AS18013,,1.0
 9306,,small-direct:CU,,392.0
 9308,Abitcool(China) Inc.,small-direct:CM,core,2315.0
@@ -325,7 +325,7 @@ asn,name,why,dc_tier,v4_24s
 13058,,small-direct:CT,,12.0
 13060,Basic Net SpA,customer-of:AS41364,review,1.0
 13213,THG HOSTING LIMITED,small-direct:CM+CT,core,435.0
-13317,Wan holdings LLC,customer-of:AS46475,downstream,2.0
+13317,Wan holdings LLC,customer-of:AS46475,downstream,3.0
 13326,,customer-of:AS11164,,256.0
 13337,,customer-of:AS19754,,70.0
 13360,Triton Digital,small-direct:CM+CT,china-adjacent,14.0
@@ -399,7 +399,7 @@ asn,name,why,dc_tier,v4_24s
 17444,,customer-of:AS10103,,683.0
 17468,,customer-of:AS9931,,1.0
 17476,CloudRadium (HK) Limited,small-direct:CM+CT+CU,core,10.0
-17497,Liasail Global Hongkong Limited,small-direct:CT,core,249.0
+17497,Liasail Global Hongkong Limited,small-direct:CT,core,250.0
 17502,,customer-of:AS134823,,4.0
 17537,,customer-of:AS10103,,32.0
 17547,,small-direct:CM+CT,,1541.0
@@ -521,7 +521,7 @@ asn,name,why,dc_tier,v4_24s
 21710,,customer-of:AS23374,,2.0
 21779,,customer-of:AS25645,,24.0
 21856,Nokia of America Corporation,small-direct:CU,review,6.0
-21859,Zenlayer Inc,transit-all-groups,core,3767.0
+21859,Zenlayer Inc,transit-all-groups,core,3765.0
 21887,,customer-of:AS8126,,53.0
 21944,,customer-of:AS21559,,2.0
 22080,,customer-of:AS52444,,58.0
@@ -531,7 +531,7 @@ asn,name,why,dc_tier,v4_24s
 22160,,customer-of:AS18013,,7.0
 22177,Transit do Brasil S/A,small-direct:CT,review,69.0
 22335,,customer-of:AS11164,,1.0
-22427,GNET INC.,small-direct:CM,review,69.0
+22427,GNET INC.,small-direct:CM,review,68.0
 22472,,customer-of:AS11096,,68.0
 22487,,customer-of:AS11096,,4.0
 22552,eSited Solutions,customer-of:AS53587,core,828.0
@@ -749,7 +749,7 @@ asn,name,why,dc_tier,v4_24s
 32440,,customer-of:AS11164,,45.0
 32519,DMIT Cloud Services,customer-of:AS906,core,16.0
 32561,,customer-of:AS53667,,1.0
-32595,"Liberally Network, LLC",customer-of:AS46475,review,8.0
+32595,"Liberally Network, LLC",customer-of:AS46475,review,7.0
 32624,,customer-of:AS19754,,64.0
 32727,SB Professional Services,customer-of:AS6233,core,2.0
 32750,,customer-of:AS10674,,1.0
@@ -1070,7 +1070,7 @@ asn,name,why,dc_tier,v4_24s
 45318,,customer-of:AS56258,,2.0
 45325,PT PC24 Telekomunikasi Indonesia,customer-of:AS134654,core,21.0
 45326,,customer-of:AS58655,,69.0
-45351,,customer-of:AS55821,,15.0
+45351,,customer-of:AS55821,,13.0
 45361,,customer-of:AS9848,,648.0
 45374,,customer-of:AS9848,,248.0
 45411,,customer-of:AS17828,,32.0
@@ -1126,13 +1126,13 @@ asn,name,why,dc_tier,v4_24s
 46138,,customer-of:AS216211,,2.0
 46142,"BridgePay Network Solutions, LLC",customer-of:AS33182,review,2.0
 46215,,customer-of:AS11280,,16.0
-46261,"QuickPacket, LLC",customer-of:AS35200,core,866.0
+46261,"QuickPacket, LLC",customer-of:AS35200,core,864.0
 46365,CYANSYN CO.,customer-of:AS979,review,1.0
 46413,,customer-of:AS19754,,10.0
 46435,,customer-of:AS11164,,16.0
 46475,"Limestone Networks, Inc.",small-direct:CT,core,670.0
 46559,ZGX US LLC,customer-of:AS138997,review,4.0
-46606,Unified Layer,small-direct:CU,core,3366.0
+46606,Unified Layer,small-direct:CU,core,3367.0
 46745,,customer-of:AS11686,,4.0
 46783,EASY LINK LLC,small-direct:CU,review,52.0
 46832,,customer-of:AS11164,,258.0
@@ -1261,14 +1261,14 @@ asn,name,why,dc_tier,v4_24s
 52496,,customer-of:AS52444,,16.0
 52501,,customer-of:AS262206,,2.0
 52507,,customer-of:AS52444,,12.0
-52814,,customer-of:AS53427,,26.0
+52814,,customer-of:AS53427,,24.0
 52818,CD ONE CORPORATION DO BRASIL LTDA,small-direct:CT,review,16.0
 52853,,customer-of:AS1916,,64.0
 52886,,customer-of:AS1916,,2.0
 52888,,customer-of:AS1916,,131.0
 52898,,customer-of:AS53427,,40.0
 52914,,customer-of:AS1916,,6.0
-52944,MEGALINK TELECOMUNICACOES LTDA ME,small-direct:CT,review,29.0
+52944,MEGALINK TELECOMUNICACOES LTDA ME,small-direct:CT,review,28.0
 52950,,customer-of:AS1916,,257.0
 53055,HostDime,customer-of:AS33182,core,143.0
 53158,,customer-of:AS53427,,57.0
@@ -1418,7 +1418,7 @@ asn,name,why,dc_tier,v4_24s
 58460,,customer-of:AS17828,,83.0
 58461,China Telecom Hangzhou IDC Network,small-direct:CT,core,1466.0
 58463,PT PGAS Telekomunikasi Nusantara,small-direct:CM,review,5.0
-58466,,small-direct:CT,,1012.0
+58466,CHINANET Guangdong province network,small-direct:CT,mixed,1012.0
 58517,,small-direct:CT,,3.0
 58518,,small-direct:CT,,5.0
 58519,China Telecom Cloud,small-direct:CT,core,2207.0
@@ -1619,7 +1619,7 @@ asn,name,why,dc_tier,v4_24s
 63959,,customer-of:AS138195,,7.0
 63961,,customer-of:AS132602,,25.0
 63972,,customer-of:AS9931,,2.0
-63989,DE-CORP,small-direct:CM,china-adjacent,24.0
+63989,DE-CORP,small-direct:CM,china-adjacent,22.0
 64010,BasicBrix LLP,small-direct:CT,review,22.0
 64013,Yancy Limited,customer-of:AS138415,review,7.0
 64047,,customer-of:AS58779,,29.0
@@ -1644,7 +1644,7 @@ asn,name,why,dc_tier,v4_24s
 131240,,customer-of:AS139089,,1.0
 131241,,customer-of:AS38235,,4.0
 131253,,customer-of:AS9821,,1.0
-131274,Cypresstel Global Network,small-direct:CT+CU,china-adjacent,424.0
+131274,Cypresstel Global Network,small-direct:CT+CU,china-adjacent,425.0
 131279,,customer-of:AS134544,,4.0
 131284,,customer-of:AS28910,,46.0
 131293,,small-direct:CU,,557.0
@@ -1876,7 +1876,7 @@ asn,name,why,dc_tier,v4_24s
 134286,Net for Choice,customer-of:AS59550,core,12.0
 134356,,customer-of:AS45204,,3.0
 134363,EZIT Solutions Pte Ltd,small-direct:CT,review,4.0
-134365,"Ansheng Network Technology Co., Limited",customer-of:AS62468,review,41.0
+134365,"Ansheng Network Technology Co., Limited",customer-of:AS62468,review,42.0
 134366,Cloud Computing HK Limited,small-direct:CT,core,19.0
 134379,,customer-of:AS10103,,7.0
 134413,,customer-of:AS983,,3.0
@@ -1950,7 +1950,7 @@ asn,name,why,dc_tier,v4_24s
 135034,,customer-of:AS55423,,11.0
 135054,,small-direct:CM,,6.0
 135059,"Lao Asia Pacific Satellite Co., Ltd.",small-direct:CU,review,2.0
-135061,,small-direct:CU,,640.0
+135061,China Unicom Guangdong IP network,small-direct:CU,core,640.0
 135063,POP NIX COMPANY LIMITED,small-direct:CU,core,5.0
 135074,DREAM CLOUD INNOVATION PTE. LTD.,small-direct:CT,china-adjacent,8.0
 135089,,small-direct:CT,,490.0
@@ -2149,7 +2149,7 @@ asn,name,why,dc_tier,v4_24s
 137919,,customer-of:AS45458,,2.0
 137927,,customer-of:AS10103,,7.0
 137933,CyberForest LLC.,customer-of:AS53587,china-adjacent,13.0
-137951,,customer-of:AS18013,,912.0
+137951,,customer-of:AS18013,,731.0
 137955,Myanmar Internet Exchange,customer-of:AS136168,downstream,2.0
 137969,HONG KONG BRIDGE INFO-TECH LIMITED,small-direct:CT,china-adjacent,5.0
 137982,,customer-of:AS45204,,1.0
@@ -2508,7 +2508,7 @@ asn,name,why,dc_tier,v4_24s
 146993,,customer-of:AS133847,,56.0
 146996,,customer-of:AS56309,,24.0
 147002,VMShell Inc.,customer-of:AS40065,downstream,1.0
-147003,ALLIANCE INTELLIGENT TECHNOLOGIES PTE. LTD.,customer-of:AS51847,downstream,33.0
+147003,ALLIANCE INTELLIGENT TECHNOLOGIES PTE. LTD.,customer-of:AS51847,downstream,34.0
 147011,,customer-of:AS38235,,4.0
 147019,jiii,small-direct:CT,review,52.0
 147023,,customer-of:AS135391,,6.0
@@ -2548,7 +2548,7 @@ asn,name,why,dc_tier,v4_24s
 149364,,customer-of:AS24198,,1.0
 149366,,customer-of:AS38757,,1.0
 149384,,customer-of:AS38757,,1.0
-149440,Evoxt Sdn. Bhd.,small-direct:CT+CU,core,182.0
+149440,Evoxt Sdn. Bhd.,small-direct:CT+CU,core,184.0
 149448,Singapore Data Cloud Pte. Ltd.,customer-of:AS133210,core,2.0
 149502,NEAROUTE LIMITED,customer-of:AS51847,downstream,2.0
 149513,SyCloud,small-direct:CT+CU,core,21.0
@@ -2976,7 +2976,7 @@ asn,name,why,dc_tier,v4_24s
 199925,Phan Nhat Nghi,customer-of:AS8849,downstream,2.0
 199959,GWY IT PTY LTD,customer-of:AS63989,core,102.0
 200017,,customer-of:AS8849,,134.0
-200019,ALEXHOST S.R.L.,small-direct:CM,core,195.0
+200019,ALEXHOST S.R.L.,small-direct:CM,core,197.0
 200027,RDA GROUP LIMITED,customer-of:AS212396,downstream,1.0
 200070,"CZ.NIC, z.s.p.o.",small-direct:CM+CT,review,4.0
 200083,Sub 6 Limited,customer-of:AS20860,china-adjacent,12.0
@@ -3090,7 +3090,7 @@ asn,name,why,dc_tier,v4_24s
 205072,,customer-of:AS35200,,39.0
 205098,Cloud Gateway Limited,small-direct:CM+CT,china-adjacent,19.0
 205106,Pea Soup Hosting Limited,customer-of:AS13009,core,4.0
-205111,ZOHO Corporation B.V,small-direct:CM+CT,china-adjacent,56.0
+205111,ZOHO Corporation B.V,small-direct:CM+CT,china-adjacent,55.0
 205152,,customer-of:AS53667,,1.0
 205182,RAWSRV LTD,customer-of:AS52041,downstream,1.0
 205197,Kanta Enterprises Ltd,customer-of:AS56595,downstream,4.0
@@ -3105,7 +3105,7 @@ asn,name,why,dc_tier,v4_24s
 205389,,customer-of:AS51043,,4.0
 205437,,customer-of:AS207044,,1.0
 205479,,small-direct:CM+CT,,2.0
-205489,CODE ASSET LTD,customer-of:AS8849,china-adjacent,161.0
+205489,CODE ASSET LTD,customer-of:AS8849,china-adjacent,165.0
 205512,,customer-of:AS150706,,11.0
 205610,,customer-of:AS10111,,2.0
 205654,,customer-of:AS35575,,10.0
@@ -3401,7 +3401,7 @@ asn,name,why,dc_tier,v4_24s
 219115,TROPICAL HOSTING LTD,customer-of:AS212396,downstream,1.0
 219289,,customer-of:AS138997,,3.0
 219300,,customer-of:AS152918,,2.0
-219401,,customer-of:AS216211,,6.0
+219401,,customer-of:AS216211,,7.0
 219410,Kingstar(HK)Technology Limited,customer-of:AS17497,downstream,6.0
 219425,,customer-of:AS216211,,4.0
 219484,,customer-of:AS134654,,1.0
@@ -3598,7 +3598,7 @@ asn,name,why,dc_tier,v4_24s
 274074,,customer-of:AS263725,,2.0
 274117,,customer-of:AS394684,,12.0
 274157,,customer-of:AS394684,,1.0
-274202,,customer-of:AS394684,,4.0
+274202,,customer-of:AS394684,,3.0
 274331,,customer-of:AS394684,,4.0
 274365,,customer-of:AS398991,,3.0
 274720,,customer-of:AS269597,,13.0
@@ -3949,7 +3949,7 @@ asn,name,why,dc_tier,v4_24s
 400514,ESpace Networks,small-direct:CM,review,16.0
 400556,"Elcro Digital Services, LLC",customer-of:AS46475,core,5.0
 400618,Prime Security Corp.,small-direct:CT+CU,review,108.0
-400619,AROSSCLOUD INC.,small-direct:CU,china-adjacent,936.0
+400619,AROSSCLOUD INC.,small-direct:CU,china-adjacent,925.0
 400679,,customer-of:AS6233,,1.0
 400692,,customer-of:AS2647,,128.0
 400731,,customer-of:AS26141,,2.0
@@ -3999,7 +3999,7 @@ asn,name,why,dc_tier,v4_24s
 402158,CyberForest,customer-of:AS53587,downstream,1.0
 402162,Benthost LLC,customer-of:AS60439,downstream,3.0
 402169,Uscloud Inc,small-direct:CU,china-adjacent,154.0
-402215,,customer-of:AS17497,,32.0
+402215,,customer-of:AS17497,,34.0
 402246,,customer-of:AS18013,,24.0
 402279,Geoscry Network LLC,customer-of:AS152918,review,31.0
 402306,,customer-of:AS17476,,7.0

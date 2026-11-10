@@ -269,7 +269,7 @@ asn,name,reason,dc_tier
 17500,Reach Networks HK Ltd.,rir-registered:HK,
 17537,HKBN JOS Synergy (HK) Limited,rir-registered:HK,
 17540,Modern Terminals Limited,rir-registered:HK,
-17554,CITIC Telcom International Limited,rir-registered:HK,
+17554,CITIC Telecom International Limited,rir-registered:HK,
 17555,Springfield NOC,rir-registered:HK,
 17561,LARUS Limited,rir-registered:HK,review
 17619,POWERNETIX,rir-registered:HK,
@@ -660,7 +660,7 @@ asn,name,reason,dc_tier
 38819,HKCSL GPRS NETWORK,rir-registered:HK,
 38834,NVIDIA-BANGALORE,rir-registered:CN,
 38860,DOCOMO interTouch - Hong Kong,bgptools-cc:HK,
-38864,CITIC Telcom International Limited,rir-registered:HK,
+38864,CITIC Telecom International Limited,rir-registered:HK,
 38866,Mediterranean Shipping Company (Hong Kong) Limited,rir-registered:HK,
 38870,BGC Partners - APAC,rir-registered:HK,
 38871,InfoMove Solutions Limited,rir-registered:HK,
@@ -935,7 +935,7 @@ asn,name,reason,dc_tier
 58448,CONAC (China Organizational Name Administration Center),rir-registered:CN,
 58453,China Mobile International,china-carrier:CMI,
 58461,China Telecom Hangzhou IDC Network,rir-registered:CN,core
-58466,CHINANET Guangdong province network,rir-registered:CN,
+58466,CHINANET Guangdong province network,rir-registered:CN,mixed
 58516,Amsterdam Internet Exchange,rir-registered:HK,
 58517,China Telecom,rir-registered:CN,
 58518,China Telecom,rir-registered:CN,
@@ -1731,7 +1731,7 @@ asn,name,reason,dc_tier
 133465,Duke Kunshan University,rir-registered:CN,
 133467,SN TECHNOLOGY LIMITED,rir-registered:HK,
 133475,New York University ASN,rir-registered:CN,core
-133478,"Tencent Cloud Computing (Beijing) Co., Ltd",rir-registered:CN,
+133478,"Tencent Cloud Computing (Beijing) Co., Ltd",rir-registered:CN,core
 133484,Tung Wah College Limited,rir-registered:HK,
 133485,Gameloft Limited,rir-registered:HK,
 133486,DXC Technology Australia Pty Limited,rir-registered:HK,
@@ -1995,7 +1995,7 @@ asn,name,reason,dc_tier
 135056,"JIN CHENGBAO TECHNOLOGY CO.,LIMITED",rir-registered:HK,
 135057,SCAD FOUNDATION (HONG KONG) LIMITED,rir-registered:HK,
 135058,JINXI TECHNOLOGY LIMITED,rir-registered:HK,
-135061,China Unicom Guangdong IP network,rir-registered:CN,
+135061,China Unicom Guangdong IP network,rir-registered:CN,core
 135067,"LOGICOM TECHNOLOGY CO.,LIMITED",rir-registered:HK,downstream
 135078,TISP LIMITED,rir-registered:HK,
 135081,CHEER TOP TECHNOLOGY LIMITED,rir-registered:HK,
