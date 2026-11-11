@@ -1750,7 +1750,7 @@ asn,name,reason,dc_tier
 133518,"CERNET New Technology Co., Ltd",rir-registered:CN,
 133519,"CERNET New Technology Co., Ltd",rir-registered:CN,
 133522,LEMON TELECOMMUNICATIONS LIMITED,rir-registered:HK,
-133526,HENGDA NETWORK LIMITED,rir-registered:HK,downstream
+133526,HENGDA NETWORK LIMITED,rir-registered:HK,
 133527,HuaBo Technology International Limited,rir-registered:HK,
 133536,Macy's Merchandising Group International (Hong Kong) Limited,rir-registered:HK,
 133545,"HONG KONG G&S TRADING CO., LIMITED",rir-registered:HK,
@@ -8000,6 +8000,7 @@ asn,name,reason,dc_tier
 216411,GZ REMITTANCE (CHINA) INDUSTRY LIMITED,rir-registered:HK,
 216412,YANG FANG,rir-registered:CN,
 216458,"Hardcore Communication Co., Limited",rir-registered:HK,review
+218130,"HONG KONG ORIENTAL SCIENCE AND TECHNOLOGY CO., LIMITED",rir-registered:HK,
 218158,Leihua Chen,rir-registered:HK,
 218167,Qiyu Huang,rir-registered:CN,
 218174,Hio Global Limited,rir-registered:HK,
@@ -8050,7 +8051,7 @@ asn,name,reason,dc_tier
 218910,ASHORE LIMITED,rir-registered:HK,
 218911,ORION LIMITED,rir-registered:HK,
 218915,OpenSky Cloud Infrastructure Limited,rir-registered:HK,downstream
-218919,NETWORK EXPRESS TECHNOLOGY LIMITED,rir-registered:HK,downstream
+218919,NETWORK EXPRESS TECHNOLOGY LIMITED,rir-registered:HK,
 218943,PrimeEdge Technology Innovations Limited,rir-registered:HK,
 218955,LOCKLINE NETWORKS LIMITED,rir-registered:HK,
 218968,NovaLink Integrated Networks Limited,rir-registered:HK,
@@ -8089,7 +8090,7 @@ asn,name,reason,dc_tier
 219393,Deep Blue Edge Limited,rir-registered:HK,downstream
 219394,Red Seek Limited,rir-registered:HK,downstream
 219396,Widget Technology Limited,rir-registered:HK,
-219397,Liangmin Li,rir-registered:CN,
+219397,Wenzhou Cloud LLC,rir-registered:CN,
 219409,Trinity Digital Limited,rir-registered:HK,
 219410,Kingstar(HK)Technology Limited,rir-registered:HK,downstream
 219422,Asia Backbone Communications Limited,rir-registered:HK,
