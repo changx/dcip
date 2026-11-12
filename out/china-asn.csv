@@ -784,6 +784,7 @@ asn,name,reason,dc_tier
 49842,Address Limited,rir-registered:HK,
 49904,Xiaodong Qi,rir-registered:CN,
 49996,Address Limited,rir-registered:HK,
+50132,IO Limited,rir-registered:HK,downstream
 50159,Next Limited,rir-registered:HK,
 50308,Address Limited,rir-registered:HK,
 50922,SHI Li Li,rir-registered:CN,downstream
@@ -7700,6 +7701,7 @@ asn,name,reason,dc_tier
 155041,"Humeng Technology International Co., Limited",rir-registered:HK,
 155046,LUCKY CREST LIMITED,rir-registered:HK,
 155078,ArcNode (Asia Pacific) Holdings Limited,rir-registered:HK,
+155102,Argsment Limited,rir-registered:CN,
 197176,Chen Yulin,rir-registered:CN,
 197196,PANSTAR CLOUD LIMITED,rir-registered:HK,china-adjacent
 197200,Key Proxy Limited,rir-registered:HK,
@@ -8090,7 +8092,7 @@ asn,name,reason,dc_tier
 219393,Deep Blue Edge Limited,rir-registered:HK,downstream
 219394,Red Seek Limited,rir-registered:HK,downstream
 219396,Widget Technology Limited,rir-registered:HK,
-219397,Wenzhou Cloud LLC,rir-registered:CN,
+219397,Wenzhou Cloud LLC,bgptools-cc:CN,
 219409,Trinity Digital Limited,rir-registered:HK,
 219410,Kingstar(HK)Technology Limited,rir-registered:HK,downstream
 219422,Asia Backbone Communications Limited,rir-registered:HK,
