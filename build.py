@@ -18,6 +18,9 @@ Outputs (in out/):
   combined-ipv4.txt / -ipv6.txt             all four lists above (recommended)
   mixed-isp-hosting-ipv4.txt / -ipv6.txt    ISPs that also sell hosting (not in combined)
   review-ipv4.txt / -ipv6.txt               China-adjacent ASNs without hosting signal
+  relay-ipv4.txt / -ipv6.txt                iCloud Private Relay egress (Apple list)
+  vpn-ipv4.txt / -ipv6.txt                  consumer VPN egress (split.py removes it from hosting)
+  country-ipv4.csv / -ipv6.csv              "cidr,CC" from DB-IP Lite
   asn.csv                                   every selected ASN with tier and reasons
 """
 import csv, gzip, ipaddress, json, re, sys
@@ -249,13 +252,18 @@ WHOIS_KW = re.compile(
 WHOIS_DBS = ["apnic.db.inetnum.gz", "apnic.db.inet6num.gz",
              "ripe.db.inetnum.gz", "ripe.db.inet6num.gz"]
 cache = D / "whois_hosting.cache"
+warp_cache = D / "whois_warp.cache"  # Cloudflare WARP (consumer VPN) netnames, for the vpn list
 srcs = [D / x for x in WHOIS_DBS if (D / x).exists()]
-if srcs and (not cache.exists() or cache.stat().st_mtime < max(s.stat().st_mtime for s in srcs)):
+stale = lambda c: not c.exists() or c.stat().st_mtime < max(s.stat().st_mtime for s in srcs)
+if srcs and (stale(cache) or stale(warp_cache)):
     sys.path.insert(0, str(ROOT))
     from whois_parse import ranges
-    with open(cache, "w") as out:
+    with open(cache, "w") as out, open(warp_cache, "w") as wout:
         for s in srcs:
             for lo, hi, nn, de, wcc, st in ranges(s):
+                if nn.upper().startswith("CLOUDFLAREWARP"):
+                    for n in ipaddress.summarize_address_range(lo, hi):
+                        wout.write(f"{n}\t{nn}\n")
                 big = (int(hi) - int(lo) + 1) > (65536 if lo.version == 4 else 2 ** 96)
                 if not big and WHOIS_KW.search(f"{nn} {de}"):
                     for n in ipaddress.summarize_address_range(lo, hi):
@@ -276,6 +284,119 @@ write("whois-hosting", pfx["whois"])
 write("combined", pfx["core"] + pfx["downstream"] + pfx["china-adjacent"] + pfx["whois"])
 write("mixed-isp-hosting", pfx["mixed"])
 write("review", pfx["review"])
+
+# ---------- relay / vpn: privacy egress split out of combined and of unlisted space ----------
+# relay: iCloud Private Relay egress (Apple's published list).
+# vpn:   consumer VPN egress. ASNs tagged VPN (bgp.tools, X4BNet) or named as a VPN
+#        operator, without clouds/CDNs/generic hosts whose VPN tag covers mostly
+#        other customers (crawlers, servers), eyeball ISPs or big carriers; plus
+#        X4BNet's VPN IP ranges outside those ASNs and Cloudflare WARP (RIPE netname).
+# split.py later writes hosting = combined - relay - vpn - meta.
+VPN_OPERATOR = re.compile(r"packethub|datacamp limited|proton ag|mullvad vpn|\bivpn\b|windscribe|"
+                          r"ipvanish|anchorfree|tefincom|surfshark|privado", re.I)
+NOT_VPN = {  # clouds, CDNs and generic hosts: VPN tag at ASN level is too broad
+    15169, 396982, 36040, 19527,          # Google (incl. Googlebot), Google Cloud
+    16509, 14618,                         # Amazon
+    8075, 8068,                           # Microsoft
+    31898, 13335, 54113, 20940, 16625,    # Oracle, Cloudflare, Fastly, Akamai
+    14061, 63949, 20473, 24940, 16276,    # DigitalOcean, Linode, Vultr, Hetzner, OVH
+    12876, 51167, 45102, 132203, 9009,    # Scaleway, Contabo, Alibaba, Tencent, M247
+    21859,                                # Zenlayer (China-line IDC)
+}
+vpn_asn = {a for a in (T["vpn"] | x4b_vpn | {a for a, n in name.items() if VPN_OPERATOR.search(n)})
+           if a not in NOT_VPN and not is_eyeball(a) and not is_big_carrier(a)}
+
+origin = {4: {}, 6: {}}  # prefixlen -> {network int: origin ASNs}
+for fn in ("rv4.pfx2as.gz", "rv6.pfx2as.gz"):
+    with gzip.open(D / fn, "rt") as f:
+        for line in f:
+            p, l, origins = line.split()
+            n = ipaddress.ip_network(f"{p}/{l}", strict=False)
+            origin[n.version].setdefault(n.prefixlen, {})[int(n.network_address)] = \
+                {int(x) for x in re.split(r"[_,]", origins) if x.isdigit()}
+
+def spans(nets):
+    """Sorted, merged (first, last) integer ranges of one address family."""
+    out = []
+    for n in ipaddress.collapse_addresses(nets):
+        lo, hi = int(n.network_address), int(n.broadcast_address)
+        if out and lo <= out[-1][1] + 1:
+            out[-1] = (out[-1][0], max(out[-1][1], hi))
+        else:
+            out.append((lo, hi))
+    return out
+
+def minus(base, cut):
+    """base minus cut; both from spans()."""
+    out, j = [], 0
+    for lo, hi in base:
+        while j < len(cut) and cut[j][1] < lo:
+            j += 1
+        k = j
+        while k < len(cut) and cut[k][0] <= hi:
+            if cut[k][0] > lo:
+                out.append((lo, cut[k][0] - 1))
+            lo = max(lo, cut[k][1] + 1)
+            if lo > hi:
+                break
+            k += 1
+        if lo <= hi:
+            out.append((lo, hi))
+    return out
+
+vpn = []
+for v in (4, 6):
+    for pl, d in origin[v].items():
+        for net, asns in d.items():
+            if asns & vpn_asn:
+                vpn.append(ipaddress.ip_network((net, pl)))
+# X4BNet VPN ranges, without any address that a NOT_VPN ASN announces.
+x4b_vpn_ranges = []
+for line in (X4B / "output/vpn/ipv4.txt").read_text().splitlines():
+    try:
+        x4b_vpn_ranges.append(ipaddress.ip_network(line.split("#")[0].strip(), strict=False))
+    except ValueError:
+        pass
+not_vpn_space = [ipaddress.ip_network((net, pl)) for pl, d in origin[4].items()
+                 for net, asns in d.items() if asns & NOT_VPN]
+for lo, hi in minus(spans(x4b_vpn_ranges), spans(not_vpn_space)):
+    vpn += ipaddress.summarize_address_range(ipaddress.IPv4Address(lo), ipaddress.IPv4Address(hi))
+if warp_cache.exists():
+    vpn += [ipaddress.ip_network(l.split("\t")[0]) for l in open(warp_cache)]
+
+relay = []
+with open(D / "apple-private-relay.csv", encoding="utf-8") as f:
+    for line in f:
+        try:
+            relay.append(ipaddress.ip_network(line.split(",", 1)[0].strip(), strict=False))
+        except ValueError:
+            pass
+if len(relay) < 1000:
+    sys.exit("apple-private-relay.csv: fewer than 1000 prefixes; rerun fetch.sh")
+write("relay", relay)
+write("vpn", vpn)
+
+# ---------- country: DB-IP Lite (CC BY 4.0), one "cidr,CC" line per CIDR ----------
+# Adjacent ranges of one country are merged; ZZ (unassigned/reserved) is skipped.
+rows = {4: [], 6: []}
+with gzip.open(D / "dbip-country-lite.csv.gz", "rt", encoding="utf-8") as f:
+    for line in f:
+        a, b, c = line.strip().split(",")
+        if c == "ZZ":
+            continue
+        lo, hi = ipaddress.ip_address(a), ipaddress.ip_address(b)
+        r = rows[lo.version]
+        if r and r[-1][2] == c and int(r[-1][1]) + 1 == int(lo):
+            r[-1][1] = hi
+        else:
+            r.append([lo, hi, c])
+for v in (4, 6):
+    if len(rows[v]) < 10000:
+        sys.exit("dbip-country-lite.csv.gz: too few rows; rerun fetch.sh")
+    with open(OUT / f"country-ipv{v}.csv", "w") as f:
+        for lo, hi, c in rows[v]:
+            for n in ipaddress.summarize_address_range(lo, hi):
+                f.write(f"{n},{c}\n")
 
 # Organisation lists come from the organisation's registered RADB routes only. radb.py
 # expands AS-FACEBOOK (AS32934 main, AS63293 CDN, AS54115 corporate, AS11917 WhatsApp,

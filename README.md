@@ -1,6 +1,6 @@
 # dcip — datacenter, VPN, China-related and Meta IP lists
 
-Rebuilt from public BGP, RIR and classification data. Every list is plain CIDR text, one prefix per line, with separate IPv4 and IPv6 files.
+Rebuilt from public BGP, RIR and classification data. Every list is plain CIDR text, one prefix per line, with separate IPv4 and IPv6 files. The country files are `cidr,CC` CSV.
 
 ## Use the lists
 
@@ -11,7 +11,17 @@ Rebuilt from public BGP, RIR and classification data. Every list is plain CIDR t
 | `china` | `china-compliance-ipv4.txt`, `china-compliance-ipv6.txt` | Location in CN/HK/MO, or a Chinese entity network | Compliance flow |
 | `china_dc` | `china-optimized-dc-ipv4.txt`, `china-optimized-dc-ipv6.txt` | China-line VPS/IDC (CN2, CMI, 9929 style) | Risk signal; combine with client signals |
 | `meta` | `meta-ipv4.txt`, `meta-ipv6.txt` | Meta servers (crawler, webhooks) | Usually allow |
-| `datacenter` | `combined-ipv4.txt`, `combined-ipv6.txt` | Datacenter, hosting, commercial VPN space | Background risk signal |
+| `relay` | `relay-ipv4.txt`, `relay-ipv6.txt` | iCloud Private Relay egress (Apple list) | Real users; allow |
+| `vpn` | `vpn-ipv4.txt`, `vpn-ipv6.txt` | Consumer VPN egress, inside and outside `combined` | Real users; allow, optional risk weight |
+| `hosting` | `hosting-ipv4.txt`, `hosting-ipv6.txt` | `combined` minus `relay`, `vpn` and `meta`: servers, clouds, proxies, crawlers | Block |
+| `datacenter` | `combined-ipv4.txt`, `combined-ipv6.txt` | Datacenter, hosting, commercial VPN space (superset kept for existing consumers) | Background risk signal |
+| country | `country-ipv4.csv`, `country-ipv6.csv` | `cidr,CC` (ISO 3166-1 alpha-2), DB-IP Lite | Region rules |
+
+`hosting`, `relay`, `vpn` and `meta` cover all of `combined`. `relay` and `vpn` also hold space outside `combined`
+(VPN operators and X4BNet VPN ranges that no hosting signal catches).
+
+Measured on one consumer site (paying users and registrations, Aug–Nov 2026): `combined` held 7.7% of the paying users,
+`hosting` 0.7%. Registrations from `relay` and `vpn` paid at the same rate as unlisted (residential) addresses.
 
 Download from one of these places:
 
@@ -72,8 +82,11 @@ Reload the lists once a week. If a download fails, keep the lists already in mem
 1. `meta` matches: Meta infrastructure. Allow it unless the request is abnormal.
 2. `china` matches: China-related for compliance. Send the request to your compliance flow.
 3. `china_dc` matches without `china`: a China-line proxy or VPS. A browser time zone of `Asia/Shanghai` or `zh-CN` language makes a user in China likely.
-4. Only `datacenter` matches: datacenter or VPN egress. Add risk weight; do not block on this alone.
-5. No match: no IP evidence. Residential proxies are not visible to any static list.
+4. `relay` or `vpn` matches: a privacy egress used by real users. Allow; add risk weight if needed.
+5. `hosting` matches: server, cloud, proxy or crawler space. Block sign-ups and other protected writes.
+6. No match: no IP evidence. Residential proxies are not visible to any static list.
+
+Check the labels in this order: `meta`, `china`, `china_dc`, `relay`, `vpn`, `hosting`.
 
 An IP match is evidence, not a legal determination. 28 CFR 202.211 defines covered persons by residence, ownership and control, so combine IP labels with KYC and contract data.
 
@@ -96,16 +109,35 @@ If nginx is behind a proxy, configure `real_ip_header` and `set_real_ip_from` fi
 
 ### VPN
 
-`combined` catches most commercial VPNs and self-hosted VPN/proxy servers, because they run on datacenter IPs. It does not catch these:
+`vpn` (`build.py`) is the union of:
+
+- prefixes originated by an ASN with the bgp.tools `vpn` tag, in X4BNet `input/vpn/ASN.txt`, or named as a VPN operator
+  (PacketHub, Datacamp, Proton, Mullvad, IVPN, Windscribe, IPVanish, AnchorFree, Tefincom, Surfshark, Privado);
+- X4BNet `output/vpn/ipv4.txt` ranges;
+- Cloudflare WARP space (RIPE netname `CLOUDFLAREWARP`).
+
+ASNs in `NOT_VPN` (Google, Amazon, Microsoft, Oracle, Cloudflare, Fastly, Akamai, DigitalOcean, Linode, Vultr, Hetzner,
+OVH, Scaleway, Contabo, Alibaba, Tencent, M247, Zenlayer), eyeball ISPs and big carriers are never listed ASN-wide: their VPN
+tag covers mostly servers and crawlers (Googlebot is AS15169). Addresses that `NOT_VPN` ASNs announce are removed from the X4BNet ranges too.
+Their VPN products reach `vpn` only through WARP, or `relay` through Apple's list.
+
+`relay` is Apple's published egress list (`data/apple-private-relay.csv`). `hosting` (`split.py`) is `combined` minus
+`relay`, `vpn` and `meta`.
+
+Not covered:
 
 | Type | Extra source |
 | --- | --- |
 | Tor exits | https://check.torproject.org/torbulkexitlist (hourly) |
-| iCloud Private Relay | https://mask-api.icloud.com/egress-ip-ranges.csv |
-| Known VPN ranges | X4BNet `output/vpn/ipv4.txt` |
+| Cloudflare WARP IPv4 (ARIN space) | Not in RIPE whois; lands in `hosting` |
 | Residential proxies (real home IPs) | No static list works. Use a commercial service (Spur, IPinfo Privacy, ipapi.is) or behaviour signals. |
 
-Geolocation in `china-geo` (part of `china-compliance`): IP Geolocation by DB-IP (https://db-ip.com), CC BY 4.0.
+## Country
+
+`country-ipv4.csv` / `country-ipv6.csv`: one `cidr,CC` line per CIDR from DB-IP Lite (monthly). Adjacent ranges of
+one country are merged; unassigned space (`ZZ`) is left out. Look up the longest (only) matching CIDR.
+
+Geolocation in `country-*` and `china-geo` (part of `china-compliance`): IP Geolocation by DB-IP (https://db-ip.com), CC BY 4.0.
 
 ## Rebuild
 
@@ -115,8 +147,9 @@ Geolocation in `china-geo` (part of `china-compliance`): IP Geolocation by DB-IP
 2. `systemd-run --user --scope -p MemoryMax=6G python3 build.py`. This writes `out/`.
    The first run parses RIPE/APNIC whois (about 5 minutes). Later runs use `data/whois_hosting.cache`.
 3. `systemd-run --user --scope -p MemoryMax=6G python3 china.py`. This writes the `china-*` lists and adds China carrier overseas space to `combined`. Run it after `build.py`.
-4. `./selftest.py`. The last line must be `0 unexpected result(s)`.
-5. `./guard.py`. It compares each `out/` list with the last commit by address space (IPv4 /24s, IPv6 /48s). It fails when a consumer list (`combined`, `meta`, `china-*`) is missing, new, empty, or changed by more than 15% (`--max-change`). The intermediate tiers are reported only, because a few IPv6 /29 leases can move them by tens of percent. Review a failing change by hand before publishing it.
+4. `python3 split.py`. This writes `hosting`. Run it after `china.py`.
+5. `./selftest.py`. The last line must be `0 unexpected result(s)`.
+6. `./guard.py`. It compares each `out/` list with the last commit by address space (IPv4 /24s, IPv6 /48s). It fails when a consumer list (`combined`, `meta`, `china-*`, `relay`, `vpn`, `hosting`, `country`) is missing, new, empty, or changed by more than 15% (`--max-change`). Use `--allow-new relay,vpn` for the first publication of a list. The intermediate tiers are reported only, because a few IPv6 /29 leases can move them by tens of percent. Review a failing change by hand before publishing it.
 
 The lists are rebuilt and published daily. BGP announcements, RADB routes and IP leases change quickly.
 
@@ -131,7 +164,10 @@ The lists are rebuilt and published daily. BGP announcements, RADB routes and IP
 | CAIDA as-rel2 | AS relationships: China carrier adjacency, upstream inference |
 | CAIDA RouteViews pfx2as (v4/v6) | Prefix to origin AS |
 | RADB `AS-FACEBOOK` (whois.radb.net) | Meta's registered route/route6 objects for the Meta list |
-| APNIC + RIPE inetnum/inet6num bulk | Sub-allocations named IDC/hosting/VPS/colo |
+| APNIC + RIPE inetnum/inet6num bulk | Sub-allocations named IDC/hosting/VPS/colo; `CLOUDFLAREWARP` netnames |
+| X4BNet/lists_vpn `output/vpn/ipv4.txt` | Known VPN ranges for `vpn` |
+| Apple `mask-api.icloud.com/egress-ip-ranges.csv` | iCloud Private Relay egress for `relay` |
+| DB-IP Lite country | `country-*`, `china-geo` |
 
 ## Tiers
 

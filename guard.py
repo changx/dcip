@@ -6,13 +6,14 @@ at a Git ref (default HEAD). Size is measured as address space, not line count,
 because collapsing can merge many lines into one:
 IPv4 in /24 equivalents, IPv6 in /48 equivalents.
 
-Fails (exit 1) when a consumer list (combined, meta, china-*) is missing, new,
-empty, or its size changed by more than --max-change (default 0.15). The
+Fails (exit 1) when a consumer list (combined, meta, china-*, relay, vpn, hosting,
+country) is missing, new, empty, or its size changed by more than --max-change
+(default 0.15). --allow-new STEM[,STEM] accepts the first publication of a new list. The
 intermediate tiers that only feed combined are reported but never fail: their
 IPv6 size is dominated by a few /29 leases and swings far more than combined.
 Prints one line per list.
 
-Usage: python3 guard.py [--base REF] [--max-change 0.15]
+Usage: python3 guard.py [--base REF] [--max-change 0.15] [--allow-new relay,vpn]
 """
 import argparse, ipaddress, subprocess, sys
 from pathlib import Path
@@ -23,7 +24,8 @@ INFO_ONLY = ("datacenter-core", "hosting-downstream", "china-adjacent", "whois-h
 
 
 def size(text, v):
-    nets = ipaddress.collapse_addresses(ipaddress.ip_network(x) for x in text.split())
+    # .txt lists hold one CIDR per line; country-*.csv lines are "cidr,CC".
+    nets = ipaddress.collapse_addresses(ipaddress.ip_network(x.split(",")[0]) for x in text.split())
     unit = 8 if v == 4 else 80
     return sum(n.num_addresses for n in nets) / (1 << unit)
 
@@ -32,18 +34,27 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--base", default="HEAD")
     ap.add_argument("--max-change", type=float, default=0.15)
+    ap.add_argument("--allow-new", default="", help="comma-separated list stems that may be new")
     a = ap.parse_args()
+    allow_new = {x for x in a.allow_new.split(",") if x}
     old_names = set(subprocess.check_output(
         ["git", "-C", str(R), "ls-tree", "--name-only", a.base, "out/"], text=True).split())
-    old_names = {Path(n).name for n in old_names if n.endswith((".txt",)) and "-ipv" in n}
-    new_names = {p.name for p in (R / "out").glob("*-ipv[46].txt")}
+    old_names = {Path(n).name for n in old_names if n.endswith((".txt", ".csv")) and "-ipv" in n}
+    new_names = {p.name for p in (R / "out").glob("*-ipv[46].txt")} | \
+        {p.name for p in (R / "out").glob("country-ipv[46].csv")}
     bad = 0
     for name in sorted(old_names | new_names):
+        stem = name.rsplit("-ipv", 1)[0]
+        if name in new_names and name not in old_names and stem in allow_new:
+            n = size((R / "out" / name).read_text(), 4 if "-ipv4." in name else 6)
+            print(f"{'ok ' if n else 'BAD'} {name}: new list, {n:,.0f}")
+            bad += not n
+            continue
         if name not in new_names or name not in old_names:
             print(f"BAD {name}: {'missing' if name not in new_names else 'new'} list")
             bad += 1
             continue
-        v = 4 if name.endswith("ipv4.txt") else 6
+        v = 4 if "-ipv4." in name else 6
         new = (R / "out" / name).read_text()
         old = subprocess.check_output(["git", "-C", str(R), "show", f"{a.base}:out/{name}"], text=True)
         s_new, s_old = size(new, v), size(old, v)
@@ -52,7 +63,7 @@ def main():
             bad += 1
             continue
         change = (s_new - s_old) / s_old if s_old else 1.0
-        info = name.rsplit("-ipv", 1)[0] in INFO_ONLY
+        info = stem in INFO_ONLY
         ok = abs(change) <= a.max_change
         if info:
             tag = "ok " if ok else "info"

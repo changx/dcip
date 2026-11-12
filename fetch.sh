@@ -58,4 +58,15 @@ curl -sSfL --retry 3 --retry-delay 30 --retry-all-errors -m 600 -o dbip-country-
   "https://download.db-ip.com/free/dbip-country-lite-$(date -u -d '-1 month' +%Y-%m).csv.gz"
 # Meta's registered routes (RADB AS-FACEBOOK), merged into out/meta-* by build.py.
 python3 ../radb.py radb-meta.json
+# iCloud Private Relay egress ranges (Apple), for out/relay-*. A failed download keeps
+# the previous file when it is less than 3 days old.
+if curl -sSfL --retry 3 --retry-delay 30 --retry-all-errors -m 300 -o apple-private-relay.csv.tmp \
+     https://mask-api.icloud.com/egress-ip-ranges.csv; then
+  mv apple-private-relay.csv.tmp apple-private-relay.csv
+elif [ -s apple-private-relay.csv ] && [ $(( $(date +%s) - $(stat -c %Y apple-private-relay.csv) )) -lt 259200 ]; then
+  rm -f apple-private-relay.csv.tmp
+  echo "warning: Private Relay download failed; keeping apple-private-relay.csv from $(date -u -r apple-private-relay.csv +%FT%TZ)" >&2
+else
+  echo "Private Relay download failed and no apple-private-relay.csv newer than 3 days" >&2; exit 1
+fi
 echo "fetch ok"

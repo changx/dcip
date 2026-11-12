@@ -51,6 +51,14 @@ TESTS = [
      "low", [26539, 22343, 197636, 29982]),
     ("meta-ipv4.txt", "Meta ASNs", "high", [32934, 63293, 54115]),
     ("meta-ipv4.txt", "non-Meta networks", "low", [16509, 15169, 8075, 7922, 4134]),
+    ("vpn-ipv4.txt", "VPN operators (Datacamp, PacketHub, Proton, Mullvad, IPVanish)", "high",
+     [212238, 136787, 207137, 208172, 197141, 46253]),
+    ("vpn-ipv4.txt", "clouds, CDNs, generic hosts, residential/mobile", "low",
+     [15169, 396982, 16509, 8075, 13335, 54113, 24940, 16276, 9009, 14061, 21859,
+      7922, 7018, 21928, 2856, 5089]),
+    ("hosting-ipv4.txt", "clouds and generic hosts", "high", [16509, 14061, 24940, 16276, 20473, 63949]),
+    ("hosting-ipv4.txt", "VPN operators, Meta, residential/mobile", "low",
+     [212238, 136787, 32934, 63293, 7922, 7018, 21928, 2856]),
 ]
 fails = 0
 for fname, label, exp, asns in TESTS:
@@ -73,4 +81,57 @@ for v in (4, 6):
     fails += bool(missing)
     print(f"== meta-ipv{v}.txt: RADB AS-FACEBOOK routes covered: "
           f"{len(radb[f'ipv{v}']) - len(missing)}/{len(radb[f'ipv{v}'])}" + (f" BAD {missing[:5]}" if missing else " ok"))
+# Class lists: meta, relay, vpn and hosting cover all of combined; hosting has none of the others.
+def ranges(stem, v):
+    nets = ipaddress.collapse_addresses(
+        ipaddress.ip_network(x) for x in (R / "out" / f"{stem}-ipv{v}.txt").read_text().split())
+    return [(int(n.network_address), int(n.broadcast_address)) for n in nets]
+
+def overlap(a, b):
+    i = j = 0; n = 0
+    while i < len(a) and j < len(b):
+        lo, hi = max(a[i][0], b[j][0]), min(a[i][1], b[j][1])
+        if lo <= hi: n += hi - lo + 1
+        if a[i][1] < b[j][1]: i += 1
+        else: j += 1
+    return n
+
+def merged(*lists):
+    out = []
+    for lo, hi in sorted(x for l in lists for x in l):
+        if out and lo <= out[-1][1] + 1: out[-1] = (out[-1][0], max(out[-1][1], hi))
+        else: out.append((lo, hi))
+    return out
+
+for v in (4, 6):
+    comb, host = ranges("combined", v), ranges("hosting", v)
+    others = merged(ranges("relay", v), ranges("vpn", v), ranges("meta", v))
+    size = sum(hi - lo + 1 for lo, hi in comb)
+    covered = overlap(comb, merged(host, others))
+    mixed = overlap(host, others)
+    ok = covered == size and mixed == 0
+    fails += not ok
+    print(f"== classes ipv{v}: combined covered {covered}/{size}, hosting overlap {mixed}: {'ok' if ok else 'BAD'}")
+
+# Spot addresses: class (first of meta, relay, vpn, hosting) and country.
+def has(stem, ip):
+    a = ipaddress.ip_address(ip)
+    return any(lo <= int(a) <= hi for lo, hi in ranges(stem, a.version))
+
+for ip, want in [("172.224.226.5", "relay"), ("2a09:bac5::1", "vpn"), ("66.249.66.1", "hosting"),
+                 ("157.240.1.1", "meta"), ("81.2.69.142", None)]:
+    got = next((s for s in ("meta", "relay", "vpn", "hosting") if has(s, ip)), None)
+    fails += got != want
+    print(f"  {'ok ' if got == want else 'BAD'} {ip}: {got} (expect {want})")
+
+country = {}
+for v in (4, 6):
+    for line in (R / "out" / f"country-ipv{v}.csv").read_text().splitlines():
+        c, cc = line.split(",")
+        country[ipaddress.ip_network(c)] = cc
+for ip, want in [("8.8.8.8", "US"), ("81.2.69.142", "GB"), ("1.0.1.1", "CN"), ("193.0.6.139", "NL")]:
+    a = ipaddress.ip_address(ip)
+    got = next((cc for n, cc in country.items() if n.version == a.version and a in n), None)
+    fails += got != want
+    print(f"  {'ok ' if got == want else 'BAD'} country {ip}: {got} (expect {want})")
 print(f"{fails} unexpected result(s)")
