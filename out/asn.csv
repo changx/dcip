@@ -5,7 +5,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 70,review,National Library of Medicine,US,Unknown,848.0,via-hosting:AS42,
 92,mixed,Clarkson University,US,Eyeball,256.0,,bgptools:hosting
 112,review,AS112 Project,US,Content,2.0,via-hosting:AS20495,
-174,mixed,"Cogent Communications, LLC",US,T1,147653.0,peer:CT ChinaNet,bgptools:hosting
+174,mixed,"Cogent Communications, LLC",US,T1,147644.0,peer:CT ChinaNet,bgptools:hosting
 187,downstream,DNScast,US,Unknown,18.0,via-hosting:AS42,all-upstreams-hosting
 188,downstream,SAIC,US,Unknown,3.0,via-hosting:AS16509,asdb:hosting;all-upstreams-hosting
 195,core,San Diego Supercomputer Center,US,Unknown,735.1,,asdb:hosting;name-keyword
@@ -17,7 +17,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 546,review,Parsons Corporation,US,Unknown,5.0,via-hosting:AS16509,
 559,review,SWITCH,CH,Carrier,8536.0,peer:CT Global,
 702,review,Verizon Business - EMEA,US,Unknown,22937.0,peer:CU Backbone,
-714,core,Apple Inc.,US,Content,175789.0,transit:CT Global,bgptools:cdn;peeringdb:content;china:transit:CT Global
+714,core,Apple Inc.,US,Content,175805.0,transit:CT Global,bgptools:cdn;peeringdb:content;china:transit:CT Global
 715,core,"WoodyNet, Inc.",US,Content,334.0,via-hosting:AS42,bgptools:cdn;china:via-hosting:AS42
 833,mixed,GoCodeIT Inc,CA,Eyeball,0.0,,bgptools:hosting
 835,core,GoCodeIT Inc,CA,Content,42.0,peer:CT Global,bgptools:hosting;china:peer:CT Global
@@ -42,7 +42,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 965,china-adjacent,Webhosting Holdings LLC,US,Unknown,21.0,via-hosting:AS53667,name-keyword
 971,downstream,PureVoltage Hosting Inc.,US,Unknown,1.0,,name-keyword;customers-mostly-hosting
 973,review,Revive IT Solutions LLC,US,Unknown,14.0,via-hosting:AS8455,
-979,core,NetLab Global,US,Unknown,1047.0,transit:CT Global,bgptools:hosting;china:transit:CT Global
+979,core,NetLab Global,US,Unknown,1054.0,transit:CT Global,bgptools:hosting;china:transit:CT Global
 983,review,Akari Networks LLC,US,Unknown,4.0,transit:CM International,
 984,mixed,Octopus Web Solution Inc.,US,Eyeball,697.0,,bgptools:hosting
 991,downstream,BlackIP 360 Solutions Inc.,CA,Unknown,4.0,,all-upstreams-hosting
@@ -55,7 +55,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 1024,downstream,12393239 Canada Inc,CA,Unknown,1.0,via-hosting:AS53667,all-upstreams-hosting
 1046,review,Fiberifi,US,Unknown,5.0,via-hosting:AS21700,
 1050,downstream,Onvox LLC,US,Unknown,2.0,via-hosting:AS53667,all-upstreams-hosting
-1054,review,Zont LLC,US,Unknown,42.0,peer:CU Global,
+1054,review,Zont LLC,US,Unknown,38.0,peer:CU Global,
 1074,downstream,"Production Networks, LLC",US,Unknown,5.0,,all-upstreams-hosting
 1083,review,"AGK Consulting, Inc.",US,Unknown,1.0,via-hosting:AS19151,
 1100,core,Nuday Networks Inc.,CA,Unknown,41.0,,bgptools:hosting
@@ -69,7 +69,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 1248,review,HERE Global BV,NL,Unknown,179.0,peer:CT Global,
 1273,review,Vodafone Group PLC,EU,Carrier,8837.0,peer:CT ChinaNet,
 1288,downstream,"Packet Clearing House, Inc.",US,Unknown,15.0,,customers-mostly-hosting
-1299,review,Arelion (fka. Telia Carrier),SE,T1,1636.0,peer:CT ChinaNet,
+1299,review,Arelion (fka. Telia Carrier),SE,T1,1628.0,peer:CT ChinaNet,
 1301,review,Electricite de France SA,EU,Unknown,59.0,via-hosting:AS30781,
 1315,downstream,Imperial PFS,US,Unknown,1.0,,all-upstreams-hosting
 1342,core,Fujitsu Invia Finland IP-network,EU,Unknown,358.0,via-hosting:AS24940,asdb:hosting;peeringdb:content;china:via-hosting:AS24940
@@ -95,9 +95,9 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 2484,review,AFNIC (Association Francaise pour le Nommage Internet en Cooperation),FR,Unknown,1.0,peer:CT Global,
 2485,review,AFNIC (Association Francaise pour le Nommage Internet en Cooperation),FR,Unknown,14.0,via-hosting:AS30781,
 2506,review,NTT business Solutions corporation,JP,Unknown,848.0,via-hosting:AS9607,
-2514,mixed,"NTT PC Communications, Inc.",JP,Eyeball,10310.0,peer:CT Global,bgptools:hosting;asdb:hosting
+2514,mixed,"NTT PC Communications, Inc.",JP,Eyeball,10311.0,peer:CT Global,bgptools:hosting;asdb:hosting
 2516,mixed,KDDI Corporation,JP,Carrier,70923.0,peer:CT ChinaNet,bgptools:hosting;asdb:hosting
-2532,review,Library of Congress,US,Unknown,256.0,via-hosting:AS42,
+2532,review,Library of Congress,US,Unknown,262.0,via-hosting:AS42,
 2559,review,VISA INTERNATIONAL SERVICE ASSOCIATION,US,Unknown,222.0,peer:CT Global,
 2578,core,AS2578,EU,Unknown,4.0,,bgptools:vpn
 2594,china-adjacent,CSI Piemonte,IT,Unknown,340.0,via-hosting:AS12779,peeringdb:content
@@ -108,13 +108,13 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 2687,review,"AT&T Enterprises, LLC",US,Unknown,3052.0,peer:CT ChinaNet,
 2734,review,CoreSite,US,Carrier,194.0,peer:CT CN2,
 2763,downstream,"Palo Alto Networks, Inc",US,Unknown,14.0,via-hosting:AS31898,all-upstreams-hosting
-2764,mixed,AAPT Limited,AU,Eyeball,4589.0,,bgptools:hosting
+2764,mixed,AAPT Limited,AU,Eyeball,4590.0,,bgptools:hosting
 2818,core,BBC,GB,Content,320.0,peer:CT Global,bgptools:cdn;peeringdb:content;china:peer:CT Global
 2876,review,Gheorghiu Enterprises OU,EE,Unknown,2.0,via-hosting:AS24940,
 2877,downstream,Latvian Shipping Company,LV,Unknown,1.0,,all-upstreams-hosting
 2899,core,ARK Data Centers LLC,US,Unknown,0.0,,asdb:hosting;name-keyword
 2906,core,Netflix Streaming Services Inc.,US,Content,1942.0,transit:CT Global,bgptools:cdn;peeringdb:content;china:transit:CT Global
-2914,review,"NTT America, Inc.",US,T1,26260.0,peer:CT ChinaNet,
+2914,review,"NTT America, Inc.",US,T1,26256.0,peer:CT ChinaNet,
 3064,core,"HDC/HW Enterprise, LLC",US,Unknown,278.0,,asdb:hosting;peeringdb:content
 3066,review,Robert E. Seastrom,US,Unknown,1.0,via-hosting:AS42,
 3163,core,DiemIT GmbH,DE,Unknown,14.0,,bgptools:vpn
@@ -146,7 +146,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 3402,downstream,Butterfly Research,KY,Unknown,6.0,,all-upstreams-hosting
 3462,mixed,HiNet (Chunghwa Telecom),TW,Carrier,63906.0,peer:CT Global,bgptools:hosting;bgptools:cdn
 3477,review,National Oceanic and Atmospheric Administration,US,Unknown,1322.0,via-hosting:AS42,
-3491,review,PCCW Global (HK) Ltd.,HK,T1,6709.0,peer:CT ChinaNet,
+3491,review,PCCW Global (HK) Ltd.,HK,T1,6708.0,peer:CT ChinaNet,
 3561,mixed,Lumen (ex. Savvis),US,Eyeball,29195.0,,x4b:dc
 3595,core,zColo,US,Unknown,13.0,,bgptools:vpn;asdb:hosting;name-keyword
 3598,review,Microsoft Corporation,US,Unknown,2382.0,via-hosting:AS8075,
@@ -221,7 +221,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 5485,downstream,SMARTHELP AS,NO,Unknown,4.0,,all-upstreams-hosting
 5500,review,Chess ICT Ltd,GB,Unknown,72.0,peer:CT Global,
 5503,review,RM Education Ltd,GB,Unknown,388.0,peer:CT Global,
-5511,review,Orange S.A.,FR,T1,1987.0,peer:CT ChinaNet,
+5511,review,Orange S.A.,FR,T1,1988.0,peer:CT ChinaNet,
 5517,core,CSL Computer Service Langenbach GmbH,DE,Unknown,544.0,,bgptools:hosting;asdb:hosting;name-keyword
 5518,core,SIA Tet,LV,Unknown,395.0,,bgptools:hosting
 5521,core,PlusServer GmbH,DE,Unknown,1.0,,bgptools:vpn;asdb:hosting;peeringdb:content;name-keyword
@@ -245,14 +245,14 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 6185,core,Apple Inc.,US,Content,88.0,via-hosting:AS714,bgptools:cdn;peeringdb:content;china:via-hosting:AS714
 6188,core,"Liquid Web, L.L.C",US,Unknown,0.0,,x4b:dc;asdb:hosting
 6203,review,Peace Communications LLC,US,Unknown,128.0,via-hosting:AS19151,
-6204,china-adjacent,INTERKVM HOST SRL,RO,Carrier,5.0,peer:CT Global,name-keyword
+6204,review,ZET Communications S.R.L.,RO,Carrier,5.0,peer:CT Global,
 6205,core,HizliNet Teknoloji A.S.,TR,Unknown,37.0,,asdb:hosting;peeringdb:content
 6206,china-adjacent,Netrouting B.V.,NL,Unknown,129.0,peer:CT Global,peeringdb:content
 6208,review,FiberX,PR,Unknown,19.0,peer:CM International,
 6233,china-adjacent,xTom,US,Unknown,47.0,peer:CU Global,asdb:hosting
 6250,china-adjacent,"NeoNova Network Services, LLC",US,Unknown,78.0,via-hosting:AS29802,asdb:hosting
 6364,core,"Atlantic.net, Inc.",US,Eyeball,292.0,,bgptools:hosting;bgptools:vpn;asdb:hosting;peeringdb:content
-6424,core,EDGOO NETWORKS,PT,Carrier,39.0,peer:CT Global,bgptools:hosting;bgptools:cdn;asdb:hosting;china:peer:CT Global
+6424,core,EDGOO NETWORKS,PT,Carrier,40.0,peer:CT Global,bgptools:hosting;bgptools:cdn;asdb:hosting;china:peer:CT Global
 6435,downstream,Tri-Net Solutions LLC.,US,Unknown,4.0,,all-upstreams-hosting
 6453,review,TATA Communications (America) Inc,US,T1,2191.0,peer:CT ChinaNet,
 6461,review,Zayo Bandwidth,US,T1,6907.0,peer:CT ChinaNet,
@@ -305,7 +305,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 7044,core,Computer Systems Authority,US,Unknown,0.0,,asdb:hosting;name-keyword
 7087,china-adjacent,Administración de Redes Colomsat S.A.,CO,Unknown,1.0,via-hosting:AS41327,name-keyword
 7151,core,"Cologix, Inc",US,Unknown,176.0,,asdb:hosting;name-keyword
-7162,core,Scala Data Centers / UNIVERSO ONLINE S/A,BR,Eyeball,1973.0,,bgptools:hosting;peeringdb:content;name-keyword
+7162,core,Scala Data Centers / UNIVERSO ONLINE S/A,BR,Eyeball,1974.0,,bgptools:hosting;peeringdb:content;name-keyword
 7195,core,EdgeUno,CO,Content,168.0,peer:CT ChinaNet,bgptools:hosting;bgptools:cdn;china:peer:CT ChinaNet
 7201,downstream,Network Edge LLC,US,Unknown,7.0,,customers-mostly-hosting
 7203,core,"Leaseweb USA, Inc.",US,Content,726.0,,bgptools:hosting;bgptools:vpn;x4b:dc;asdb:hosting;peeringdb:content
@@ -350,7 +350,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 7671,core,NTT SmartConnect Corporation,JP,Eyeball,1788.0,via-hosting:AS9607,bgptools:hosting;bgptools:cdn;peeringdb:content;china:via-hosting:AS9607
 7682,review,"HOKKAIDO TELECOMMUNICATIONS NETWORK Co., Inc.",JP,Unknown,140.0,peer:CT Global,
 7684,core,SAKURA Internet Inc.,JP,Content,1440.0,,bgptools:hosting
-7713,mixed,PT Telkom Indonesia Tbk,ID,Carrier,32024.0,peer:CT CN2,bgptools:hosting
+7713,mixed,PT Telkom Indonesia Tbk,ID,Carrier,32025.0,peer:CT CN2,bgptools:hosting
 7716,review,Worley Organisation Australia,AU,Unknown,1.0,via-hosting:AS56038,
 7719,downstream,ITSUDATTE,JP,Unknown,1.0,via-hosting:AS31898,all-upstreams-hosting
 7720,core,Skywolf Technology LLC,US,Carrier,5.0,,bgptools:hosting
@@ -390,7 +390,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 8304,core,Ecritel SASU,FR,Unknown,274.0,peer:CT Global,bgptools:hosting;bgptools:vpn;china:peer:CT Global
 8309,review,SIPARTECH SAS,FR,Unknown,270.0,peer:CT Global,
 8312,downstream,Bas Smit trading as Zylon,NL,Unknown,20.0,,asdb:hosting;all-upstreams-hosting
-8315,core,WorldStream B.V.,NL,Content,434.0,,bgptools:hosting;asdb:hosting
+8315,core,WorldStream B.V.,NL,Content,421.0,,bgptools:hosting;asdb:hosting
 8330,review,LONAP Ltd,GB,Unknown,9.0,via-hosting:AS3170,
 8342,mixed,JSC RTComm.RU,RU,Eyeball,1254.0,,bgptools:hosting;bgptools:vpn
 8352,downstream,Unibail-Rodamco-Westfield SE,FR,Unknown,4.0,via-hosting:AS30781,all-upstreams-hosting
@@ -401,7 +401,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 8423,core,NetcoRR Synergies SRL,RO,Content,23.0,via-hosting:AS39737,bgptools:hosting;peeringdb:content;china:via-hosting:AS39737
 8426,mixed,Claranet Limited,GB,Eyeball,3557.0,peer:CT ChinaNet,bgptools:hosting
 8430,downstream,Irina Gaida,KZ,Unknown,1.0,,all-upstreams-hosting
-8452,mixed,Telecom Egypt,EG,Carrier,60061.0,peer:CT Global,bgptools:hosting
+8452,mixed,Telecom Egypt,EG,Carrier,60062.0,peer:CT Global,bgptools:hosting
 8453,downstream,WIIT Schweiz AG,CH,Unknown,14.0,,all-upstreams-hosting
 8455,core,atom86 BV,NL,Carrier,75.0,transit:CT Global,x4b:dc;china:transit:CT Global
 8469,mixed,CANCOM Managed Services GmbH,DE,Eyeball,458.0,,bgptools:hosting
@@ -464,11 +464,11 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 8972,core,Host Europe GmbH,DE,Eyeball,419.0,,bgptools:vpn;x4b:dc;asdb:hosting;name-keyword
 8976,review,Streamwide Romania SRL,RO,Unknown,1.0,via-hosting:AS39737,
 8983,review,Nokia Solutions and Networks Oy,FI,Unknown,123.0,via-hosting:AS6667,
-8987,core,Amazon Gov Cloud,US,Content,5577.0,via-hosting:AS16509,bgptools:hosting;x4b:dc;name-keyword;china:via-hosting:AS16509
+8987,core,Amazon Gov Cloud,US,Content,5578.0,via-hosting:AS16509,bgptools:hosting;x4b:dc;name-keyword;china:via-hosting:AS16509
 8995,review,LARS MICHAEL JOGBAECK,SE,Unknown,1.0,via-hosting:AS15576,
 9002,mixed,RETN Limited,GB,Carrier,109.0,peer:CT ChinaNet,bgptools:hosting;bgptools:vpn
 9007,downstream,heise & dumrath medien geschaeftsfuehrung gmbh,DE,Unknown,48.0,,all-upstreams-hosting
-9009,mixed,M247 Europe SRL,RO,Carrier,6655.0,transit:CT Global,bgptools:hosting;bgptools:vpn;x4b:dc;x4b:vpn
+9009,mixed,M247 Europe SRL,RO,Carrier,6663.0,transit:CT Global,bgptools:hosting;bgptools:vpn;x4b:dc;x4b:vpn
 9023,review,Oesterreichische Lotterien GmbH,AT,Unknown,5.0,via-hosting:AS53667,
 9028,core,OHOST GROUP LLC,BG,Unknown,4.0,,bgptools:hosting;peeringdb:content;name-keyword
 9031,mixed,EDPNET Belgium BV,BE,Eyeball,373.0,,bgptools:hosting
@@ -477,7 +477,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 9063,mixed,VSE NET GmbH,DE,Eyeball,316.0,,bgptools:hosting
 9100,core,Convotis Schweiz AG,CH,Unknown,28.0,,bgptools:hosting;asdb:hosting
 9115,core,Hostpapa UK Ltd.,GB,Unknown,131.0,,bgptools:vpn;asdb:hosting;peeringdb:content;name-keyword
-9123,core,"JSC ""TIMEWEB""",RU,Unknown,945.0,,bgptools:hosting;bgptools:vpn;asdb:hosting;peeringdb:content
+9123,core,"JSC ""TIMEWEB""",RU,Unknown,946.0,,bgptools:hosting;bgptools:vpn;asdb:hosting;peeringdb:content
 9136,mixed,WOBCOM GmbH,DE,Carrier,119.0,peer:CT Global,bgptools:hosting
 9137,review,Uno Communications SpA,IT,Unknown,48.0,via-hosting:AS41327,
 9140,review,Hyperneph Ltd,GB,Unknown,3.0,peer:CT Global,
@@ -497,7 +497,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 9290,core,GoHosting,AU,Unknown,15.0,,x4b:dc;asdb:hosting;peeringdb:content;name-keyword
 9291,downstream,ONEQODE GAMING CARRIER,AU,Unknown,1.0,via-hosting:AS140627,all-upstreams-hosting
 9293,review,NTT Com Asia Limited,HK,Unknown,998.0,transit:CU Backbone,
-9294,review,GNET INC.,US,Unknown,2007.0,transit:CT Global,
+9294,review,GNET INC.,US,Unknown,1907.0,transit:CT Global,
 9308,core,Abitcool(China) Inc.,CN,Unknown,2315.0,transit:CM Backbone,bgptools:vpn;china:transit:CM Backbone
 9312,mixed,xTom,HK,Eyeball,42.0,,bgptools:hosting;bgptools:vpn
 9335,review,National Telecom Public Company Limited,TH,Unknown,274.0,peer:CU Global,
@@ -645,7 +645,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 11989,core,HostPapa,US,Unknown,31.0,,asdb:hosting;name-keyword
 11990,mixed,"Unlimited Net, LLC",US,Unknown,17.0,,bgptools:hosting;bgptools:vpn
 12001,downstream,"Point North Networks, Inc.",US,Unknown,12.0,,all-upstreams-hosting
-12008,china-adjacent,Vercara (f.k.a Neustar),US,Unknown,120.0,via-hosting:AS16552,peeringdb:content
+12008,china-adjacent,Vercara (f.k.a Neustar),US,Unknown,119.0,via-hosting:AS16552,peeringdb:content
 12041,china-adjacent,"Afilias, Inc.",US,Unknown,484.0,via-hosting:AS8455,peeringdb:content
 12070,review,ANYCAST LLC,US,Unknown,4.0,via-hosting:AS64050,
 12076,review,Microsoft (Azure Customer Peering),US,Unknown,10.0,via-hosting:AS42,
@@ -689,15 +689,15 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 12508,mixed,Rainside s.r.o.,SK,Eyeball,34.0,,bgptools:hosting
 12519,core,FastNet International Ltd,GB,Unknown,112.0,,bgptools:hosting
 12530,mixed,"""Kyivstar"" PJSC",UA,Eyeball,0.0,,bgptools:vpn
-12536,review,BSO Network Solutions SAS,FR,Unknown,33.0,via-hosting:AS4455,
-12552,mixed,GlobalConnect (IP-Only),SE,Carrier,2596.0,peer:CT Global,bgptools:hosting
+12536,review,BSO Network Solutions SAS,FR,Unknown,32.0,via-hosting:AS4455,
+12552,mixed,GlobalConnect (IP-Only),SE,Carrier,2595.0,peer:CT Global,bgptools:hosting
 12553,review,Andreas Grawehr,CH,Unknown,1.0,via-hosting:AS15576,
 12555,core,Data-center IMAQLIQ Ltd.,RU,Unknown,26.0,,asdb:hosting;peeringdb:content
 12565,review,GROUPE LDLC SA,FR,Content,9.0,via-hosting:AS30781,
 12567,downstream,GAIJIN NETWORK LTD,CY,Unknown,1.0,,all-upstreams-hosting
 12574,core,Hosting.de GmbH,DE,Unknown,35.0,,bgptools:vpn;asdb:hosting;peeringdb:content;name-keyword
 12577,review,MMC GmbH,AT,Unknown,36.0,peer:CT Global,
-12586,core,GHOSTnet GmbH,DE,Content,1317.0,,bgptools:hosting;bgptools:vpn;x4b:dc;name-keyword
+12586,core,GHOSTnet GmbH,DE,Content,1314.0,,bgptools:hosting;bgptools:vpn;x4b:dc;name-keyword
 12595,downstream,Onworx BV,NL,Unknown,12.0,via-hosting:AS8455,all-upstreams-hosting
 12599,downstream,Atlas On-Line Iletisim Sistemleri ve Tic. A.S.,TR,Unknown,11.0,,all-upstreams-hosting
 12600,core,Equinix (EMEA) Acquisition Enterprises B.V.,NL,Unknown,1.0,,bgptools:vpn;asdb:hosting
@@ -724,7 +724,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 12824,core,home.pl sp. z o.o.,PL,Unknown,1600.0,via-hosting:AS8560,bgptools:vpn;x4b:dc;asdb:hosting;peeringdb:content;china:via-hosting:AS8560
 12826,core,CYLLENE ITS SAS,FR,Content,38.0,peer:CM International,bgptools:hosting;china:peer:CM International
 12837,core,"""1 CLOUD LAB"" LLC",UA,Unknown,22.0,,asdb:hosting;name-keyword
-12843,mixed,TelemaxX Telekommunikation GmbH,DE,Eyeball,754.0,,bgptools:vpn
+12843,mixed,TelemaxX Telekommunikation GmbH,DE,Eyeball,755.0,,bgptools:vpn
 12850,mixed,Retelit Digital Services S.p.A.,IT,Carrier,145.0,peer:CT Global,bgptools:hosting;bgptools:vpn
 12859,core,BIT BV,NL,Unknown,218.0,peer:CT Global,bgptools:hosting;bgptools:vpn;china:peer:CT Global
 12876,core,Scaleway,FR,Content,2465.0,peer:CT Global,bgptools:hosting;bgptools:vpn;x4b:dc;asdb:hosting;peeringdb:content;china:peer:CT Global
@@ -766,10 +766,10 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 13298,review,SOS-Kinderdorf International,AT,Unknown,1.0,via-hosting:AS53667,
 13301,downstream,WIIT AG,DE,Unknown,15.0,,peeringdb:content;all-upstreams-hosting
 13308,downstream,Peter Olsson,SE,Unknown,1.0,,all-upstreams-hosting
-13317,downstream,Wan holdings LLC,US,Unknown,2.0,via-hosting:AS46475,all-upstreams-hosting
+13317,downstream,Wan holdings LLC,US,Unknown,3.0,via-hosting:AS46475,all-upstreams-hosting
 13332,core,Hype Enterprises,US,Unknown,48.0,,asdb:hosting;peeringdb:content
 13334,review,Rapidzone,CA,Unknown,2.0,via-hosting:AS62000,
-13335,core,"Cloudflare, Inc.",US,Content,6105.0,peer:CT Global,bgptools:vpn;bgptools:cdn;asdb:hosting;peeringdb:content;name-keyword;china:peer:CT Global
+13335,core,"Cloudflare, Inc.",US,Content,6149.0,peer:CT Global,bgptools:vpn;bgptools:cdn;asdb:hosting;peeringdb:content;name-keyword;china:peer:CT Global
 13354,core,zColo,US,Unknown,233.0,,bgptools:vpn;name-keyword
 13360,china-adjacent,Triton Digital,CA,Unknown,14.0,peer:CT Global,peeringdb:content
 13361,core,"American Computer Group, Inc.",US,Unknown,0.0,,asdb:hosting;name-keyword
@@ -787,7 +787,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 13645,review,"BroadbandONE, LLC",US,Unknown,331.0,via-hosting:AS19151,
 13646,core,Plactrix Technologies,CA,Unknown,0.0,,asdb:hosting;peeringdb:content
 13647,core,"NetActuate, Inc",US,Unknown,1.0,,x4b:dc
-13649,core,Flexential Colorado Corp.,US,Unknown,3255.0,,bgptools:hosting;asdb:hosting;peeringdb:content;name-keyword
+13649,core,Flexential Colorado Corp.,US,Unknown,3256.0,,bgptools:hosting;asdb:hosting;peeringdb:content;name-keyword
 13706,core,CompleteWeb.Net LLC,US,Unknown,32.0,,bgptools:hosting;asdb:hosting
 13709,downstream,"Cumulus Media, Inc.",US,Unknown,47.0,,all-upstreams-hosting
 13722,downstream,"Default Route, LLC",US,Unknown,1.0,,peeringdb:content;all-upstreams-hosting
@@ -828,7 +828,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 14116,core,Internet Names For Business Inc.,CA,Unknown,76.0,,asdb:hosting;peeringdb:content
 14120,core,"oneZero Financial Systems, LLC",US,Unknown,16.0,,x4b:dc
 14123,downstream,UpLion,US,Unknown,1.0,,all-upstreams-hosting
-14127,core,Iland Internet Solutions Corporation,US,Unknown,291.0,peer:CT Global,x4b:dc;asdb:hosting;china:peer:CT Global
+14127,core,Iland Internet Solutions Corporation,US,Unknown,292.0,peer:CT Global,x4b:dc;asdb:hosting;china:peer:CT Global
 14131,core,DataYard,US,Unknown,64.0,,bgptools:hosting
 14160,core,"Premium Hosting, Inc.",US,Unknown,5.0,,x4b:dc;asdb:hosting;name-keyword
 14166,core,Softcom Inc.,CA,Unknown,0.0,,bgptools:vpn;asdb:hosting;peeringdb:content
@@ -840,7 +840,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 14268,core,Northern Computer Solutions Ltd.,CA,Unknown,4.0,,asdb:hosting;name-keyword
 14280,core,"HDC/HW Enterprise, LLC",US,Unknown,3.0,,bgptools:vpn;asdb:hosting;peeringdb:content
 14313,core,zColo,US,Unknown,15.0,,asdb:hosting;name-keyword
-14315,core,"1GSERVERS, LLC",US,Unknown,77.0,,bgptools:hosting;bgptools:vpn;asdb:hosting;peeringdb:content;name-keyword
+14315,core,"1GSERVERS, LLC",US,Unknown,79.0,,bgptools:hosting;bgptools:vpn;asdb:hosting;peeringdb:content;name-keyword
 14324,core,XeVPS L.L.C,US,Unknown,0.0,,asdb:hosting;name-keyword
 14340,core,"Salesforce, Inc.",US,Unknown,3424.0,peer:CT Global,asdb:hosting;peeringdb:content;china:peer:CT Global
 14343,review,i2 Technologies Inc.,US,Unknown,37.0,via-hosting:AS12200,
@@ -860,17 +860,17 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 14490,downstream,Nexavo Ltd.,CA,Unknown,1.0,,all-upstreams-hosting
 14492,core,"DataPipe, Inc.",US,Unknown,576.0,via-hosting:AS12200,asdb:hosting;peeringdb:content;china:via-hosting:AS12200
 14525,core,"Stellar Technologies, LLC",US,Carrier,14.0,,bgptools:hosting
-14537,review,Continent 8 LLC,US,Unknown,509.0,peer:CT CN2,
+14537,review,Continent 8 LLC,US,Unknown,510.0,peer:CT CN2,
 14544,core,Oracle Cloud Infrastructure Serbia,US,Unknown,54.0,,bgptools:hosting;name-keyword
 14567,core,Springs Hosting,US,Unknown,16.0,,x4b:dc;asdb:hosting;name-keyword
 14569,downstream,"Intellipop, LLC",US,Unknown,9.0,,all-upstreams-hosting
 14570,downstream,"Ansible Networks, LLC",US,Unknown,2.0,,all-upstreams-hosting
-14571,core,OI MÓVEL S.A. - Em Recuperação Judicial,BR,Eyeball,262.0,,asdb:hosting;peeringdb:content
+14571,core,OI MÓVEL S.A. - Em Recuperação Judicial,BR,Eyeball,261.0,,asdb:hosting;peeringdb:content
 14576,core,Hosting Solution Ltd.,US,Content,65.0,,bgptools:hosting;x4b:dc;asdb:hosting;peeringdb:content;name-keyword
 14586,core,"Nuclearfallout Enterprises, Inc.",US,Content,15.0,,bgptools:hosting;asdb:hosting
 14594,downstream,"Payment Alliance International, Inc",US,Unknown,1.0,,all-upstreams-hosting
 14600,downstream,SKYHIGH SECURITY LLC,US,Unknown,1.0,via-hosting:AS16509,all-upstreams-hosting
-14618,core,"Amazon.com, Inc.",US,Content,93848.0,via-hosting:AS16509,bgptools:hosting;bgptools:vpn;bgptools:cdn;x4b:dc;asdb:hosting;china:via-hosting:AS16509
+14618,core,"Amazon.com, Inc.",US,Content,93847.0,via-hosting:AS16509,bgptools:hosting;bgptools:vpn;bgptools:cdn;x4b:dc;asdb:hosting;china:via-hosting:AS16509
 14670,core,WHG Hosting Services Ltd,GB,Unknown,51.0,,peeringdb:content;name-keyword
 14708,core,WebHost Chile S.A.,CL,Unknown,0.0,,x4b:dc;asdb:hosting;name-keyword
 14712,downstream,"One Step Consulting, Inc.",US,Unknown,4.0,,all-upstreams-hosting
@@ -948,7 +948,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 15693,review,Today Concepts B.V.,NL,Unknown,13.0,via-hosting:AS8455,
 15694,mixed,Atman Sp. z o.o.,PL,Eyeball,284.0,peer:CT Global,bgptools:vpn;x4b:dc
 15699,core,"Adam EcoTech, S.A",ES,Unknown,113.0,,bgptools:hosting
-15703,core,TrueFullstaq B.V.,NL,Content,520.0,via-hosting:AS8455,bgptools:hosting;bgptools:vpn;china:via-hosting:AS8455
+15703,core,TrueFullstaq B.V.,NL,Content,521.0,via-hosting:AS8455,bgptools:hosting;bgptools:vpn;china:via-hosting:AS8455
 15716,china-adjacent,Adfinis AG,CH,Unknown,9.0,via-hosting:AS15576,peeringdb:content
 15725,core,IKS Service GmbH,DE,Carrier,20.0,,bgptools:hosting
 15734,core,EQUINIX (SPAIN) ENTERPRISES SLU,ES,Unknown,0.0,,x4b:dc
@@ -982,7 +982,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 16091,downstream,SISTEMAS AVANZADOS DE TECNOLOGIA SA,ES,Unknown,32.0,,all-upstreams-hosting
 16097,mixed,HL komm Telekommunikations GmbH,DE,Eyeball,348.0,,bgptools:vpn
 16101,core,Ordipat SAS,FR,Unknown,1.0,via-hosting:AS30781,asdb:hosting;peeringdb:content;china:via-hosting:AS30781
-16125,core,"UAB ""Cherry Servers""",LT,Content,148.0,,bgptools:hosting;bgptools:vpn;x4b:dc;asdb:hosting;peeringdb:content;name-keyword
+16125,core,"UAB ""Cherry Servers""",LT,Content,149.0,,bgptools:hosting;bgptools:vpn;x4b:dc;asdb:hosting;peeringdb:content;name-keyword
 16140,core,MEDIACTIVE SAS,FR,Unknown,0.0,,asdb:hosting;peeringdb:content
 16154,mixed,Telecoms-Net Ltd.,BG,Eyeball,23.0,,bgptools:vpn
 16164,review,Sohonet Limited,GB,Unknown,10.0,peer:CT Global,
@@ -1006,14 +1006,14 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 16339,core,Virtual Internet (UK) Limited,GB,Unknown,1.0,via-hosting:AS13213,asdb:hosting;name-keyword;china:via-hosting:AS13213
 16347,core,ADISTA SAS,FR,Content,1053.0,peer:CT Global,bgptools:hosting;bgptools:vpn;china:peer:CT Global
 16351,downstream,George Vorres,GB,Unknown,1.0,via-hosting:AS47480,all-upstreams-hosting
-16353,core,Merula Limited,GB,Eyeball,94.0,,bgptools:hosting;peeringdb:content
+16353,core,Merula Limited,GB,Eyeball,95.0,,bgptools:hosting;peeringdb:content
 16371,core,"acens Technologies, S.L.",ES,Unknown,720.0,,asdb:hosting;peeringdb:content
 16391,core,"Celito Communications, LLC",US,Carrier,27.0,,bgptools:hosting
 16397,core,Equinix Brasil,BR,Content,1.0,,x4b:dc
 16398,core,Supermicro Computer,US,Unknown,1.0,,asdb:hosting;name-keyword
 16406,core,"Intermedia.net, Inc.",US,Unknown,170.0,,asdb:hosting;peeringdb:content
 16482,downstream,Flexential Corp.,US,Unknown,4.0,,asdb:hosting;all-upstreams-hosting
-16509,core,"Amazon.com, Inc.",US,Content,855375.0,transit:CT Global,bgptools:hosting;bgptools:vpn;bgptools:cdn;x4b:dc;asdb:hosting;china:transit:CT Global
+16509,core,"Amazon.com, Inc.",US,Content,855411.0,transit:CT Global,bgptools:hosting;bgptools:vpn;bgptools:cdn;x4b:dc;asdb:hosting;china:transit:CT Global
 16515,downstream,Yahoo Holdings Inc.,US,Unknown,1.0,via-hosting:AS10310,all-upstreams-hosting
 16517,downstream,LEE & ASSOCIATES LLC,US,Unknown,1.0,,all-upstreams-hosting
 16535,core,Echostar Purchasing Corporation,US,Unknown,0.0,,x4b:dc;name-keyword
@@ -1030,7 +1030,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 16671,core,Coloblox Data Centers Inc,US,Unknown,1.0,,peeringdb:content;name-keyword
 16721,downstream,Algorix LLC,US,Unknown,5.0,,all-upstreams-hosting
 16737,core,Nerdie Networks LLC,US,Unknown,3.0,,asdb:hosting;peeringdb:content
-16740,china-adjacent,DOXX.NET CORPORATION,US,Unknown,37.0,peer:CT Global,asdb:hosting
+16740,china-adjacent,DOXX.NET CORPORATION,US,Unknown,38.0,peer:CT Global,asdb:hosting
 16766,review,"Island Technology, Inc.",US,Unknown,39.0,via-hosting:AS16509,
 16784,downstream,Inetz Media Group,US,Unknown,2.0,,asdb:hosting;all-upstreams-hosting
 16788,core,CG COMPUTER WORKS LLC,US,Unknown,36.0,,asdb:hosting;name-keyword
@@ -1078,7 +1078,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 17481,downstream,I.T. Basecamp Pty Ltd,AU,Unknown,8.0,,all-upstreams-hosting
 17494,mixed,Bangladesh Telegraph & Telephone Board,BD,Eyeball,320.0,peer:CT Global,bgptools:hosting
 17497,core,Liasail Global Hongkong Limited,HK,Unknown,250.0,peer:CT Global,bgptools:hosting;bgptools:vpn;china:peer:CT Global
-17561,review,LARUS Limited,HK,Unknown,7084.0,via-hosting:AS35916,
+17561,review,LARUS Limited,HK,Unknown,7208.0,via-hosting:AS35916,
 17621,mixed,China Unicom Shanghai network,CN,Carrier,4997.0,transit:CU Backbone,bgptools:hosting
 17622,mixed,China Unicom Guangdong Province Network,CN,Eyeball,4817.0,transit:CU Backbone,bgptools:hosting
 17623,mixed,China Unicom Guangdong Province Shenzhen Network,CN,Eyeball,2704.0,transit:CU Backbone,bgptools:hosting
@@ -1116,7 +1116,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 18120,core,"Gemini Software Solutions (P) Ltd. Hosting Services, India",IN,Unknown,12.0,,x4b:dc;asdb:hosting;name-keyword
 18127,downstream,Ibaraki Prefectural Government,JP,Unknown,14.0,,all-upstreams-hosting
 18156,mixed,PT Bitnet Komunikasindo,ID,Eyeball,41.0,,bgptools:hosting
-18186,core,Nebula Global LLC,US,Unknown,1743.0,transit:CT Global,bgptools:hosting;china:transit:CT Global
+18186,core,Nebula Global LLC,US,Unknown,1605.0,transit:CT Global,bgptools:hosting;china:transit:CT Global
 18187,mixed,Ignite Telecommunications Inc,PH,Eyeball,44.0,peer:CT Global,bgptools:hosting
 18206,china-adjacent,TM TECHNOLOGY SERVICES SDN. BHD.,MY,Unknown,126.0,transit:CM International,customers-mostly-hosting
 18229,core,CtrlS,IN,Eyeball,508.0,,asdb:hosting;peeringdb:content
@@ -1249,10 +1249,10 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 20187,review,"Passport Health Communications, Inc.",US,Unknown,6.0,via-hosting:AS19151,
 20242,downstream,GENESCO INC,US,Unknown,1.0,,all-upstreams-hosting
 20248,core,"Take 2 Hosting, Inc.",US,Content,144.0,,bgptools:hosting;x4b:dc;asdb:hosting;name-keyword
-20253,core,Qwilt Inc.,US,Content,24.0,,bgptools:cdn;asdb:hosting;peeringdb:content
+20253,core,Qwilt Inc.,US,Content,8.0,,bgptools:cdn;asdb:hosting;peeringdb:content
 20264,core,Webair Internet Development Company Inc.,US,Unknown,21.0,,x4b:dc;asdb:hosting
 20278,core,"Nexeon Technologies, Inc.",US,Content,895.0,,bgptools:hosting;bgptools:vpn
-20326,core,TeraSwitch Networks Inc.,US,Content,273.0,peer:CT Global,bgptools:hosting;china:peer:CT Global
+20326,core,TeraSwitch Networks Inc.,US,Content,274.0,peer:CT Global,bgptools:hosting;china:peer:CT Global
 20349,downstream,Crystal Farms Dairy Company,US,Unknown,1.0,,all-upstreams-hosting
 20401,core,"HDC/HW Enterprise, LLC",US,Unknown,0.0,,x4b:dc;asdb:hosting
 20417,downstream,StabiliServers,US,Unknown,2.0,,name-keyword;all-upstreams-hosting
@@ -1263,7 +1263,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 20450,core,"Trojan Hosting, LLC.",US,Unknown,1.0,,x4b:dc;asdb:hosting;name-keyword
 20454,core,SECURED SERVERS LLC,US,Content,708.0,,bgptools:hosting;bgptools:vpn;x4b:dc;asdb:hosting;name-keyword
 20462,core,Opulent Cloud,US,Unknown,1.0,,asdb:hosting;name-keyword
-20473,core,"The Constant Company, LLC",US,Content,5831.0,peer:CT Global,bgptools:hosting;bgptools:vpn;x4b:dc;asdb:hosting;china:peer:CT Global
+20473,core,"The Constant Company, LLC",US,Content,5878.0,peer:CT Global,bgptools:hosting;bgptools:vpn;x4b:dc;asdb:hosting;china:peer:CT Global
 20493,core,VIPARIS LE PALAIS DES CONGRES DE PARIS SAS,FR,Unknown,5.0,,bgptools:vpn
 20495,core,We Dare B.V.,NL,Carrier,201.0,peer:CT Global,bgptools:hosting;china:peer:CT Global
 20529,downstream,Alfa-Safety SARL,FR,Unknown,12.0,via-hosting:AS30781,all-upstreams-hosting
@@ -1289,7 +1289,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 20692,core,Matthias Rojahn,DE,Unknown,0.0,,x4b:dc
 20694,core,NMMN GmbH,DE,Eyeball,33.0,,bgptools:hosting;asdb:hosting;peeringdb:content
 20701,china-adjacent,"CZ.NIC, z.s.p.o.",CZ,Unknown,2.0,via-hosting:AS29802,asdb:hosting
-20712,mixed,Andrews & Arnold Ltd,GB,Eyeball,614.0,peer:CT Global,bgptools:hosting
+20712,mixed,Andrews & Arnold Ltd,GB,Eyeball,615.0,peer:CT Global,bgptools:hosting
 20718,core,ARSYS INTERNET S.L.U.,ES,Unknown,4.0,,asdb:hosting;peeringdb:content
 20724,downstream,GlobalTeleHost Corp.,CA,Unknown,13.0,via-hosting:AS63023,name-keyword;all-upstreams-hosting
 20738,core,Heart Internet limited,GB,Unknown,187.0,via-hosting:AS4455,bgptools:vpn;x4b:dc;china:via-hosting:AS4455
@@ -1310,7 +1310,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 20914,china-adjacent,Gluecklich GmbH,CH,Unknown,9.0,via-hosting:AS4455,peeringdb:content
 20917,china-adjacent,FIDUCIAL CLOUD SASU,FR,Unknown,47.0,via-hosting:AS30781,name-keyword
 20932,review,Services Industriels de Geneve,CH,Unknown,37.0,peer:CT Global,
-20940,core,Akamai International B.V.,NL,Content,61104.0,transit:CT Global,bgptools:cdn;x4b:dc;asdb:hosting;peeringdb:content;china:transit:CT Global
+20940,core,Akamai International B.V.,NL,Content,61105.0,transit:CT Global,bgptools:cdn;x4b:dc;asdb:hosting;peeringdb:content;china:transit:CT Global
 20949,core,1 Cloud Lab s.r.o.,SK,Unknown,0.0,,asdb:hosting;name-keyword
 20973,review,"ABBAS SERVICIOS DE INFORMATICA Y TELECOMUNICACIONES, S.L.",ES,Unknown,12.0,via-hosting:AS16347,
 20976,downstream,Domainmaster LTD,GB,Unknown,16.0,via-hosting:AS62172,all-upstreams-hosting
@@ -1366,7 +1366,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 21505,china-adjacent,Multi Media LLC,US,Unknown,1.0,peer:CM International,peeringdb:content
 21534,review,"BroadSoft, Inc.",US,Unknown,25.0,via-hosting:AS16509,
 21554,core,"Wisconsin CyberLynk Network, Inc.",US,Eyeball,173.0,,bgptools:hosting;asdb:hosting
-21574,mixed,Century Telecom Ltda,BR,Eyeball,53.0,,bgptools:hosting
+21574,mixed,Century Telecom Ltda,BR,Eyeball,54.0,,bgptools:hosting
 21581,core,M5 Computer Security,US,Unknown,53.0,,bgptools:hosting;asdb:hosting;peeringdb:content;name-keyword
 21592,downstream,Multi-View Inc.,US,Unknown,2.0,,all-upstreams-hosting
 21594,downstream,Interstate Battery System of America Inc.,US,Unknown,2.0,,all-upstreams-hosting
@@ -1382,7 +1382,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 21840,core,WiredISP Inc.,US,Unknown,40.0,,bgptools:vpn
 21844,core,IBM Cloud,US,Unknown,0.0,,peeringdb:content;name-keyword
 21856,review,Nokia of America Corporation,US,Unknown,6.0,transit:CU Backbone,
-21859,core,Zenlayer Inc,US,Eyeball,3770.0,transit:CT Global,bgptools:hosting;bgptools:vpn;bgptools:cdn;x4b:dc;asdb:hosting;peeringdb:content;china:transit:CT Global
+21859,core,Zenlayer Inc,US,Eyeball,3775.0,transit:CT Global,bgptools:hosting;bgptools:vpn;bgptools:cdn;x4b:dc;asdb:hosting;peeringdb:content;china:transit:CT Global
 21880,core,"Zendesk, Inc.",US,Unknown,0.0,,asdb:hosting;peeringdb:content
 21886,review,Netrix LLC,US,Unknown,186.0,via-hosting:AS19151,
 21913,downstream,"Mainfreight, Inc.",US,Unknown,4.0,,all-upstreams-hosting
@@ -1429,7 +1429,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 22664,downstream,Kiwi Technology Consulting LLC,US,Unknown,1.0,,all-upstreams-hosting
 22697,core,Roblox,US,Content,177.0,peer:CT Global,bgptools:cdn;peeringdb:content;china:peer:CT Global
 22720,core,Rackspace Hosting,US,Unknown,0.0,,x4b:dc;name-keyword
-22773,mixed,Cox Communications Inc.,US,Content,95556.0,,bgptools:hosting;bgptools:cdn
+22773,mixed,Cox Communications Inc.,US,Content,95558.0,,bgptools:hosting;bgptools:cdn
 22781,core,"Strong Technology, LLC.",US,Unknown,143.0,,x4b:dc
 22789,downstream,Pushwoosh,US,Unknown,1.0,via-hosting:AS16509,all-upstreams-hosting
 22807,downstream,"CINEMARK USA, INC",US,Unknown,15.0,,all-upstreams-hosting
@@ -1444,7 +1444,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 22941,downstream,The HelpDesk Inc,US,Unknown,1.0,via-hosting:AS62240,all-upstreams-hosting
 22951,downstream,Hebergement Phaonix Inc.,CA,Unknown,2.0,,all-upstreams-hosting
 23026,review,SETEC ASTRONOMY INC,US,Unknown,1.0,via-hosting:AS62000,
-23028,review,Team Cymru Inc.,US,Unknown,93.0,via-hosting:AS16509,
+23028,review,Team Cymru Inc.,US,Unknown,94.0,via-hosting:AS16509,
 23033,core,Wowrack.com,US,Unknown,186.0,,bgptools:hosting;bgptools:vpn;x4b:dc;asdb:hosting;peeringdb:content
 23052,core,PleskLogin Net,US,Unknown,0.0,,x4b:dc
 23059,core,"Limelight Networks, Inc.",US,Unknown,0.0,,asdb:hosting;peeringdb:content
@@ -1480,7 +1480,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 23511,review,Grass DataCo (BVI) Ltd.,VG,Unknown,22.0,via-hosting:AS398465,
 23522,downstream,GigeNET,US,Unknown,22.0,,asdb:hosting;all-upstreams-hosting
 23532,review,IOVZ NETWORKS INC,US,Unknown,36.0,via-hosting:AS135377,
-23535,core,"HostRocket.com, Inc.",US,Unknown,53.0,,x4b:dc;asdb:hosting;name-keyword
+23535,core,"HostRocket.com, Inc.",US,Unknown,57.0,,x4b:dc;asdb:hosting;name-keyword
 23576,core,NAVER Cloud Corp.,KR,Unknown,765.0,peer:CT Global,bgptools:hosting;bgptools:cdn;x4b:dc;peeringdb:content;name-keyword;china:peer:CT Global
 23633,review,Niigata Communication Service,JP,Unknown,8.0,via-hosting:AS9607,
 23650,core,China Telecom Jiangsu Province IDC Network,CN,Content,441.0,transit:CT ChinaNet,bgptools:hosting;bgptools:vpn;asdb:hosting;name-keyword;china:transit:CT ChinaNet
@@ -1526,7 +1526,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 24381,core,BGP.Exchange,AU,Unknown,1.0,via-hosting:AS4455,x4b:dc;china:via-hosting:AS4455
 24396,review,Bank of China (Hong Kong) Limited,HK,Content,15.0,peer:CT Global,
 24400,mixed,"Shanghai Mobile Communications Co.,Ltd.",CN,Carrier,4437.0,transit:CM Backbone,bgptools:hosting
-24429,core,Alibaba Cloud,CN,Content,741.0,transit:CT Global,bgptools:hosting;bgptools:vpn;bgptools:cdn;x4b:dc;asdb:hosting;peeringdb:content;name-keyword;china:transit:CT Global
+24429,core,Alibaba Cloud,CN,Content,742.0,transit:CT Global,bgptools:hosting;bgptools:vpn;bgptools:cdn;x4b:dc;asdb:hosting;peeringdb:content;name-keyword;china:transit:CT Global
 24446,downstream,5G NETWORK OPERATIONS PTY LTD,AU,Unknown,93.0,,asdb:hosting;all-upstreams-hosting
 24452,downstream,EonF Meda SL,ES,Unknown,4.0,,all-upstreams-hosting
 24459,core,RIMU HOSTING LIMITED,NZ,Unknown,64.0,,asdb:hosting;name-keyword
@@ -1549,16 +1549,17 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 24657,core,Dokumenta AG,DE,Unknown,16.0,,bgptools:hosting;asdb:hosting
 24679,core,kyberio GmbH,DE,Content,257.0,,bgptools:hosting;x4b:dc
 24695,downstream,T.M.A Serv SRL,RO,Unknown,2.0,,all-upstreams-hosting
+24705,review,Single Mode Networks Ltd,GB,Unknown,5.0,via-hosting:AS34555,
 24717,review,PATRIMONIO CITTA' DI SETTIMO TORINESE S.R.L.,IT,Unknown,2.0,via-hosting:AS12779,
 24723,core,Atman Sp. z o.o.,PL,Unknown,24.0,,bgptools:vpn
 24724,core,Atman Sp. z o.o.,PL,Unknown,4.0,,bgptools:vpn
 24725,core,"LLC ""Hostmaster""",UA,Unknown,3.0,,x4b:dc;asdb:hosting;name-keyword
 24742,downstream,APAK Group Limited,GB,Unknown,32.0,via-hosting:AS13009,all-upstreams-hosting
 24748,core,THINX WAW Route Servers,PL,Unknown,0.0,,asdb:hosting;name-keyword
-24768,core,"AlmourolTec, Lda",PT,Eyeball,157.0,,bgptools:hosting;bgptools:vpn;x4b:dc;asdb:hosting;peeringdb:content
+24768,core,"AlmourolTec, Lda",PT,Eyeball,158.0,,bgptools:hosting;bgptools:vpn;x4b:dc;asdb:hosting;peeringdb:content
 24778,china-adjacent,Rackspace Ltd.,GB,Unknown,0.0,via-hosting:AS12200,asdb:hosting
 24796,china-adjacent,NAMEX CONSORZIO,IT,Unknown,4.0,via-hosting:AS41327,customers-mostly-hosting
-24806,core,"INTERNET CZ, a.s.",CZ,Eyeball,182.0,,bgptools:vpn;x4b:dc;asdb:hosting
+24806,core,"INTERNET CZ, a.s.",CZ,Eyeball,185.0,,bgptools:vpn;x4b:dc;asdb:hosting
 24843,core,France Televisions SA,FR,Unknown,15.0,via-hosting:AS30781,bgptools:vpn;peeringdb:content;china:via-hosting:AS30781
 24851,core,Netcetera Ltd.,IM,Unknown,3.0,,bgptools:vpn
 24867,core,Rackspace Ltd.,GB,Unknown,337.0,via-hosting:AS12200,asdb:hosting;peeringdb:content;china:via-hosting:AS12200
@@ -1599,7 +1600,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 25181,review,Sony Europe B.V.,NL,Unknown,54.0,via-hosting:AS33353,
 25182,core,Nederlandse Publieke Omroep,NL,Content,256.0,,bgptools:cdn;peeringdb:content
 25192,review,"CZ.NIC, z.s.p.o.",CZ,Unknown,26.0,peer:CT Global,
-25198,core,INTERKVM HOST (ZetServers),RO,Unknown,130.0,,bgptools:hosting;bgptools:vpn;asdb:hosting;peeringdb:content;name-keyword
+25198,core,INTERKVM HOST (ZetServers),RO,Unknown,129.0,,bgptools:hosting;bgptools:vpn;asdb:hosting;peeringdb:content;name-keyword
 25220,core,equada network GmbH,DE,Unknown,120.0,peer:CT Global,bgptools:hosting;asdb:hosting;peeringdb:content;china:peer:CT Global
 25224,downstream,STS Invest Holding AD,BG,Unknown,1.0,,all-upstreams-hosting
 25234,core,"ACTIVE 24, s.r.o.",CZ,Unknown,30.0,via-hosting:AS24940,asdb:hosting;peeringdb:content;china:via-hosting:AS24940
@@ -1768,7 +1769,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 27712,review,Paulo Dias de Araujo Filho,BR,Unknown,19.0,via-hosting:AS135377,
 27715,core,Locaweb Serviços de Internet S/A,BR,Unknown,2720.0,,bgptools:hosting;asdb:hosting;peeringdb:content
 27740,downstream,EDGEUNO ECUADOR S.A.,EC,Unknown,24.0,,all-upstreams-hosting
-27845,core,Empresa de Recursos Tecnologicos S.A E.S.P,CO,Unknown,78.0,,bgptools:hosting;peeringdb:content
+27845,core,Empresa de Recursos Tecnologicos S.A E.S.P,CO,Unknown,77.0,,bgptools:hosting;peeringdb:content
 27956,core,"Cyber Cast International, S.A.",PA,Unknown,19.0,,bgptools:hosting;asdb:hosting
 28098,downstream,ABGON COMUNICACIONES,CL,Unknown,36.0,,all-upstreams-hosting
 28099,core,iHosting Servicios Internet Ltda.,CL,Unknown,14.0,,x4b:dc;asdb:hosting;name-keyword
@@ -1783,7 +1784,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 28299,core,Kinghost / LWSA S/A,BR,Unknown,280.0,,bgptools:hosting;asdb:hosting;peeringdb:content;name-keyword
 28323,core,AYKO TECHNOLOGY LTDA,BR,Content,111.0,,bgptools:hosting
 28329,mixed,SAMM  (G8/Megatelecom),BR,Eyeball,175.0,,bgptools:hosting
-28333,core,Local Datacenter Soluções em Comunicação Ltda.,BR,Unknown,64.0,,x4b:dc;name-keyword
+28333,core,Local Datacenter Soluções em Comunicação Ltda.,BR,Unknown,65.0,,x4b:dc;name-keyword
 28344,downstream,FIDELITY NATIONAL PARTICIPACOES E SERVICOS DE INFO,BR,Unknown,19.0,,asdb:hosting;all-upstreams-hosting
 28347,core,UNOTEL PARTICIPAÇÕES S/A,BR,Unknown,0.0,,bgptools:vpn
 28497,downstream,Network Information Center México,MX,Unknown,1.0,,all-upstreams-hosting
@@ -1829,7 +1830,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 29043,downstream,Kishka Anry Aleksandrovich,RU,Unknown,1.0,,all-upstreams-hosting
 29048,review,Equiduct Systems Limited,GB,Unknown,1.0,via-hosting:AS4455,
 29056,core,Citycom Telekommunikation GmbH,AT,Unknown,130.0,,bgptools:hosting
-29066,core,velia.net Internetdienste GmbH,DE,Eyeball,1109.0,transit:CM International,bgptools:hosting;bgptools:vpn;x4b:dc;asdb:hosting;peeringdb:content;china:transit:CM International
+29066,core,velia.net Internetdienste GmbH,DE,Eyeball,1110.0,transit:CM International,bgptools:hosting;bgptools:vpn;x4b:dc;asdb:hosting;peeringdb:content;china:transit:CM International
 29067,core,Hostmaster LLC,UA,Unknown,7.0,via-hosting:AS29222,x4b:dc;asdb:hosting;name-keyword;china:via-hosting:AS29222
 29073,core,,,,0.0,,x4b:dc
 29075,mixed,IELO-LIAZO SERVICES SAS,FR,Eyeball,122.0,peer:CT ChinaNet,bgptools:hosting
@@ -1848,8 +1849,8 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 29200,downstream,Eseye Ltd,GB,Unknown,1.0,via-hosting:AS20860,all-upstreams-hosting
 29208,mixed,"Quantcom, a.s.",CZ,Eyeball,1072.0,peer:CT Global,bgptools:hosting
 29216,review,Netnod - I-root,SE,Unknown,3.0,via-hosting:AS15576,
-29222,core,Infomaniak Network SA,CH,Content,434.0,peer:CT ChinaNet,bgptools:hosting;asdb:hosting;peeringdb:content;china:peer:CT ChinaNet
-29226,mixed,MasterTel,RU,Eyeball,193.0,,bgptools:hosting;bgptools:vpn
+29222,core,Infomaniak Network SA,CH,Content,432.0,peer:CT ChinaNet,bgptools:hosting;asdb:hosting;peeringdb:content;china:peer:CT ChinaNet
+29226,mixed,MasterTel,RU,Eyeball,194.0,,bgptools:hosting;bgptools:vpn
 29229,downstream,Anaptiksiakos Sindesmos Ditikis Athinas,GR,Unknown,4.0,,all-upstreams-hosting
 29239,core,I-NetPartner GmbH Online Services,DE,Unknown,21.0,,bgptools:hosting;asdb:hosting
 29242,downstream,Vision TV LTD,UA,Unknown,4.0,,all-upstreams-hosting
@@ -1899,17 +1900,17 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 29697,core,BeeksFX VPS USA Inc.,US,Unknown,1.0,,peeringdb:content;name-keyword
 29713,core,Reliable Hosting Services,US,Unknown,16.0,,x4b:dc;asdb:hosting;name-keyword
 29748,core,"Quality Technology Services, LLC",US,Unknown,327.0,,x4b:dc
-29752,core,Zenlayer Inc,US,Unknown,26.0,,asdb:hosting;peeringdb:content
+29752,core,Zenlayer Inc,US,Unknown,28.0,,asdb:hosting;peeringdb:content
 29761,core,Converted Networks LLC,US,Unknown,0.0,,bgptools:vpn;asdb:hosting
 29789,core,"Reflected Networks, Inc.",US,Content,176.0,,bgptools:cdn;asdb:hosting
 29791,core,Internap Holding LLC,US,Content,0.0,,bgptools:hosting;bgptools:vpn
-29802,core,"HIVELOCITY, Inc.",US,Content,2134.0,peer:CM International,bgptools:hosting;x4b:dc;asdb:hosting;peeringdb:content;china:peer:CM International
+29802,core,"HIVELOCITY, Inc.",US,Content,2131.0,peer:CM International,bgptools:hosting;x4b:dc;asdb:hosting;peeringdb:content;china:peer:CM International
 29803,review,FanaticNode LLC,US,Unknown,1.0,via-hosting:AS979,
 29838,core,"Atlantic Metro Communications II, Inc.",US,Carrier,805.0,peer:CT Global,bgptools:hosting;bgptools:vpn;x4b:dc;china:peer:CT Global
 29854,core,"WestHost, Inc.",US,Unknown,0.0,,bgptools:vpn;x4b:dc;asdb:hosting;peeringdb:content;name-keyword
 29863,core,"Latisys-Denver, LLC",US,Unknown,386.0,,bgptools:hosting
 29869,core,"HostRocket.com, Inc.",US,Unknown,1.0,,x4b:dc;asdb:hosting;name-keyword
-29873,core,"Newfold Digital, Inc.",US,Content,323.0,,bgptools:hosting;bgptools:vpn;asdb:hosting
+29873,core,"Newfold Digital, Inc.",US,Content,322.0,,bgptools:hosting;bgptools:vpn;asdb:hosting
 29883,core,Internet Hosting Servers,CA,Unknown,31.0,,x4b:dc;asdb:hosting;name-keyword
 29934,downstream,"Netadyne Networks, Inc.",US,Unknown,4.0,,all-upstreams-hosting
 29941,core,Tri-County Computer Services Association,US,Unknown,28.0,,asdb:hosting;name-keyword
@@ -1923,7 +1924,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 30077,downstream,SB-IX,BL,Unknown,2.0,,all-upstreams-hosting
 30081,core,CacheFly,US,Content,57.0,peer:CT Global,bgptools:cdn;peeringdb:content;china:peer:CT Global
 30083,core,velia.net,DE,Eyeball,311.0,,bgptools:hosting;x4b:dc;asdb:hosting
-30088,downstream,GTHost,US,Unknown,38.0,via-hosting:AS63023,name-keyword;all-upstreams-hosting
+30088,downstream,GTHost,US,Unknown,39.0,via-hosting:AS63023,name-keyword;all-upstreams-hosting
 30103,review,"Zoom Video Communications, Inc",US,Content,2115.0,peer:CT Global,
 30114,review,Decima LLC,US,Unknown,5.0,via-hosting:AS53667,
 30132,review,ISC F-ROOT AMS1,US,Content,4.0,via-hosting:AS12859,
@@ -1969,10 +1970,10 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 30823,core,aurologic GmbH,DE,Carrier,43.0,,bgptools:hosting
 30827,core,Extraordinary Managed Services Ltd,GB,Eyeball,97.0,peer:CT Global,asdb:hosting;peeringdb:content;china:peer:CT Global
 30836,core,23VNet Kft.,HU,Eyeball,14.0,,x4b:dc;asdb:hosting
-30844,mixed,Liquid Intelligent Technologies ,GB,Carrier,2131.0,peer:CT Global,bgptools:hosting
+30844,mixed,Liquid Intelligent Technologies ,GB,Carrier,2118.0,peer:CT Global,bgptools:hosting
 30849,core,Research-and-production company Host Ltd,UA,Unknown,1.0,,x4b:dc;asdb:hosting;name-keyword
 30860,core,Virtual Systems LLC,UA,Content,101.0,,bgptools:hosting;bgptools:vpn;x4b:dc;asdb:hosting;name-keyword
-30870,review,Trans-iX B.V.,NL,Unknown,55.0,via-hosting:AS20495,
+30870,review,Trans-iX B.V.,NL,Unknown,45.0,via-hosting:AS20495,
 30875,downstream,V.R.I.S. Consultancy Services B.V.,NL,Unknown,4.0,,all-upstreams-hosting
 30880,core,SpaceDump IT AB,SE,Unknown,42.0,,bgptools:hosting;peeringdb:content
 30889,downstream,ADISTA SAS,FR,Unknown,5.0,,all-upstreams-hosting
@@ -2060,7 +2061,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 31815,core,"GoDaddy.com, LLC",US,Unknown,0.0,,bgptools:vpn;asdb:hosting
 31863,core,"Centrilogic, Inc.",US,Unknown,195.0,,bgptools:hosting;bgptools:vpn
 31887,downstream,Trinity Health Corporation,US,Unknown,1.0,,all-upstreams-hosting
-31898,core,Oracle Cloud,US,Content,23604.0,transit:CT Global,bgptools:hosting;x4b:dc;peeringdb:content;name-keyword;china:transit:CT Global
+31898,core,Oracle Cloud,US,Content,23599.0,transit:CT Global,bgptools:hosting;x4b:dc;peeringdb:content;name-keyword;china:transit:CT Global
 31916,downstream,ReviveHost,US,Unknown,5.0,,name-keyword;all-upstreams-hosting
 31945,downstream,MERTANDHOUSE LLC,US,Unknown,1.0,,all-upstreams-hosting
 31981,core,BlueTower Hosting LLC,US,Unknown,8.0,,x4b:dc;asdb:hosting;name-keyword
@@ -2096,7 +2097,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 32555,review,Centre de Recherche Informatique de Montreal,CA,Unknown,256.0,via-hosting:AS8304,
 32582,mixed,"600Amps Internet Services, Inc.",US,Eyeball,5.0,,bgptools:hosting
 32590,core,Valve Corporation,US,Content,53.0,peer:CT ChinaNet,bgptools:cdn;peeringdb:content;china:peer:CT ChinaNet
-32595,review,"Liberally Network, LLC",US,Unknown,10.0,via-hosting:AS46475,
+32595,review,"Liberally Network, LLC",US,Unknown,9.0,via-hosting:AS46475,
 32604,downstream,uwalkin IT Solutions,US,Unknown,1.0,,all-upstreams-hosting
 32605,downstream,BraveSoftTech Inc,US,Unknown,2.0,,all-upstreams-hosting
 32613,core,Leaseweb Canada Inc.,CA,Eyeball,1086.0,,bgptools:hosting;bgptools:vpn;x4b:dc;asdb:hosting;peeringdb:content
@@ -2122,7 +2123,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 32881,core,Server North,CA,Eyeball,19.0,,peeringdb:content;name-keyword
 32882,core,"Centrilogic, Inc.",US,Unknown,0.0,,asdb:hosting;peeringdb:content
 32911,core,Pulsant LTD,US,Unknown,0.0,,x4b:dc;asdb:hosting
-32934,core,"Facebook, Inc.",US,Content,2090.0,transit:CT Global,bgptools:cdn;peeringdb:content;china:transit:CT Global
+32934,core,"Facebook, Inc.",US,Content,2088.0,transit:CT Global,bgptools:cdn;peeringdb:content;china:transit:CT Global
 32976,core,ARK Data Centers LLC,US,Unknown,0.0,,asdb:hosting;name-keyword
 32983,downstream,"Corelight, Inc.",US,Unknown,4.0,via-hosting:AS16509,all-upstreams-hosting
 33011,core,Box.com,US,Unknown,0.0,,asdb:hosting;peeringdb:content
@@ -2216,7 +2217,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 34177,review,Celeste SAS,FR,Unknown,896.0,peer:CT Global,
 34197,review,Three Fourteen SASU,FR,Unknown,19.0,via-hosting:AS25091,
 34215,downstream,@Inet Technology Consultancy B.V.,NL,Unknown,12.0,via-hosting:AS8455,all-upstreams-hosting
-34224,core,Neterra Ltd.,BG,Content,163.0,peer:CT Global,bgptools:hosting;china:peer:CT Global
+34224,core,Neterra Ltd.,BG,Content,164.0,peer:CT Global,bgptools:hosting;china:peer:CT Global
 34233,core,Superior B.V.,NL,Unknown,5.0,via-hosting:AS8455,asdb:hosting;peeringdb:content;china:via-hosting:AS8455
 34235,core,ITINSELL CLOUD SAS,FR,Unknown,31.0,,bgptools:vpn;asdb:hosting;name-keyword
 34259,core,"TOV ""Highload Systems""",UA,Unknown,5.0,,bgptools:hosting;asdb:hosting
@@ -2256,7 +2257,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 34534,core,FBW NETWORKS SAS,FR,Unknown,23.0,,asdb:hosting;peeringdb:content
 34541,core,Online Solutions Oy,FI,Unknown,17.0,via-hosting:AS6667,x4b:dc;asdb:hosting;china:via-hosting:AS6667
 34549,core,meerfarbig GmbH & Co. KG,DE,Content,133.0,transit:CT Global,bgptools:hosting;bgptools:vpn;china:transit:CT Global
-34555,review,C.C.S. (Leeds) Ltd,GB,Content,84.0,peer:CT Global,
+34555,core,C.C.S. (Leeds) Ltd,GB,Content,84.0,peer:CT Global,bgptools:hosting;china:peer:CT Global
 34573,core,"Information-Computer Center Oberon Plus, LLC",RU,Eyeball,49.0,,asdb:hosting;name-keyword
 34578,china-adjacent,Bedag Informatik AG,CH,Unknown,257.0,via-hosting:AS15576,asdb:hosting
 34587,core,Hillside (Technology) Ltd,GB,Unknown,25.0,,asdb:hosting;peeringdb:content
@@ -2277,7 +2278,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 34679,core,X-HOST-COMMUNICATION-SRL,RO,Unknown,1.0,,asdb:hosting;name-keyword
 34689,core,Castlegem SRL,RO,Unknown,7.0,via-hosting:AS24940,bgptools:hosting;asdb:hosting;china:via-hosting:AS24940
 34691,review,Intendo S.r.l.,IT,Unknown,9.0,via-hosting:AS41327,
-34702,mixed,Aktsiaselts WaveCom,EE,Eyeball,61.0,,bgptools:vpn
+34702,mixed,Aktsiaselts WaveCom,EE,Eyeball,62.0,,bgptools:vpn
 34711,core,ICE Computers SRL,RO,Unknown,2.0,,asdb:hosting;name-keyword
 34723,review,Real Network and Tel SRL,RO,Unknown,18.0,via-hosting:AS39737,
 34738,core,Webhost Limited,GG,Unknown,13.0,,asdb:hosting;name-keyword
@@ -2309,12 +2310,12 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 34953,mixed,RelAix Networks GmbH,DE,Carrier,117.0,,bgptools:hosting
 34958,china-adjacent,Xavier Beaudouin,FR,Unknown,2.0,via-hosting:AS30781,asdb:hosting
 34960,core,Netcetera AG,CH,Unknown,22.0,,asdb:hosting;peeringdb:content
-34968,mixed,iunxi B.V.,NL,Eyeball,70.0,via-hosting:AS8455,bgptools:hosting
+34968,mixed,iunxi B.V.,NL,Eyeball,78.0,via-hosting:AS8455,bgptools:hosting
 34970,core,Diatem SAS,FR,Unknown,20.0,,bgptools:vpn
 34971,mixed,CDLAN SpA,IT,Eyeball,35.0,,bgptools:hosting;x4b:dc
 34978,review,Linkwireless srl,IT,Unknown,20.0,via-hosting:AS42295,
 34979,core,39 DESIGN LTD,GB,Unknown,10.0,via-hosting:AS62000,bgptools:hosting;china:via-hosting:AS62000
-34989,core,ServeTheWorld AS,NO,Unknown,88.0,,bgptools:vpn;x4b:dc;asdb:hosting
+34989,core,ServeTheWorld AS,NO,Unknown,89.0,,bgptools:vpn;x4b:dc;asdb:hosting
 34993,downstream,CYLLENE ITS SAS,FR,Unknown,23.0,via-hosting:AS12826,peeringdb:content;all-upstreams-hosting
 34997,downstream,InterNetworX Management GmbH,DE,Unknown,2.0,,all-upstreams-hosting
 35001,core,MyOwn sprl,BE,Unknown,1.0,,asdb:hosting;peeringdb:content
@@ -2334,7 +2335,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 35145,downstream,iDea Leaper Innovation Inc.,CA,Unknown,1.0,via-hosting:AS140227,all-upstreams-hosting
 35168,review,TNS-Plus LLP,KZ,Unknown,13.0,transit:CT Global,
 35174,core,Network For Business Sp z o.o.,PL,Unknown,29.0,,bgptools:vpn
-35179,mixed,Korbank S. A.,PL,Carrier,94.0,,bgptools:hosting
+35179,mixed,Korbank S. A.,PL,Carrier,95.0,,bgptools:hosting
 35180,review,Broadsoft LTD,GB,Unknown,4.0,peer:CT Global,
 35186,downstream,DONET d.o.o.,SI,Unknown,1.0,,all-upstreams-hosting
 35189,core,EuroRhine-IX Route Servers,FR,Unknown,0.0,,asdb:hosting;name-keyword
@@ -2389,7 +2390,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 35600,review,Vedege SAS,FR,Unknown,20.0,peer:CT Global,
 35617,review,air2bite s.r.l.,IT,Unknown,64.0,via-hosting:AS41327,
 35624,downstream,Fast Servers (Pty) Ltd,ZA,Unknown,4.0,,name-keyword;all-upstreams-hosting
-35625,core,Eurofiber France SAS,FR,Carrier,130.0,peer:CT Global,bgptools:hosting;china:peer:CT Global
+35625,core,Eurofiber France SAS,FR,Carrier,131.0,peer:CT Global,bgptools:hosting;china:peer:CT Global
 35634,downstream,No ACK Group Holding AB,SE,Unknown,1.0,via-hosting:AS42708,all-upstreams-hosting
 35635,china-adjacent,Net Jump GmbH,CH,Unknown,18.0,via-hosting:AS15576,asdb:hosting
 35661,core,VIRTUA SYSTEMS SAS,FR,Carrier,56.0,,bgptools:hosting
@@ -2418,7 +2419,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 35866,downstream,Silver Chip Interactive,US,Unknown,1.0,via-hosting:AS21700,all-upstreams-hosting
 35895,downstream,CMMG Ltd,US,Unknown,10.0,,all-upstreams-hosting
 35907,downstream,NaviNet Inc.,US,Unknown,2.0,,all-upstreams-hosting
-35908,core,Krypt Technologies,US,Content,917.0,,bgptools:hosting;x4b:dc
+35908,core,Krypt Technologies,US,Content,916.0,,bgptools:hosting;x4b:dc
 35913,core,DediPath,US,Content,0.0,,x4b:dc;asdb:hosting
 35914,core,Armor Defense Inc,US,Unknown,0.0,,x4b:dc;asdb:hosting
 35916,core,MULTACOM CORPORATION,US,Content,8137.0,peer:CM International,bgptools:hosting;bgptools:vpn;x4b:dc;china:peer:CM International
@@ -2428,7 +2429,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 35994,core,"Akamai Technologies, Inc.",US,Unknown,384.0,via-hosting:AS20940,x4b:dc;asdb:hosting;china:via-hosting:AS20940
 35995,downstream,Twitter Inc.,US,Content,11.0,,all-upstreams-hosting
 36002,mixed,GoMami Networks,US,Eyeball,19.0,,bgptools:hosting
-36007,core,"Kamatera, Inc.",US,Unknown,148.0,,bgptools:hosting;x4b:dc;asdb:hosting
+36007,core,"Kamatera, Inc.",US,Unknown,147.0,,bgptools:hosting;x4b:dc;asdb:hosting
 36011,review,Atlantic Health System,US,Unknown,2.0,via-hosting:AS14127,
 36024,core,"TierPoint, LLC",US,Unknown,0.0,,x4b:dc
 36025,downstream,WickedFastInternet.com,US,Unknown,5.0,,all-upstreams-hosting
@@ -2462,7 +2463,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 36326,core,Techwebhosting Internet Solutions LLC,US,Unknown,4.0,,asdb:hosting;name-keyword
 36344,downstream,Virtuozzo Inc.,US,Unknown,4.0,via-hosting:AS36351,asdb:hosting;all-upstreams-hosting
 36351,core,IBM Cloud,US,Content,14737.0,transit:CT Global,bgptools:hosting;bgptools:vpn;x4b:dc;peeringdb:content;name-keyword;china:transit:CT Global
-36352,core,HostPapa,US,Content,4247.0,,bgptools:hosting;bgptools:vpn;x4b:dc;asdb:hosting;peeringdb:content;name-keyword
+36352,core,HostPapa,US,Content,4245.0,,bgptools:hosting;bgptools:vpn;x4b:dc;asdb:hosting;peeringdb:content;name-keyword
 36369,core,Limewave Communications,CA,Unknown,0.0,,bgptools:hosting
 36382,core,Quixly,CA,Unknown,2.0,,bgptools:hosting;peeringdb:content
 36383,downstream,Google LLC,US,Unknown,102.0,via-hosting:AS15169,all-upstreams-hosting
@@ -2574,7 +2575,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 38074,china-adjacent,SDCC Japan-West Area,JP,Unknown,3.0,via-hosting:AS9607,asdb:hosting
 38082,review,"True International Gateway Co., Ltd.",TH,Unknown,43.0,transit:CT Global,
 38107,core,CDNetworks,KR,Unknown,119.0,via-hosting:AS139341,x4b:dc;asdb:hosting;name-keyword;china:via-hosting:AS139341
-38136,core,Akari Networks,HK,Carrier,153.0,via-hosting:AS29802,bgptools:hosting;bgptools:vpn;china:via-hosting:AS29802
+38136,core,Akari Networks,HK,Carrier,164.0,via-hosting:AS29802,bgptools:hosting;bgptools:vpn;china:via-hosting:AS29802
 38158,review,PT Cyberindo Aditama,ID,Carrier,23.0,transit:CT Global,
 38186,core,"Forewin Telecom Group Limited, ISP at HK",HK,Unknown,260.0,peer:CM International,asdb:hosting;peeringdb:content;china:peer:CM International
 38193,review,Transworld Associates (Pvt.) Ltd.,PK,Carrier,110.0,transit:CT Global,
@@ -2765,8 +2766,8 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 40193,downstream,"Trit Networks, LLC",US,Unknown,43.0,,all-upstreams-hosting
 40216,downstream,DSTIP Networks LLC,US,Unknown,2.0,,all-upstreams-hosting
 40242,core,"J2 Cloud Services, LLC",US,Unknown,0.0,,asdb:hosting;name-keyword
-40244,core,Turnkey Internet Inc.,US,Unknown,224.0,via-hosting:AS29802,bgptools:hosting;x4b:dc;china:via-hosting:AS29802
-40253,core,Elysia Root L.C.,US,Unknown,2.0,,asdb:hosting;peeringdb:content
+40244,core,Turnkey Internet Inc.,US,Unknown,228.0,via-hosting:AS29802,bgptools:hosting;x4b:dc;china:via-hosting:AS29802
+40253,core,Elysia Root L.C.,US,Unknown,4.0,,asdb:hosting;peeringdb:content
 40263,core,"Bear Cloud Solutions, Inc.",US,Unknown,2.0,,asdb:hosting;peeringdb:content;name-keyword
 40279,core,ForestRacks,US,Unknown,6.0,,bgptools:hosting
 40281,core,"QWK.net Hosting, L.L.C.",US,Unknown,69.0,,x4b:dc;asdb:hosting;name-keyword
@@ -2796,7 +2797,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 40627,core,RingCentral Inc,US,Unknown,105.0,peer:CT Global,asdb:hosting;peeringdb:content;china:peer:CT Global
 40635,downstream,"Think On, Inc.",CA,Unknown,1.0,,all-upstreams-hosting
 40663,core,IncogNet LLC,US,Unknown,12.0,via-hosting:AS53667,bgptools:hosting;bgptools:vpn;china:via-hosting:AS53667
-40676,core,Psychz Networks,US,Content,820.0,,bgptools:hosting;bgptools:vpn;bgptools:cdn;x4b:dc;asdb:hosting;peeringdb:content
+40676,core,Psychz Networks,US,Content,821.0,,bgptools:hosting;bgptools:vpn;bgptools:cdn;x4b:dc;asdb:hosting;peeringdb:content
 40689,downstream,"FTS INTERNATIONAL SERVICES, LLC",US,Unknown,3.0,,all-upstreams-hosting
 40715,core,"Cologix, Inc",US,Unknown,50.0,,x4b:dc;name-keyword
 40728,core,"GearHost, Inc.",US,Unknown,48.0,,x4b:dc;asdb:hosting;name-keyword
@@ -2840,6 +2841,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 41198,downstream,IGT Austria GmbH,AT,Unknown,1.0,,all-upstreams-hosting
 41210,core,SC Industrial Computer Group SRL,RO,Unknown,1.0,,asdb:hosting;name-keyword
 41242,review,Sofor Oy,FI,Unknown,17.0,via-hosting:AS24940,
+41246,review,Electronic Media Services Ltd,GB,Unknown,7.0,via-hosting:AS34555,
 41264,china-adjacent,Google Switzerland GmbH,CH,Unknown,15.0,via-hosting:AS15169,asdb:hosting
 41268,mixed,Sesameware FZ-LLC,AE,Eyeball,152.0,,bgptools:vpn
 41281,core,KeFF Networks Ltd,GB,Unknown,4.0,via-hosting:AS44356,bgptools:hosting;bgptools:vpn;china:via-hosting:AS44356
@@ -3027,7 +3029,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 42927,mixed,S-NET Sp. z o.o.,PL,Eyeball,59.0,,x4b:dc
 42929,review,Artefact SARL,FR,Unknown,13.0,via-hosting:AS4455,
 42974,downstream,JSC Sberbank-AST,RU,Unknown,1.0,,all-upstreams-hosting
-43021,core,Certit Hosting Handelsbolag,SE,Unknown,0.0,,x4b:dc;asdb:hosting;name-keyword
+43021,core,Ayaa International AB,SE,Unknown,0.0,,x4b:dc;asdb:hosting
 43024,downstream,Datalahti Oy,FI,Unknown,4.0,,all-upstreams-hosting
 43028,downstream,Ventspils Digital Centre,LV,Unknown,3.0,,all-upstreams-hosting
 43037,core,"Seznam.cz, a.s.",CZ,Unknown,12.0,,asdb:hosting;peeringdb:content
@@ -3066,7 +3068,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 43317,core,SIA VEESP,LV,Eyeball,27.0,,bgptools:hosting;x4b:dc;peeringdb:content
 43333,core,XNNET LIMITED,HK,Unknown,0.0,,bgptools:vpn;asdb:hosting
 43339,core,Broadband Hosting B.V.,NL,Unknown,0.0,,asdb:hosting;name-keyword
-43350,core,NForce Entertainment B.V.,NL,Content,210.0,peer:CT Global,bgptools:hosting;x4b:dc;china:peer:CT Global
+43350,core,NForce Entertainment B.V.,NL,Content,209.0,peer:CT Global,bgptools:hosting;x4b:dc;china:peer:CT Global
 43357,core,Owl Limited,VU,Content,27.0,,bgptools:hosting;bgptools:vpn
 43359,core,Tarhely.Eu Szolgaltato Kft.,HU,Unknown,14.0,,asdb:hosting;peeringdb:content
 43362,core,Hosting Ltd,RU,Eyeball,33.0,,bgptools:hosting;bgptools:vpn;asdb:hosting;name-keyword
@@ -3137,7 +3139,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 44050,mixed,Petersburg Internet Network ltd.,RU,Eyeball,321.0,,x4b:dc
 44051,core,Fornex Hosting S.L.,ES,Unknown,86.0,via-hosting:AS44066,peeringdb:content;name-keyword;china:via-hosting:AS44066
 44052,downstream,ICONIC MEDIA SYSTEMS LIMITED,GB,Unknown,4.0,via-hosting:AS31727,all-upstreams-hosting
-44066,core,firstcolo GmbH,DE,Eyeball,644.0,peer:CM International,bgptools:hosting;bgptools:vpn;x4b:dc;name-keyword;china:peer:CM International
+44066,core,firstcolo GmbH,DE,Eyeball,650.0,peer:CM International,bgptools:hosting;bgptools:vpn;x4b:dc;name-keyword;china:peer:CM International
 44084,review,Multiwire S.r.l.,IT,Unknown,22.0,via-hosting:AS12779,
 44091,review,SISTEMI SPA,IT,Unknown,12.0,via-hosting:AS41327,
 44094,core,Webhost LLC,RU,Content,9.0,,bgptools:hosting;asdb:hosting;name-keyword
@@ -3188,7 +3190,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 44546,core,ALFA TELECOM s.r.o.,CZ,Unknown,2061.0,via-hosting:AS50245,bgptools:hosting;china:via-hosting:AS50245
 44550,downstream,Techno G Limited,CY,Unknown,9.0,,all-upstreams-hosting
 44557,downstream,Veiligheidsregio Rotterdam-Rijnmond,NL,Unknown,4.0,via-hosting:AS8455,all-upstreams-hosting
-44559,china-adjacent,IT HOSTLINE LTD,CY,Unknown,1843.0,via-hosting:AS63023,name-keyword
+44559,china-adjacent,IT HOSTLINE LTD,CY,Unknown,1823.0,via-hosting:AS63023,name-keyword
 44571,downstream,Melbikomas UAB,LT,Unknown,4.0,,all-upstreams-hosting
 44592,core,SkyLink Data Center BV,NL,Carrier,56.0,,bgptools:hosting;asdb:hosting;name-keyword
 44606,review,Artefact SARL,FR,Unknown,4.0,via-hosting:AS30781,
@@ -3250,7 +3252,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 45050,review,HiPay SAS,FR,Unknown,24.0,via-hosting:AS4455,
 45061,core,"Shanghai Information Network Co.,Ltd.",CN,Unknown,280.0,,bgptools:hosting
 45090,core,Tencent Cloud,CN,Content,47895.0,transit:CU Backbone,bgptools:hosting;bgptools:vpn;bgptools:cdn;x4b:dc;asdb:hosting;peeringdb:content;name-keyword;china:transit:CU Backbone
-45102,core,"Alibaba (US) Technology Co., Ltd.",US,Content,43819.0,transit:CT Global,bgptools:hosting;bgptools:vpn;x4b:dc;asdb:hosting;peeringdb:content;china:transit:CT Global
+45102,core,"Alibaba (US) Technology Co., Ltd.",US,Content,43818.0,transit:CT Global,bgptools:hosting;bgptools:vpn;x4b:dc;asdb:hosting;peeringdb:content;china:transit:CT Global
 45144,core,Net Onboard Sdn Bhd - Quality & Reliable Cloud Hosting Provider,MY,Unknown,23.0,,asdb:hosting;peeringdb:content;name-keyword
 45146,core,PT Raja Sepadan Abadi,ID,Unknown,8.0,,bgptools:hosting
 45147,review,PT NAP Info Lintas Nusa,ID,Carrier,9.0,transit:CU Global,
@@ -3324,7 +3326,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 46221,downstream,"Ascentient, Inc.",US,Unknown,1.0,,all-upstreams-hosting
 46259,review,Donor Network West,US,Unknown,2.0,via-hosting:AS14127,
 46260,core,"MEDHOST, Inc.",US,Unknown,0.0,,x4b:dc;name-keyword
-46261,core,"QuickPacket, LLC",US,Eyeball,864.0,via-hosting:AS3170,bgptools:hosting;bgptools:vpn;x4b:dc;peeringdb:content;china:via-hosting:AS3170
+46261,core,"QuickPacket, LLC",US,Eyeball,863.0,via-hosting:AS3170,bgptools:hosting;bgptools:vpn;x4b:dc;peeringdb:content;china:via-hosting:AS3170
 46309,core,ValorC3 Data Centers,US,Unknown,127.0,,asdb:hosting;name-keyword
 46365,review,CYANSYN CO.,US,Unknown,1.0,via-hosting:AS979,
 46366,core,"Cologix Canada, Inc.",US,Unknown,0.0,,asdb:hosting;name-keyword
@@ -3395,7 +3397,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 47155,review,ViaEuropa Sverige AB,SE,Unknown,68.0,via-hosting:AS42708,
 47160,downstream,MOJI SAS,FR,Unknown,25.0,via-hosting:AS62000,asdb:hosting;all-upstreams-hosting
 47161,core,Stadtwerke Feldkirch,AT,Unknown,4.0,,x4b:dc
-47172,core,Greenhost BV,NL,Eyeball,48.0,,bgptools:hosting;x4b:dc;asdb:hosting;peeringdb:content;name-keyword
+47172,core,Greenhost BV,NL,Eyeball,47.0,,bgptools:hosting;x4b:dc;asdb:hosting;peeringdb:content;name-keyword
 47175,downstream,Unlimited Expectations B.V.,NL,Unknown,1.0,via-hosting:AS8455,asdb:hosting;all-upstreams-hosting
 47176,review,GAS&COM AG,CH,Unknown,36.0,via-hosting:AS15576,
 47178,review,Soluzioni Potenza Srl,IT,Unknown,14.0,via-hosting:AS41327,
@@ -3458,7 +3460,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 47578,downstream,PRT Systems Limited,GB,Unknown,1.0,,all-upstreams-hosting
 47580,core,Broadband Hosting B.V.,NL,Unknown,0.0,,asdb:hosting;name-keyword
 47582,downstream,ANSON NETWORK LIMITED,GB,Unknown,9.0,,all-upstreams-hosting
-47583,core,Hostinger International Limited,CY,Content,8442.0,peer:CT Global,bgptools:hosting;x4b:dc;asdb:hosting;peeringdb:content;name-keyword;china:peer:CT Global
+47583,core,Hostinger International Limited,CY,Content,8440.0,peer:CT Global,bgptools:hosting;x4b:dc;asdb:hosting;peeringdb:content;name-keyword;china:peer:CT Global
 47588,core,TEL COMMUNICATIONS L.L.C.,AL,Unknown,16.0,,x4b:dc
 47595,core,"JSC ""RU-CENTER""",RU,Unknown,0.0,,bgptools:vpn;asdb:hosting
 47612,china-adjacent,MORGAN HAMART,FR,Unknown,1.0,via-hosting:AS30781,peeringdb:content
@@ -3496,6 +3498,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 47905,downstream,"JSC ""Novosibirskenergosbyt""",RU,Unknown,1.0,,all-upstreams-hosting
 47913,downstream,Moshonkin Ilia Sergeevich,RU,Unknown,48.0,,all-upstreams-hosting
 47915,downstream,NIXWAY SRL,RO,Unknown,3.0,,asdb:hosting;all-upstreams-hosting
+47935,review,Quantum Communications Ltd,GB,Unknown,1.0,via-hosting:AS34555,
 47957,review,Worldline IGSA SA,FR,Unknown,20.0,peer:CT ChinaNet,
 47983,review,Cinia Oy,FI,Unknown,4.0,via-hosting:AS6667,
 47986,downstream,Project Informatica srl,IT,Unknown,8.0,,all-upstreams-hosting
@@ -3506,7 +3509,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 48018,core,Fornex Hosting S.L.,ES,Unknown,14.0,,bgptools:hosting;peeringdb:content;name-keyword
 48029,downstream,NOAVARAN SHABAKEH SABZ MEHREGAN (Ltd.),IR,Unknown,3.0,,asdb:hosting;all-upstreams-hosting
 48030,downstream,Martynova Irina Nikolaevna,RU,Unknown,7.0,,all-upstreams-hosting
-48031,core,Ivanov Vitaliy Sergeevich,UA,Content,620.0,,bgptools:hosting;bgptools:vpn;x4b:dc;asdb:hosting
+48031,core,Ivanov Vitaliy Sergeevich,UA,Content,621.0,,bgptools:hosting;bgptools:vpn;x4b:dc;asdb:hosting
 48040,core,Fornex Hosting S.L.,ES,Unknown,23.0,via-hosting:AS42708,peeringdb:content;name-keyword;china:via-hosting:AS42708
 48061,core,Limited Liability Company GPM Digital Technologies,RU,Unknown,17.0,,asdb:hosting;peeringdb:content
 48062,downstream,INVERS GmbH,DE,Unknown,1.0,,all-upstreams-hosting
@@ -3561,16 +3564,17 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 48571,core,efectRO SRL,RO,Content,11.0,,bgptools:hosting;peeringdb:content
 48576,review,Dr. Risch AG,LI,Unknown,4.0,via-hosting:AS4455,
 48586,downstream,LLC Zero Kilometer,RU,Content,1.0,,all-upstreams-hosting
-48589,review,Tiger Network Limited,GB,Unknown,62.0,via-hosting:AS64050,
+48589,review,Tiger Network Limited,GB,Unknown,70.0,via-hosting:AS64050,
 48596,core,InterNetworX Management GmbH,DE,Content,13.0,,bgptools:hosting
 48602,downstream,Connect plus s.r.o.,CZ,Unknown,4.0,,all-upstreams-hosting
 48603,review,Arjen Zonneveld,NL,Unknown,1.0,via-hosting:AS8455,
 48618,core,Glesys Sweden AB,SE,Unknown,0.0,,bgptools:hosting;asdb:hosting
+48628,review,CoreISP Group Limited,GB,Unknown,1.0,via-hosting:AS34555,
 48631,review,Odine Solutions FZ-LLC,AE,Unknown,16.0,via-hosting:AS51945,
 48635,core,CLDIN B.V.,NL,Content,361.0,,bgptools:hosting;bgptools:vpn;asdb:hosting;peeringdb:content
 48645,china-adjacent,Solvinity B.V.,NL,Unknown,25.0,via-hosting:AS8455,asdb:hosting
 48652,downstream,Tnex Inc.,US,Unknown,1.0,via-hosting:AS29802,all-upstreams-hosting
-48678,core,Pentech Bilisim Teknolojileri Sanayi Ve Ticaret Limited Sirketi,TR,Unknown,54.0,,bgptools:hosting;peeringdb:content
+48678,core,Pentech Bilisim Teknolojileri Sanayi Ve Ticaret Limited Sirketi,TR,Unknown,53.0,,bgptools:hosting;peeringdb:content
 48682,downstream,IP Space Limited,GB,Unknown,2.0,via-hosting:AS53667,all-upstreams-hosting
 48684,core,Viking Host B.V.,NL,Unknown,44.0,,asdb:hosting;name-keyword
 48688,review,Thales UK Ltd,GB,Unknown,10.0,peer:CT Global,
@@ -3656,6 +3660,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 49355,review,ACCIAI SPECIALI TERNI S.P.A.,IT,Unknown,1.0,via-hosting:AS12637,
 49367,core,Seflow s.r.l.,IT,Unknown,57.0,,bgptools:vpn;x4b:dc
 49372,downstream,Anastasiia Hein,GB,Unknown,1.0,,all-upstreams-hosting
+49401,review,Bink Group Ltd,GB,Unknown,2.0,via-hosting:AS34555,
 49407,downstream,PharmaSwiss d.o.o. Ljubljana,SI,Unknown,1.0,,all-upstreams-hosting
 49415,review,VTSL Ltd,GB,Unknown,5.0,peer:CT Global,
 49425,review,Digital Realty (UK) Limited,GB,Unknown,146.0,peer:CT Global,
@@ -3675,7 +3680,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 49490,review,Circlenet LLP,GB,Unknown,3.0,peer:CT Global,
 49493,core,GIGAS HOSTING S.A.,ES,Unknown,48.0,,asdb:hosting;name-keyword
 49504,review,LANESTEL SARL,FR,Unknown,1.0,via-hosting:AS30781,
-49505,core,JSC Selectel,RU,Content,2260.0,,bgptools:hosting;x4b:dc;asdb:hosting;peeringdb:content
+49505,core,JSC Selectel,RU,Content,2261.0,,bgptools:hosting;x4b:dc;asdb:hosting;peeringdb:content
 49507,review,Institutul National de Cercetare-Dezvoltare pentru Fizica Materialelor Bucuresti RA,RO,Unknown,2.0,via-hosting:AS39737,
 49515,core,DND Nordic AB,SE,Unknown,19.0,,bgptools:hosting
 49527,core,SRL ROXNET-COM,MD,Unknown,1.0,via-hosting:AS43289,bgptools:vpn;china:via-hosting:AS43289
@@ -3686,7 +3691,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 49572,review,Fujitsu Services Ltd.,GB,Unknown,168.0,peer:CT Global,
 49581,core,Ferdinand Zink trading as Tube-Hosting,DE,Content,40.0,peer:CT Global,bgptools:hosting;name-keyword;china:peer:CT Global
 49585,core,CoreRoute UG (haftungsbeschraenkt),DE,Unknown,6.0,,bgptools:hosting
-49592,core,Pipe Networks GmbH,AT,Unknown,57.0,,asdb:hosting;peeringdb:content
+49592,core,Pipe Networks GmbH,AT,Unknown,56.0,,asdb:hosting;peeringdb:content
 49597,review,EURO.NET SRLS,IT,Unknown,4.0,via-hosting:AS41327,
 49600,review,"NEAR IP, S.L.",ES,Carrier,6.0,peer:CT Global,
 49603,downstream,Nerdherrschaft GmbH,DE,Unknown,12.0,via-hosting:AS47447,all-upstreams-hosting
@@ -3735,7 +3740,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 49870,core,Alsycon B.V.,NL,Carrier,34.0,,bgptools:hosting;x4b:dc;asdb:hosting
 49879,core,Dincer Isik trading as ISIK Bilgisayar Internet ve Yayincilik Hizmetleri,TR,Content,41.0,,bgptools:hosting;asdb:hosting
 49893,mixed,Bitrace telecom Ltd.,RU,Eyeball,66.0,,bgptools:vpn
-49915,china-adjacent,Megaport Global Access,GB,Unknown,141.0,peer:CT Global,asdb:hosting
+49915,china-adjacent,Megaport Global Access,GB,Unknown,142.0,peer:CT Global,asdb:hosting
 49917,downstream,LayerSwitch B.V.,NL,Unknown,0.0,,customers-mostly-hosting
 49923,review,Generale Frigorifique SAS,FR,Unknown,1.0,via-hosting:AS30781,
 49926,downstream,Alex XZ Cypher Zero,GB,Content,1.0,,all-upstreams-hosting
@@ -3750,7 +3755,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 50018,review,Flowmailer B.V.,NL,Unknown,6.0,via-hosting:AS8455,
 50023,review,VCG TECHNOLOGY SERVICES LIMITED,GB,Unknown,22.0,peer:CT Global,
 50049,china-adjacent,RedSwitches,NL,Content,69.0,peer:CT Global,peeringdb:content
-50053,core,Anton Levin,KG,Unknown,134.0,,bgptools:hosting
+50053,core,Anton Levin,KG,Unknown,135.0,,bgptools:hosting
 50056,core,Vorboss Limited,GB,Unknown,13.0,,bgptools:hosting;bgptools:vpn
 50066,downstream,Serious Tubes Networks,SE,Unknown,4.0,via-hosting:AS42708,peeringdb:content;all-upstreams-hosting
 50068,downstream,Clue24 GmbH,DE,Unknown,4.0,,all-upstreams-hosting
@@ -3822,6 +3827,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 50628,review,Leonix Telecom SAS,FR,Carrier,55.0,peer:CT ChinaNet,
 50629,mixed,LWLcom GmbH,DE,Carrier,410.0,peer:CT Global,bgptools:hosting
 50655,core,ITS HOSTED,NL,Unknown,9.0,,bgptools:hosting;x4b:dc;asdb:hosting;peeringdb:content;name-keyword
+50656,downstream,Optix Software Ltd,GB,Unknown,2.0,via-hosting:AS34555,all-upstreams-hosting
 50667,china-adjacent,NETPROTECT SRL,RO,Unknown,5.0,via-hosting:AS39737,asdb:hosting
 50673,mixed,Serverius Holding B.V.,NL,Content,244.0,peer:CT Global,bgptools:hosting;bgptools:vpn;x4b:dc;asdb:hosting;name-keyword
 50747,core,It Hosting Group,EE,Unknown,0.0,,asdb:hosting;name-keyword
@@ -3864,7 +3870,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 50983,review,APT Resources & Services SRL,RO,Unknown,1.0,via-hosting:AS39737,
 50984,review,Business Plus SRL,RO,Unknown,1.0,via-hosting:AS39737,
 50986,core,Teleservice Bredband Skane AB,SE,Unknown,0.0,,x4b:dc
-51013,core,WebSupport s.r.o.,SK,Unknown,46.0,,asdb:hosting;peeringdb:content
+51013,core,WebSupport s.r.o.,SK,Unknown,47.0,,asdb:hosting;peeringdb:content
 51025,downstream,VSHosting s.r.o.,CZ,Unknown,1.0,,name-keyword;all-upstreams-hosting
 51048,core,WIFINITY LIMITED,GB,Carrier,61.0,,bgptools:hosting;asdb:hosting
 51049,downstream,Pensionkassernes Administration A/S,DK,Unknown,1.0,,all-upstreams-hosting
@@ -3888,7 +3894,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 51176,china-adjacent,Axians magellan GmbH,DE,Unknown,8.0,via-hosting:AS24940,asdb:hosting
 51185,core,MainStreaming SpA,IT,Content,24.0,peer:CT Global,bgptools:cdn;china:peer:CT Global
 51191,core,Core-Backbone GmbH,DE,Unknown,29.0,,bgptools:hosting;x4b:dc
-51202,core,NUXOA GmbH,DE,Eyeball,26.0,,bgptools:hosting;peeringdb:content
+51202,core,NUXOA GmbH,DE,Eyeball,27.0,,bgptools:hosting;peeringdb:content
 51210,downstream,KRAXNET s.r.o.,CZ,Unknown,8.0,,all-upstreams-hosting
 51218,core,Zvuk LLC,RU,Unknown,16.0,,asdb:hosting;peeringdb:content
 51241,core,Islamic Republic of Iran Post PJSC,IR,Unknown,12.0,,x4b:dc
@@ -4035,7 +4041,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 52389,review,SSCS BV,BQ,Unknown,4.0,peer:CM International,
 52423,core,Data Miners S.A. ( Racknation.cr ),CR,Eyeball,27.0,,bgptools:vpn;asdb:hosting
 52465,core,WNet Internet y Hosting,AR,Eyeball,39.0,,x4b:dc;peeringdb:content;name-keyword
-52468,mixed,UFINET PANAMA S.A.,PA,Eyeball,1105.0,peer:CM International,x4b:dc
+52468,mixed,UFINET PANAMA S.A.,PA,Eyeball,1107.0,peer:CM International,x4b:dc
 52469,core,Offshore Racks S.A,PA,Unknown,8.0,,bgptools:hosting;asdb:hosting
 52511,core,IRONSERVERS E.I.R.L,CL,Unknown,10.0,,asdb:hosting;peeringdb:content;name-keyword
 52512,core,OPENCLOUD SpA,CL,Unknown,8.0,,asdb:hosting;name-keyword
@@ -4058,7 +4064,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 53057,core,RedeHost Internet Ltda.,BR,Unknown,77.0,,x4b:dc;asdb:hosting;peeringdb:content;name-keyword
 53063,downstream,Andrade Gutierrez Engenharia S/A,BR,Unknown,16.0,,asdb:hosting;all-upstreams-hosting
 53101,core,SIANET Datacenter e Provedores Ltda-ME,BR,Unknown,31.0,,x4b:dc;peeringdb:content;name-keyword
-53107,core,EVEO Serviços de Internet Ltda.,BR,Unknown,391.0,,bgptools:hosting;asdb:hosting;peeringdb:content
+53107,core,EVEO Serviços de Internet Ltda.,BR,Unknown,392.0,,bgptools:hosting;asdb:hosting;peeringdb:content
 53221,core,ENGETRONICS INTERNET DATACENTER,BR,Unknown,24.0,,x4b:dc;name-keyword
 53225,core,IPGLOBE INTERNET LTDA,BR,Unknown,33.0,,x4b:dc
 53231,downstream,GRUPOHOST COMUNICACAO MULTIMIDIA LTDA,BR,Unknown,88.0,,name-keyword;all-upstreams-hosting
@@ -4071,7 +4077,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 53334,review,"Total Uptime Technologies, LLC",US,Unknown,33.1,peer:CT Global,
 53340,core,FiberHub (VegasNAP),US,Content,94.0,via-hosting:AS53667,bgptools:hosting;bgptools:vpn;x4b:dc;peeringdb:content;china:via-hosting:AS53667
 53342,core,Delco Automation Inc,CA,Unknown,1.0,,x4b:dc
-53356,core,Free Range Cloud Hosting Inc.,CA,Content,133.0,,bgptools:hosting;bgptools:vpn;name-keyword
+53356,core,Free Range Cloud Hosting Inc.,CA,Content,149.0,,bgptools:hosting;bgptools:vpn;name-keyword
 53359,core,CUBE Global Storage Ltd.,CA,Unknown,15.0,,bgptools:hosting
 53363,core,TANGRAM CANADA INC.,CA,Unknown,11.0,,bgptools:hosting
 53370,core,dotCOM host,US,Unknown,0.0,,x4b:dc;asdb:hosting;name-keyword
@@ -4098,7 +4104,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 53674,core,"SupportCloud, LLC",US,Unknown,2.0,,asdb:hosting;name-keyword
 53706,core,Arise Virtual Solutions Inc.,US,Unknown,5.0,,asdb:hosting;name-keyword
 53724,core,ExtraVM LLC,US,Content,12.0,,bgptools:hosting
-53755,core,Input Output Flood LLC,US,Content,833.0,,bgptools:hosting;x4b:dc;asdb:hosting;peeringdb:content
+53755,core,Input Output Flood LLC,US,Content,835.0,,bgptools:hosting;x4b:dc;asdb:hosting;peeringdb:content
 53767,core,iCastCenter,US,Unknown,19.0,,bgptools:hosting;peeringdb:content
 53797,downstream,"Pinpointe On-Demand, Inc.",US,Unknown,8.0,,all-upstreams-hosting
 53808,review,MoeDove,US,Content,13.0,via-hosting:AS51847,
@@ -4125,7 +4131,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 54054,downstream,Deteque,US,Unknown,11.0,,peeringdb:content;customers-mostly-hosting
 54098,downstream,LIONLINK NETWORKS,US,Unknown,16.0,via-hosting:AS21700,all-upstreams-hosting
 54104,core,InfoObjects Inc.,US,Unknown,1.0,,x4b:dc;peeringdb:content
-54113,core,"Fastly, Inc.",US,Content,2549.1,peer:CT Global,bgptools:vpn;bgptools:cdn;x4b:dc;peeringdb:content;china:peer:CT Global
+54113,core,"Fastly, Inc.",US,Content,2547.1,peer:CT Global,bgptools:vpn;bgptools:cdn;x4b:dc;peeringdb:content;china:peer:CT Global
 54115,review,Facebook (Corporate),US,Unknown,29.0,via-hosting:AS32934,
 54133,mixed,UnmeteredInternet.com,CA,Unknown,0.0,,bgptools:hosting;bgptools:vpn
 54145,core,"auth-servers, LLC",US,Unknown,3.0,,asdb:hosting;name-keyword
@@ -4154,7 +4160,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 54558,downstream,"Healthcare Outsourcing Network, L.L.C",US,Unknown,1.0,,all-upstreams-hosting
 54561,downstream,Secure Dragon LLC.,US,Unknown,1.0,via-hosting:AS29802,asdb:hosting;all-upstreams-hosting
 54574,core,DMIT Cloud Services,US,Eyeball,0.0,,bgptools:hosting;name-keyword
-54600,core,PEG TECH INC,US,Eyeball,2545.0,transit:CT CN2,bgptools:hosting;bgptools:vpn;asdb:hosting;peeringdb:content;china:transit:CT CN2
+54600,core,PEG TECH INC,US,Eyeball,2547.0,transit:CT CN2,bgptools:hosting;bgptools:vpn;asdb:hosting;peeringdb:content;china:transit:CT CN2
 54636,core,Rackspace Hosting,US,Unknown,2.0,,asdb:hosting;name-keyword
 54641,core,"InMotion Hosting, Inc.",US,Unknown,213.0,,bgptools:vpn;x4b:dc;asdb:hosting;peeringdb:content;name-keyword
 54643,core,Idigital Internet Inc.,CA,Unknown,49.0,,bgptools:vpn;asdb:hosting;peeringdb:content
@@ -4198,7 +4204,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 55225,core,,,,0.0,,x4b:dc
 55229,core,White Sands Hosting,US,Unknown,3.0,,x4b:dc;asdb:hosting;name-keyword
 55240,downstream,UniFocus LP,US,Unknown,1.0,,asdb:hosting;all-upstreams-hosting
-55256,review,Netskope Inc,US,Unknown,841.0,transit:CT Global,
+55256,review,Netskope Inc,US,Unknown,843.0,transit:CT Global,
 55258,core,"Cologix, Inc",US,Unknown,0.0,,asdb:hosting;name-keyword
 55264,downstream,"Atlantic Metro Communications II, Inc.",US,Unknown,3.0,,asdb:hosting;all-upstreams-hosting
 55269,downstream,"Critical Signal Technologies, Inc",US,Unknown,1.0,,all-upstreams-hosting
@@ -4239,7 +4245,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 55898,review,LY Corporation,JP,Unknown,10.0,via-hosting:AS9607,
 55901,downstream,Sony Computer Entertainment Inc,JP,Unknown,1.0,via-hosting:AS33353,name-keyword;all-upstreams-hosting
 55911,review,kazukichi,JP,Unknown,3.0,via-hosting:AS9607,
-55933,core,Cloudie Limited,HK,Unknown,449.0,,bgptools:hosting;x4b:dc;name-keyword
+55933,core,Cloudie Limited,HK,Unknown,444.0,,bgptools:hosting;x4b:dc;name-keyword
 55936,downstream,Spark Digital New Zealand Ltd,NZ,Unknown,13.0,,all-upstreams-hosting
 55960,core,Amazon Web Services Beijing (Beijing Sinnet),CN,Content,1829.0,transit:CM Backbone,bgptools:hosting;china:transit:CM Backbone
 55967,core,"Beijing Baidu Netcom Science and Technology Co., Ltd.",CN,Content,181.0,transit:CT Global,bgptools:cdn;x4b:dc;asdb:hosting;peeringdb:content;china:transit:CT Global
@@ -4312,7 +4318,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 56728,china-adjacent,Boost (Suisse) SA,CH,Unknown,5.0,via-hosting:AS30781,asdb:hosting
 56732,core,"AXARNET COMUNICACIONES, S.L.",ES,Unknown,0.0,,x4b:dc;asdb:hosting
 56739,downstream,PRT Systems Limited,GB,Unknown,1.0,,all-upstreams-hosting
-56740,core,DataHata Ltd,BY,Unknown,36.0,,asdb:hosting;peeringdb:content
+56740,core,DataHata Ltd,BY,Unknown,25.0,,asdb:hosting;peeringdb:content
 56772,review,"I.C.S. ""PREMIER ENERGY DISTRIBUTION"" S.A.",MD,Unknown,1.0,via-hosting:AS43289,
 56784,core,,,,0.0,,x4b:dc;asdb:hosting
 56798,downstream,HIDORA SA,CH,Unknown,15.0,via-hosting:AS25091,all-upstreams-hosting
@@ -4341,7 +4347,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 57022,review,HFD DATAVITA LIMITED,GB,Unknown,16.0,via-hosting:AS56595,
 57029,review,Case Telecom B.V.,NL,Unknown,5.0,via-hosting:AS8455,
 57037,china-adjacent,Manuel Krebs trading as MKQ Internetservice,DE,Unknown,39.0,via-hosting:AS24940,asdb:hosting
-57043,core,HOSTKEY B.V.,NL,Unknown,728.0,via-hosting:AS24940,bgptools:hosting;bgptools:vpn;x4b:dc;asdb:hosting;peeringdb:content;name-keyword;china:via-hosting:AS24940
+57043,core,HOSTKEY B.V.,NL,Unknown,730.0,via-hosting:AS24940,bgptools:hosting;bgptools:vpn;x4b:dc;asdb:hosting;peeringdb:content;name-keyword;china:via-hosting:AS24940
 57045,downstream,Panin Kirill Evgenyevich,RU,Unknown,4.0,,customers-mostly-hosting
 57050,core,DreamServer S.R.L.,RO,Unknown,8.0,via-hosting:AS37153,bgptools:hosting;name-keyword;china:via-hosting:AS37153
 57066,review,Yleisradio Oy,FI,Unknown,4.0,via-hosting:AS6667,
@@ -4467,7 +4473,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 58034,review,AEROPORTUL INTERNATIONAL AVRAM IANCU CLUJ RA,RO,Unknown,2.0,via-hosting:AS39737,
 58045,downstream,Sportivnye Novosti LLC,RU,Unknown,5.0,,asdb:hosting;all-upstreams-hosting
 58057,core,Securebit AG,CH,Unknown,21.0,peer:CT Global,bgptools:hosting;china:peer:CT Global
-58061,core,Scalaxy B.V.,LV,Unknown,399.0,via-hosting:AS29802,bgptools:hosting;bgptools:vpn;asdb:hosting;china:via-hosting:AS29802
+58061,core,Scalaxy B.V.,LV,Unknown,398.0,via-hosting:AS29802,bgptools:hosting;bgptools:vpn;asdb:hosting;china:via-hosting:AS29802
 58065,core,Orion Network Limited,GB,Unknown,416.0,via-hosting:AS62000,bgptools:vpn;x4b:dc;china:via-hosting:AS62000
 58066,downstream,Gutkin Vladyslav,UA,Unknown,2.0,,all-upstreams-hosting
 58072,core,Zenon-Region Ltd.,RU,Unknown,2.0,,bgptools:vpn
@@ -4600,7 +4606,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 59438,downstream,99X INCREO AS,NO,Unknown,2.0,,all-upstreams-hosting
 59439,china-adjacent,EvolveIP LTD,GB,Unknown,4.0,peer:CT Global,peeringdb:content
 59441,core,NOAVARAN SHABAKEH SABZ MEHREGAN (Ltd.),IR,Unknown,100.0,,bgptools:hosting;asdb:hosting;peeringdb:content
-59445,review,ICC NETWORKS LTD,GB,Unknown,6.0,via-hosting:AS8455,
+59445,review,ICC NETWORKS LTD,GB,Unknown,7.0,via-hosting:AS8455,
 59452,downstream,Customized InformSystems Ltd,RU,Unknown,1.0,,all-upstreams-hosting
 59455,core,Clearstream Technology ltd,GB,Unknown,23.0,peer:CT Global,bgptools:hosting;china:peer:CT Global
 59472,core,Sinersio Polska Sp. z o.o.,PL,Unknown,9.0,,x4b:dc;asdb:hosting
@@ -4688,7 +4694,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 60044,review,EMnify GmbH,DE,Unknown,1.0,via-hosting:AS16509,
 60049,review,CPL CONCORDIA Soc. Coop.,IT,Unknown,8.0,via-hosting:AS41327,
 60064,core,HOSTPALACE DATACENTERS LTD,GB,Unknown,44.0,,bgptools:hosting;name-keyword
-60068,core,Datacamp Limited (CDN77 / DataPacket),GB,Carrier,512.0,transit:CT Global,bgptools:hosting;bgptools:vpn;bgptools:cdn;x4b:dc;asdb:hosting;peeringdb:content;name-keyword;china:transit:CT Global
+60068,core,Datacamp Limited (CDN77 / DataPacket),GB,Carrier,514.0,transit:CT Global,bgptools:hosting;bgptools:vpn;bgptools:cdn;x4b:dc;asdb:hosting;peeringdb:content;name-keyword;china:transit:CT Global
 60077,core,Asre Dadeha Asiatech,IR,Unknown,56.0,,bgptools:hosting;asdb:hosting
 60087,core,Netsons s.r.l.,IT,Unknown,58.0,via-hosting:AS12637,bgptools:vpn;asdb:hosting;china:via-hosting:AS12637
 60117,core,Host Sailor Ltd,AE,Eyeball,71.0,via-hosting:AS37153,bgptools:hosting;x4b:dc;asdb:hosting;name-keyword;china:via-hosting:AS37153
@@ -4699,7 +4705,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 60144,core,3W Infra B.V.,NL,Content,69.0,,bgptools:hosting;asdb:hosting
 60150,china-adjacent,area-7 IT-Services GmbH,DE,Unknown,16.0,via-hosting:AS48314,peeringdb:content
 60164,downstream,Webtrekk GmbH,DE,Unknown,42.0,,all-upstreams-hosting
-60171,review,AFR-IX TELECOM S.A.,ES,Unknown,87.0,transit:CT Global,
+60171,review,AFR-IX TELECOM S.A.,ES,Unknown,86.0,transit:CT Global,
 60217,downstream,Beyond.pl sp. z o.o.,PL,Unknown,1.0,,asdb:hosting;all-upstreams-hosting
 60230,china-adjacent,Neterra Ltd.,BG,Unknown,2.0,peer:CM International,asdb:hosting
 60241,downstream,High-Speed Universal Broadband Services C.I.C.,GB,Unknown,12.0,via-hosting:AS56595,all-upstreams-hosting
@@ -4828,7 +4834,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 61074,review,Cuuma Communications Oy,FI,Unknown,4.0,via-hosting:AS24940,
 61077,review,NP Base SRL,MD,Unknown,1.0,via-hosting:AS43289,
 61081,review,Richard Lowton,AE,Unknown,3.0,via-hosting:AS16509,
-61084,core,Mehmet Selim Sahin,TR,Unknown,4.0,,bgptools:hosting
+61084,core,Mehmet Selim Sahin,TR,Unknown,3.0,,bgptools:hosting
 61086,review,GIE ORTEC SERVICES,FR,Unknown,8.0,via-hosting:AS30781,
 61093,downstream,Solution Computers Ltd,GB,Unknown,2.0,via-hosting:AS16082,name-keyword;all-upstreams-hosting
 61098,core,Exoscale (Akenes SA),CH,Unknown,157.0,via-hosting:AS25091,bgptools:hosting;asdb:hosting;peeringdb:content;china:via-hosting:AS25091
@@ -4837,7 +4843,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 61108,core,eww ag,AT,Unknown,18.0,via-hosting:AS15576,bgptools:hosting;asdb:hosting;china:via-hosting:AS15576
 61109,review,Stadtgemeinde/Stadtwerke Imst,AT,Unknown,24.0,via-hosting:AS53667,
 61111,core,"RTCloud, LLC",RU,Unknown,7.0,,asdb:hosting;name-keyword
-61112,core,AKILE LTD,GB,Content,189.0,via-hosting:AS149513,bgptools:hosting;bgptools:vpn;china:via-hosting:AS149513
+61112,core,AKILE LTD,GB,Content,199.0,via-hosting:AS149513,bgptools:hosting;bgptools:vpn;china:via-hosting:AS149513
 61120,core,Hostbit SRL,RO,Unknown,2.0,,bgptools:hosting;name-keyword
 61128,downstream,Odense Kommune,DK,Unknown,4.0,,all-upstreams-hosting
 61138,core,Zappie Host LLC,US,Unknown,49.0,via-hosting:AS37153,bgptools:hosting;bgptools:vpn;x4b:dc;asdb:hosting;name-keyword;china:via-hosting:AS37153
@@ -4855,7 +4861,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 61195,core,Peering.cz Route Servers,CZ,Unknown,0.0,,asdb:hosting;name-keyword
 61200,review,MediaMonks Multimedia Holding B.V.,NL,Unknown,8.0,via-hosting:AS8455,
 61207,core,Hostek AB,SE,Unknown,45.0,,asdb:hosting;name-keyword
-61211,core,SETCOR d.o.o.,HR,Unknown,20.0,,bgptools:hosting
+61211,core,SETCOR d.o.o.,HR,Unknown,21.0,,bgptools:hosting
 61215,review,IIJ Europe Limited,GB,Unknown,48.0,peer:CT Global,
 61217,review,EMAIL MARKETING SAS,FR,Unknown,8.0,via-hosting:AS30781,
 61218,core,4b42 UG,DE,Unknown,1.0,via-hosting:AS37153,bgptools:hosting;china:via-hosting:AS37153
@@ -4998,7 +5004,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 62417,review,DIGITALK Limited,GB,Unknown,5.0,peer:CT Global,
 62425,review,Mailbox Internet Hizmetleri Ltd. Sti.,TR,Unknown,13.0,via-hosting:AS3170,
 62443,review,Nicolas VUILLERMET,FR,Unknown,1.0,via-hosting:AS62000,
-62468,core,VpsQuan L.L.C.,US,Unknown,218.0,peer:CU Global,asdb:hosting;name-keyword;china:peer:CU Global
+62468,core,VpsQuan L.L.C.,US,Unknown,225.0,peer:CU Global,asdb:hosting;name-keyword;china:peer:CU Global
 62471,core,"SupremeBytes, LLC",US,Unknown,0.0,,x4b:dc;asdb:hosting;peeringdb:content
 62490,review,Comintech Corp,US,Unknown,6.0,peer:CM International,
 62501,downstream,Security Arsenal,US,Unknown,1.0,,all-upstreams-hosting
@@ -5015,7 +5021,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 62597,china-adjacent,IBM,US,Content,31.0,peer:CT Global,asdb:hosting
 62605,core,"Untangled Technology, LLC",US,Unknown,18.0,,x4b:dc
 62606,downstream,"Sector 7, LLC",US,Unknown,2.0,,all-upstreams-hosting
-62610,core,Zenlayer Inc,US,Unknown,335.0,,asdb:hosting;peeringdb:content
+62610,core,Zenlayer Inc,US,Unknown,337.0,,asdb:hosting;peeringdb:content
 62633,core,HostRush,US,Unknown,16.0,,bgptools:hosting;name-keyword
 62651,core,"Strong Technology, LLC.",US,Unknown,99.0,,bgptools:vpn;x4b:dc
 62667,core,Jolera Inc.,CA,Unknown,3.0,,bgptools:hosting
@@ -5039,7 +5045,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 62890,downstream,Dream in Code LLC,US,Unknown,1.0,,all-upstreams-hosting
 62899,core,Clarity Web Hosting Inc.,CA,Unknown,0.0,,x4b:dc;name-keyword
 62900,core,"Kerfuffle, LLC",US,Unknown,0.0,,asdb:hosting;peeringdb:content
-62904,core,Eonix Corporation,US,Eyeball,1855.0,,bgptools:hosting;x4b:dc;asdb:hosting;peeringdb:content
+62904,core,Eonix Corporation,US,Eyeball,1857.0,,bgptools:hosting;x4b:dc;asdb:hosting;peeringdb:content
 62943,core,"Missouri Network Alliance, LLC",US,Carrier,302.0,,bgptools:hosting
 62955,review,"eBay, Inc",US,Content,40.0,peer:CT Global,
 62992,downstream,"MBS Textbook Exchange, LLC",US,Unknown,1.0,,all-upstreams-hosting
@@ -5052,7 +5058,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 63040,core,Hostzors Inc.,US,Unknown,8.0,,asdb:hosting;name-keyword
 63046,review,"Brave Software, Inc.",US,Unknown,1.0,via-hosting:AS16509,
 63068,core,CrocWeb,CA,Unknown,7.0,,bgptools:vpn;asdb:hosting;peeringdb:content
-63099,review,MADEALA TELECOM TECHNOLOGY INC,US,Unknown,299.0,via-hosting:AS135377,
+63099,review,MADEALA TELECOM TECHNOLOGY INC,US,Unknown,300.0,via-hosting:AS135377,
 63101,core,AFLY CLOUD LLC,US,Unknown,0.0,,asdb:hosting;name-keyword
 63119,core,Angelnet Limited,SC,Unknown,78.0,via-hosting:AS41564,x4b:dc;asdb:hosting;china:via-hosting:AS41564
 63121,core,Cloud Propeller,US,Unknown,0.0,,asdb:hosting;name-keyword
@@ -5066,7 +5072,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 63194,downstream,"Crashlytics, Inc",US,Unknown,1.0,,all-upstreams-hosting
 63199,core,"CDS Global Cloud Co., Ltd",US,Eyeball,670.0,transit:CT Global,bgptools:hosting;bgptools:vpn;x4b:dc;name-keyword;china:transit:CT Global
 63209,downstream,"KODIAK NETWORKS, INC.",US,Unknown,4.0,,all-upstreams-hosting
-63213,core,Astute Internet,CA,Unknown,23.0,,x4b:dc;asdb:hosting
+63213,core,Astute Internet,CA,Unknown,22.0,,x4b:dc;asdb:hosting
 63220,core,"SkyLink Data Centers, LLC.",US,Unknown,0.0,,asdb:hosting;name-keyword
 63229,downstream,Nocturnal Networks,US,Unknown,4.0,via-hosting:AS21700,all-upstreams-hosting
 63231,downstream,Lumia Security,US,Unknown,1.0,via-hosting:AS16509,asdb:hosting;all-upstreams-hosting
@@ -5168,15 +5174,15 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 64427,downstream,OSN Online Service Nuernberg GmbH,DE,Unknown,2.0,,asdb:hosting;all-upstreams-hosting
 64431,downstream,Better World Security Sarl,CH,Unknown,4.0,via-hosting:AS25091,all-upstreams-hosting
 64432,core,Variti+ LLC,RU,Unknown,5.0,,bgptools:vpn
-64435,core,The Communication GATEWAY LTD,GB,Unknown,6.0,,bgptools:vpn
-64445,core,NetJoin S.r.l.,IT,Carrier,92.0,,bgptools:hosting
+64435,core,The Communication GATEWAY LTD,GB,Unknown,6.0,via-hosting:AS34555,bgptools:vpn;china:via-hosting:AS34555
+64445,core,NetJoin S.r.l.,IT,Carrier,96.0,,bgptools:hosting
 64457,china-adjacent,Matteo Fruhwald trading as PipeHost e.U.,AT,Unknown,5.0,via-hosting:AS52041,name-keyword
 64462,downstream,Stephan Roland Wolf,CH,Unknown,2.0,via-hosting:AS25091,all-upstreams-hosting
 64476,core,Shadow SAS,FR,Eyeball,37.0,,bgptools:hosting;asdb:hosting;peeringdb:content
 64482,downstream,365 IT SAS,FR,Unknown,2.0,via-hosting:AS25091,all-upstreams-hosting
 64484,core,Hexanode SARL,FR,Unknown,1.0,,x4b:dc;peeringdb:content
 131075,china-adjacent,PT Molindo Media Persada,ID,Unknown,2.0,via-hosting:AS58495,asdb:hosting
-131149,core,"Yuan-Jhen Info CO., LTD.",TW,Unknown,43.0,,bgptools:hosting;asdb:hosting
+131149,core,"Yuan-Jhen Info CO., LTD.",TW,Unknown,42.0,,bgptools:hosting;asdb:hosting
 131159,review,Yamagata University,JP,Unknown,482.0,via-hosting:AS9607,
 131199,downstream,"Nexeon Technologies, Inc.",US,Unknown,16.0,,all-upstreams-hosting
 131214,core,Interact Hosting Pty Ltd,AU,Unknown,10.0,,asdb:hosting;name-keyword
@@ -5263,7 +5269,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 132394,review,OpusV Technology Group,AU,Unknown,5.0,via-hosting:AS140627,
 132399,core,SITA Cloud APAC,SG,Unknown,65.0,,asdb:hosting;name-keyword
 132418,china-adjacent,Outscale AP,FR,Unknown,21.0,peer:CT Global,asdb:hosting
-132420,core,E2E Networks Limited,IN,Unknown,176.0,,bgptools:hosting;asdb:hosting
+132420,core,E2E Networks Limited,IN,Unknown,177.0,,bgptools:hosting;asdb:hosting
 132422,core,Hong Kong Telecom Global Data Centre,HK,Unknown,0.0,,asdb:hosting;name-keyword
 132425,core,Exabytes Network (Singapore) Pte. Ltd.,SG,Unknown,0.0,,x4b:dc
 132498,downstream,ASPEDIA AUSTRALIA PTY LTD,AU,Unknown,1.0,,all-upstreams-hosting
@@ -5315,7 +5321,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 133150,downstream,GGS Technical Information Services Inc.,PH,Unknown,9.0,,asdb:hosting;all-upstreams-hosting
 133153,downstream,IPv4 Superhub Limited,HK,Unknown,8.0,,all-upstreams-hosting
 133159,core,Mammoth Media Pty Ltd,AU,Content,98.0,peer:CT Global,bgptools:hosting;asdb:hosting;peeringdb:content;china:peer:CT Global
-133199,core,SonderCloud Limited,HK,Unknown,526.0,transit:CT Global,asdb:hosting;name-keyword;china:transit:CT Global
+133199,core,SonderCloud Limited,HK,Unknown,525.0,transit:CT Global,asdb:hosting;name-keyword;china:transit:CT Global
 133200,review,NeocomISP Limited,KH,Unknown,33.0,transit:CT Global,
 133201,china-adjacent,ABCDE GROUP,HK,Unknown,16.0,peer:CT Global,asdb:hosting
 133210,core,EN Technologies Pte Ltd,SG,Unknown,17.0,peer:CT Global,bgptools:hosting;peeringdb:content;china:peer:CT Global
@@ -5402,17 +5408,17 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 134328,downstream,Feedback Infra Private Limited,IN,Unknown,1.0,,all-upstreams-hosting
 134351,core,Leaseweb Japan K.K.,JP,Unknown,85.0,,bgptools:hosting;bgptools:vpn;x4b:dc;asdb:hosting
 134363,review,EZIT Solutions Pte Ltd,SG,Unknown,4.0,peer:CT Global,
-134365,review,"Ansheng Network Technology Co., Limited",HK,Unknown,42.0,via-hosting:AS62468,
+134365,review,"Ansheng Network Technology Co., Limited",HK,Unknown,41.0,via-hosting:AS62468,
 134366,core,Cloud Computing HK Limited,HK,Unknown,19.0,peer:CT Global,asdb:hosting;peeringdb:content;name-keyword;china:peer:CT Global
 134417,downstream,Nanjing,CN,Unknown,10.0,via-hosting:AS23650,all-upstreams-hosting
 134441,downstream,5G NETWORK OPERATIONS PTY LTD,AU,Unknown,1.0,,all-upstreams-hosting
-134450,core,HostRoyale Technologies Pvt Ltd,IN,Unknown,57.0,,x4b:dc;name-keyword
+134450,core,HostRoyale Technologies Pvt Ltd,IN,Unknown,55.0,,x4b:dc;name-keyword
 134451,core,NewMedia Express Pte Ltd,ID,Content,9.0,via-hosting:AS38001,bgptools:hosting;bgptools:vpn;x4b:dc;asdb:hosting;china:via-hosting:AS38001
 134459,downstream,Infotech Solutions Pty Ltd,AU,Unknown,2.0,,all-upstreams-hosting
 134469,review,Digital Singapore 2 Pte Ltd,SG,Unknown,32.0,peer:CT Global,
 134474,china-adjacent,Micro Cloud Technology Pte. Ltd.,SG,Unknown,2.0,via-hosting:AS132111,name-keyword
 134487,downstream,PT Lintas Teknologi Digital,ID,Unknown,1.0,,all-upstreams-hosting
-134494,core,Code For Host Inc Ltd,BD,Unknown,128.0,,asdb:hosting;name-keyword
+134494,core,Code For Host Inc Ltd,BD,Unknown,127.0,,asdb:hosting;name-keyword
 134496,core,Stelch,AU,Unknown,0.0,,bgptools:hosting;asdb:hosting
 134518,china-adjacent,RETN Hong Kong,HK,Unknown,13.0,peer:CT Global,asdb:hosting
 134520,core,GigsGigs Network Services,HK,Unknown,0.0,,bgptools:vpn;asdb:hosting;peeringdb:content
@@ -5504,7 +5510,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 135822,core,Ovi Hosting Pvt Ltd,IN,Unknown,5.0,,x4b:dc;asdb:hosting;name-keyword
 135884,downstream,MAGNET BRAINS SOFTWARE TECHNOLOGY PRIVATE LIMITED,IN,Unknown,3.0,,all-upstreams-hosting
 135895,review,Centorrino Technologies Pty Ltd,AU,Unknown,10.0,peer:CM International,
-135905,mixed,Vietnam P&T,VN,Eyeball,748.0,,bgptools:hosting
+135905,mixed,Vietnam P&T,VN,Eyeball,750.0,,bgptools:hosting
 135907,core,"VI NA Host Co., ltd",VN,Unknown,0.0,,asdb:hosting;name-keyword
 135912,core,VNETWORK Joint Stock Company,VN,Unknown,4.0,,asdb:hosting;peeringdb:content
 135920,core,Ehost software company limited,VN,Unknown,5.0,,asdb:hosting;name-keyword
@@ -5550,7 +5556,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 136523,core,"COLODEE DIGITAL NETWORK CO.,LTD.",TH,Unknown,21.0,via-hosting:AS38001,asdb:hosting;peeringdb:content;name-keyword;china:via-hosting:AS38001
 136526,downstream,ALLCLOUD LIMITED,HK,Unknown,1.0,,name-keyword;all-upstreams-hosting
 136527,core,CLOUDFOREST.ME,TH,Eyeball,0.0,,asdb:hosting;name-keyword
-136557,mixed,Host Universal Pty Ltd,AU,Eyeball,83.0,peer:CT Global,bgptools:vpn;x4b:dc;name-keyword
+136557,mixed,Host Universal Pty Ltd,AU,Eyeball,87.0,peer:CT Global,bgptools:vpn;x4b:dc;name-keyword
 136577,review,Siptalk Pty Ltd,AU,Unknown,6.0,via-hosting:AS38880,
 136582,core,LIFTUP HOSTING PTY LTD,AU,Unknown,2.0,via-hosting:AS3170,bgptools:hosting;peeringdb:content;name-keyword;china:via-hosting:AS3170
 136593,core,Hostsymbol Pte. Ltd.,SG,Unknown,0.0,,asdb:hosting;name-keyword
@@ -5579,7 +5585,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 136887,review,PT Telkom Satelit Indonesia,ID,Unknown,1.0,via-hosting:AS58495,
 136897,core,Enjoyvc Cloud Group Limited.,HK,Unknown,150.0,transit:CT Global,bgptools:hosting;asdb:hosting;name-keyword;china:transit:CT Global
 136899,downstream,PhoenixNAP,US,Unknown,2.0,,asdb:hosting;all-upstreams-hosting
-136907,core,Huawei Cloud,HK,Content,4547.0,transit:CT Global,bgptools:hosting;bgptools:cdn;x4b:dc;asdb:hosting;peeringdb:content;name-keyword;china:transit:CT Global
+136907,core,Huawei Cloud,HK,Content,4545.0,transit:CT Global,bgptools:hosting;bgptools:cdn;x4b:dc;asdb:hosting;peeringdb:content;name-keyword;china:transit:CT Global
 136915,downstream,Outer Rim Entertainment,US,Unknown,8.0,,all-upstreams-hosting
 136933,core,Gigabitbank Global,HK,Unknown,6.0,,bgptools:hosting;asdb:hosting
 136970,core,YISU CLOUD LTD,HK,Unknown,17.0,,asdb:hosting;name-keyword
@@ -5714,7 +5720,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 138997,core,Eons Data Communications Limited,HK,Carrier,260.0,peer:CT Global,bgptools:hosting;china:peer:CT Global
 139021,china-adjacent,West263 International Limited,HK,Unknown,94.0,transit:CU Backbone,asdb:hosting
 139026,mixed,Shadhinota Net,BD,Eyeball,5.0,,bgptools:vpn
-139057,core,Legend Dynasty Pte. Ltd.,SG,Content,172.0,transit:CT Global,bgptools:hosting;bgptools:cdn;peeringdb:content;china:transit:CT Global
+139057,core,Legend Dynasty Pte. Ltd.,SG,Content,171.0,transit:CT Global,bgptools:hosting;bgptools:cdn;peeringdb:content;china:transit:CT Global
 139063,downstream,HyperX Labs LLP,IN,Unknown,2.0,,all-upstreams-hosting
 139070,core,Google Cloud Korea,SG,Content,274.0,via-hosting:AS15169,bgptools:hosting;name-keyword;china:via-hosting:AS15169
 139089,review,MT Networks LLC,MN,Unknown,2.0,transit:CU Global,
@@ -5882,7 +5888,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 141917,review,PT Muria Data Utama,ID,Unknown,2.0,via-hosting:AS58495,
 141937,review,PT Aulia Sentral Multidata,ID,Unknown,2.0,via-hosting:AS58495,
 141965,review,Diskominfo Kota Pasuruan,ID,Unknown,1.0,via-hosting:AS58495,
-141968,core,PT Industri Kreatif Digital,ID,Content,33.0,,bgptools:hosting;peeringdb:content
+141968,core,PT Industri Kreatif Digital,ID,Content,34.0,,bgptools:hosting;peeringdb:content
 141979,review,PT Agro Boga Utama,ID,Unknown,4.0,via-hosting:AS58495,
 141988,downstream,Optimus Technologies,BD,Unknown,4.0,,customers-mostly-hosting
 141993,downstream,X LINK ASIA,KH,Unknown,2.0,,all-upstreams-hosting
@@ -6139,7 +6145,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 151681,downstream,ARTIFICIAL REALITY,IN,Unknown,1.0,,all-upstreams-hosting
 151686,downstream,VEDINIRMALA BROADBAND PVT LTD,IN,Unknown,2.0,,all-upstreams-hosting
 151703,downstream,DIVYATA TECHNOLOGIES PVT LTD,IN,Unknown,3.0,,all-upstreams-hosting
-151704,core,BHARAT DATACENTER,IN,Content,32.0,,bgptools:hosting;name-keyword
+151704,core,BHARAT DATACENTER,IN,Content,31.0,,bgptools:hosting;name-keyword
 151746,downstream,Uv Enterprises,IN,Unknown,2.0,,all-upstreams-hosting
 151755,downstream,L&T Network Services Private Limited,IN,Unknown,6.0,,customers-mostly-hosting
 151852,downstream,FUTE JOINT STOCK COMPANY,VN,Unknown,2.0,,all-upstreams-hosting
@@ -6173,7 +6179,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 152232,core,"kt cloud Co., Ltd",KR,Unknown,29.0,,x4b:dc;name-keyword
 152291,core,NHNCLOUD,KR,Unknown,7.0,,x4b:dc;name-keyword
 152320,review,"GOALNOW NETWORK TECHNOLOGY CO., LIMITED",HK,Unknown,32.0,via-hosting:AS48266,
-152324,review,"3XNET Co., Ltd.",JP,Unknown,7.0,peer:CU Global,
+152324,review,"3XNET Co., Ltd.",JP,Unknown,10.0,peer:CU Global,
 152376,review,PT Indotek Solution Network,ID,Unknown,2.0,via-hosting:AS58495,
 152383,review,PT Mitra Telekomunikasi Nusantara,ID,Unknown,2.0,via-hosting:AS58495,
 152390,core,PT Intercloud Digital Inovasi,ID,Content,1.0,,bgptools:hosting;x4b:dc;name-keyword
@@ -6268,7 +6274,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 153671,downstream,Liasail Global Hongkong Limited,HK,Unknown,52.0,,all-upstreams-hosting
 153687,downstream,SRI GURU RAGHAVENDRA COMMUNICATIONS (OPC) PRIVATE LIMITED,IN,Unknown,2.0,,all-upstreams-hosting
 153701,downstream,DIZITEL FUTURETECH PVT LTD,IN,Unknown,4.0,,all-upstreams-hosting
-153706,downstream,Stack Network Sdn. Bhd.,MY,Unknown,39.0,peer:CT Global,all-upstreams-hosting
+153706,downstream,Stack Network Sdn. Bhd.,MY,Unknown,38.0,peer:CT Global,all-upstreams-hosting
 153715,review,General Department of Public Financial Management Information Technology,KH,Unknown,4.0,transit:CT Global,
 153717,core,PT Diaza Lintas Data,ID,Unknown,5.0,,bgptools:hosting
 153722,downstream,UMAK FIBERNET PRIVATE LIMITED,IN,Unknown,2.0,,all-upstreams-hosting
@@ -6321,7 +6327,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 154297,downstream,PROCAPITUS BUSINESS PARK PRIVATE LIMITED,IN,Unknown,6.0,,all-upstreams-hosting
 154317,core,VyomCloud,IN,Unknown,4.0,,bgptools:hosting;name-keyword
 154321,china-adjacent,CORENET CLOUD SDN. BHD.,MY,Unknown,236.0,via-hosting:AS979,name-keyword
-154323,downstream,SOFTERINT TECHNOLOGY (OPC) PRIVATE LIMITED,IN,Unknown,2.0,,all-upstreams-hosting
+154323,downstream,SOFTERINT TECHNOLOGY (OPC) PRIVATE LIMITED,IN,Unknown,3.0,,all-upstreams-hosting
 154324,core,AltusCloud Pte. Ltd.,SG,Unknown,4.0,,peeringdb:content;name-keyword
 154335,review,NAYSWAN NETWORK AND DATA SOLUTION,PH,Unknown,10.0,peer:CM International,
 154339,core,"Zyn Data Technology Solutions Co., Ltd.",VN,Unknown,2.0,,bgptools:hosting
@@ -6335,7 +6341,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 154390,downstream,BEAMCONNECT INTERNET SERVICES PVT LTD,IN,Unknown,6.0,,all-upstreams-hosting
 154395,review,Rackdog LLC,HK,Unknown,590.0,via-hosting:AS398465,
 154401,review,PT Sahabat Internet Nusantara,ID,Unknown,2.0,via-hosting:AS58495,
-154408,core,URLSTART,IN,Unknown,17.0,,bgptools:hosting
+154408,core,URLSTART,IN,Unknown,16.0,,bgptools:hosting
 154468,downstream,LRDF INTERNET SERVICE PRIVATE LIMITED,IN,Unknown,4.0,,all-upstreams-hosting
 154482,downstream,Precisecloud Infrastructure Private Limited,IN,Unknown,1.0,,name-keyword;all-upstreams-hosting
 154486,review,REI MIMURA,JP,Unknown,1.0,via-hosting:AS9607,
@@ -6417,7 +6423,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 197166,downstream,Gotschna Limited,GB,Unknown,1.0,,peeringdb:content;all-upstreams-hosting
 197168,core,ASPhostBG Ltd,BG,Unknown,2.0,,asdb:hosting;name-keyword
 197170,core,TechTies Inc.,SC,Unknown,12.0,,bgptools:hosting;x4b:dc;asdb:hosting
-197173,review,HIGHLIGHT APPS LTD,GB,Unknown,6.0,via-hosting:AS29066,
+197173,review,HIGHLIGHT APPS LTD,GB,Unknown,7.0,via-hosting:AS29066,
 197191,review,Virtical Operations B.V.,NL,Unknown,1.0,via-hosting:AS20495,
 197194,downstream,Rakan Alsulaiman trading as Kayan Establishment For Information Technology,SA,Unknown,2.0,,asdb:hosting;all-upstreams-hosting
 197196,china-adjacent,PANSTAR CLOUD LIMITED,HK,Unknown,23.0,via-hosting:AS149513,name-keyword
@@ -6458,7 +6464,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 197450,mixed,Sunucun Bilgi Iletisim Teknolojileri ve Ticaret Ltd. Sti.,TR,Eyeball,100.0,,bgptools:hosting;bgptools:vpn;x4b:dc
 197455,downstream,ONITO Sp. z o.o.,PL,Unknown,1.0,,all-upstreams-hosting
 197458,review,Organization of the Petroleum Exporting Countries,AT,Unknown,3.0,via-hosting:AS53667,
-197462,core,UPHOST SOLUTIONS LIMITED,GB,Content,7.0,via-hosting:AS19151,bgptools:hosting;name-keyword;china:via-hosting:AS19151
+197462,core,UPHOST SOLUTIONS LIMITED,GB,Content,8.0,via-hosting:AS19151,bgptools:hosting;name-keyword;china:via-hosting:AS19151
 197477,core,Moritz Mantel trading as Nerdscave,DE,Content,6.0,,bgptools:hosting
 197483,core,SYSAD IT SERVICES SL,ES,Unknown,1.0,,bgptools:hosting
 197495,downstream,One.com A/S,DK,Unknown,1.0,via-hosting:AS51468,asdb:hosting;all-upstreams-hosting
@@ -6473,7 +6479,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 197562,downstream,Boscop SC,FR,Unknown,5.0,via-hosting:AS30781,all-upstreams-hosting
 197569,review,BASED ON WHAT LLC,US,Unknown,3.0,via-hosting:AS53587,
 197570,downstream,BladeX Networks LLC,US,Unknown,3.0,,all-upstreams-hosting
-197574,core,ExpressHost Ltd,GB,Unknown,24.0,,bgptools:hosting;name-keyword
+197574,core,ExpressHost Ltd,GB,Unknown,25.0,,bgptools:hosting;name-keyword
 197576,downstream,ZUMBAK LTD,GB,Unknown,1.0,,all-upstreams-hosting
 197604,downstream,Softhouse Ltd.,BG,Unknown,1.0,,all-upstreams-hosting
 197617,core,Scalability AB,SE,Unknown,10.0,via-hosting:AS42708,asdb:hosting;peeringdb:content;china:via-hosting:AS42708
@@ -6490,7 +6496,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 197684,downstream,DeRoy LLC.,US,Unknown,2.0,,asdb:hosting;all-upstreams-hosting
 197685,downstream,Onionring Limited,GB,Unknown,1.0,via-hosting:AS3170,asdb:hosting;all-upstreams-hosting
 197692,china-adjacent,Conostix S.A.,LU,Unknown,11.0,via-hosting:AS4455,peeringdb:content
-197695,core,"""Domain names registrar REG.RU"", Ltd",RU,Content,503.0,,bgptools:hosting;asdb:hosting
+197695,core,"""Domain names registrar REG.RU"", Ltd",RU,Content,505.0,,bgptools:hosting;asdb:hosting
 197696,core,Evolix SARL,FR,Unknown,22.0,via-hosting:AS12779,bgptools:vpn;asdb:hosting;china:via-hosting:AS12779
 197703,downstream,IP MARKET - FZCO,AE,Unknown,12.0,,all-upstreams-hosting
 197706,core,Keminet SHPK,AL,Unknown,44.0,,bgptools:vpn;x4b:dc;asdb:hosting;peeringdb:content
@@ -6592,6 +6598,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 198443,review,Advania Finland Oy,FI,Unknown,2.0,via-hosting:AS6667,
 198459,downstream,"Limited liability company ""BAIDAK""",UA,Unknown,3.0,via-hosting:AS63023,all-upstreams-hosting
 198462,review,NEW SRL,IT,Unknown,1.0,via-hosting:AS41327,
+198466,review,J. MORBY,GB,Unknown,1.0,via-hosting:AS34555,
 198468,core,Gijsbertus Henricus van Gemert trading as DutchIS,NL,Content,1.0,,bgptools:hosting;peeringdb:content
 198483,core,CloudTek TOO,KZ,Unknown,1.0,,asdb:hosting;name-keyword
 198489,core,JZO Sp. z o.o.,PL,Unknown,1.0,,bgptools:vpn
@@ -6606,7 +6613,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 198554,china-adjacent,8X8 UK Limited,GB,Unknown,10.0,peer:CT Global,peeringdb:content
 198556,downstream,Marcel Hanisch,DE,Unknown,1.0,,all-upstreams-hosting
 198560,core,Pawel Staszewski trading as ITCare,PL,Unknown,1.0,,asdb:hosting;peeringdb:content
-198566,review,MAMUT RAHAL SOFTWARE - FZCO,AE,Unknown,178.0,via-hosting:AS52041,
+198566,review,MAMUT RAHAL SOFTWARE - FZCO,AE,Unknown,179.0,via-hosting:AS52041,
 198571,core,3xK Tech GmbH,DE,Unknown,0.0,,x4b:vpn
 198572,downstream,"Ika, trgovsko podjetje, Ziri, d.o.o.",SI,Unknown,1.0,,all-upstreams-hosting
 198584,core,PIO-Hosting GmbH,DE,Content,43.0,,bgptools:hosting;name-keyword
@@ -6615,7 +6622,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 198605,mixed,AVAST Software s.r.o.,CZ,Eyeball,24.0,,bgptools:vpn;x4b:dc
 198607,core,HaloAgency SAS,FR,Unknown,1.0,,bgptools:hosting
 198608,downstream,Symbion A/S,DK,Unknown,12.0,,all-upstreams-hosting
-198610,core,Beget LLC,RU,Unknown,846.0,,bgptools:hosting;bgptools:vpn;asdb:hosting
+198610,core,Beget LLC,RU,Unknown,901.0,,bgptools:hosting;bgptools:vpn;asdb:hosting
 198612,review,Wekudata AB,SE,Unknown,42.0,via-hosting:AS42708,
 198615,downstream,RBA-Management LLC,RU,Unknown,2.0,,all-upstreams-hosting
 198624,core,Petr Balek trading as Hexado.pro,CZ,Unknown,0.0,,bgptools:hosting;peeringdb:content
@@ -6719,7 +6726,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 199402,downstream,SIAFLEX Bilisim Anonim Sirketi,TR,Unknown,4.0,,all-upstreams-hosting
 199403,review,DR. BAEHLER DROPA AG,CH,Unknown,8.0,via-hosting:AS15576,
 199404,core,WHG Hosting Services Ltd,GB,Unknown,19.0,,x4b:dc;peeringdb:content;name-keyword
-199412,review,ANARCHY LAB S.R.L.,RO,Unknown,26.0,via-hosting:AS63023,
+199412,review,ANARCHY LAB S.R.L.,RO,Unknown,25.0,via-hosting:AS63023,
 199415,core,YORKHOST SAS,FR,Unknown,10.0,via-hosting:AS62000,bgptools:hosting;name-keyword;china:via-hosting:AS62000
 199417,downstream,Serghei Samoilov,MD,Unknown,1.0,,asdb:hosting;all-upstreams-hosting
 199420,downstream,OOO Fly Engeneering Group,RU,Unknown,44.0,,all-upstreams-hosting
@@ -6858,7 +6865,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 200132,review,Peter-Paul Maria Kurstjens,NL,Carrier,2.0,via-hosting:AS12859,
 200136,core,Association LibraHost,FR,Unknown,2.0,via-hosting:AS399486,bgptools:hosting;name-keyword;china:via-hosting:AS399486
 200140,downstream,Hanseung Kim,KR,Unknown,1.0,,all-upstreams-hosting
-200147,core,Hosting Techniques Limited,GB,Unknown,4.0,,x4b:dc;asdb:hosting;name-keyword
+200147,core,Hosting Techniques Limited,GB,Unknown,8.0,,x4b:dc;asdb:hosting;name-keyword
 200148,downstream,FIDOKA srl SB,IT,Unknown,49.0,via-hosting:AS41327,all-upstreams-hosting
 200157,downstream,99999 Informatika Ltd.,HU,Unknown,1.0,,all-upstreams-hosting
 200159,core,Adacor Hosting GmbH,DE,Unknown,1.0,,asdb:hosting;name-keyword
@@ -7005,6 +7012,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 201094,core,Mulgin Alexander Sergeevich,UA,Unknown,12.0,,bgptools:hosting;asdb:hosting
 201106,core,Spartan Host Ltd,GB,Unknown,57.0,,asdb:hosting;name-keyword
 201112,core,Andrzej Erenc trading as awHost,PL,Unknown,4.0,,bgptools:hosting;name-keyword
+201115,review,Pylon One Ltd,GB,Unknown,1.0,via-hosting:AS34555,
 201117,china-adjacent,ZeroPlex B.V.,NL,Unknown,12.0,via-hosting:AS8455,peeringdb:content
 201121,downstream,Tamiza Digital S.L.,ES,Unknown,2.0,,all-upstreams-hosting
 201124,core,Daniel Kuk,DE,Unknown,1.0,,bgptools:hosting
@@ -7020,7 +7028,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 201182,downstream,IT Uoga MB,LT,Content,2.0,via-hosting:AS4455,peeringdb:content;all-upstreams-hosting
 201188,review,BJT Partners SAS,FR,Unknown,22.0,via-hosting:AS30781,
 201191,china-adjacent,Cobytes B.V.,NL,Content,5.0,via-hosting:AS8455,peeringdb:content
-201194,core,"Nahor Hadish Design and Architecture Co., Ltd",IR,Unknown,6.0,,bgptools:hosting;asdb:hosting
+201194,core,"Nahor Hadish Design and Architecture Co., Ltd",IR,Unknown,5.0,,bgptools:hosting;asdb:hosting
 201199,review,Box Internet Services Sarl,CH,Unknown,3.0,via-hosting:AS25091,
 201200,core,SuperHosting.BG Ltd.,BG,Content,37.0,,x4b:dc;asdb:hosting;name-keyword
 201201,core,UAB Delska Lithuania,LT,Unknown,20.0,,bgptools:hosting
@@ -7102,7 +7110,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 201715,downstream,Ineedbroadband Ltd,GB,Unknown,7.0,via-hosting:AS20860,all-upstreams-hosting
 201722,downstream,NEXT SRL,IT,Unknown,4.0,via-hosting:AS41327,all-upstreams-hosting
 201723,review,R. van der Meijden,NL,Unknown,1.0,via-hosting:AS8298,
-201729,downstream,VALERUS LTD,EU,Unknown,1.0,via-hosting:AS63023,all-upstreams-hosting
+201729,downstream,VALERUS LTD,EU,Unknown,4.0,via-hosting:AS63023,all-upstreams-hosting
 201736,review,Bachmann electronic GmbH,AT,Unknown,4.0,via-hosting:AS53667,
 201743,core,Oktawave S.A.,PL,Unknown,6.0,,bgptools:vpn;asdb:hosting;peeringdb:content
 201744,review,ByteFlare LTD,SC,Unknown,11.0,via-hosting:AS399486,
@@ -7241,7 +7249,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 202635,core,Server Farm LLC,EE,Content,19.0,via-hosting:AS6667,bgptools:hosting;name-keyword;china:via-hosting:AS6667
 202649,core,Hostingway B.V.,NL,Unknown,2.0,,peeringdb:content;name-keyword
 202652,review,Elevi AS,EE,Unknown,8.0,via-hosting:AS6667,
-202656,core,Ivanov Vitaliy Sergeevich,UA,Content,808.0,via-hosting:AS8455,bgptools:hosting;bgptools:vpn;asdb:hosting;china:via-hosting:AS8455
+202656,core,Ivanov Vitaliy Sergeevich,UA,Content,802.0,via-hosting:AS8455,bgptools:hosting;bgptools:vpn;asdb:hosting;china:via-hosting:AS8455
 202662,mixed,Hytron Network Services Limited,HK,Eyeball,86.0,via-hosting:AS149513,bgptools:hosting;bgptools:vpn
 202663,review,VOGANET SARL,FR,Unknown,2.0,via-hosting:AS4455,
 202665,downstream,SMShighway Limited,GB,Unknown,3.0,via-hosting:AS36351,all-upstreams-hosting
@@ -7572,7 +7580,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 204917,core,Mi-Ja Javornik s.r.o.,CZ,Unknown,1.0,,bgptools:hosting
 204921,review,zhenyun sun,GB,Unknown,11.0,via-hosting:AS20495,
 204923,downstream,WISPI SRL,IT,Unknown,16.0,via-hosting:AS41327,all-upstreams-hosting
-204928,downstream,Bonsai Hosting ltd,GB,Unknown,3.0,,name-keyword;customers-mostly-hosting
+204928,downstream,Bonsai Hosting ltd,GB,Unknown,4.0,,name-keyword;customers-mostly-hosting
 204932,core,George Sgouridis trading as Friktoria.com - Data Center Services.,GR,Unknown,1.0,,bgptools:hosting;name-keyword
 204934,downstream,"InnoCrystal Co., Ltd.",TW,Unknown,19.0,,all-upstreams-hosting
 204942,downstream,MIFINORX LTD,GB,Unknown,1.0,via-hosting:AS63023,all-upstreams-hosting
@@ -7586,6 +7594,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 205009,downstream,HDM Solutions LTD,MH,Unknown,9.0,,all-upstreams-hosting
 205010,review,LaNetCie SAS,FR,Unknown,4.0,via-hosting:AS12779,
 205011,review,Celer Technologies Limited,GB,Unknown,1.0,via-hosting:AS206934,
+205012,review,Giant Communications Ltd,GB,Unknown,1.0,via-hosting:AS34555,
 205016,mixed,HERN Labs AB,SE,Eyeball,4.0,,bgptools:vpn;x4b:dc
 205019,review,G1SAT B.V.,NL,Unknown,49.0,via-hosting:AS4455,
 205025,downstream,Ilir Kurti,AL,Unknown,28.0,,asdb:hosting;all-upstreams-hosting
@@ -7636,7 +7645,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 205299,downstream,MEVSPACE sp. z o.o.,PL,Unknown,2.0,,all-upstreams-hosting
 205305,china-adjacent,Gabriel Peron,FR,Content,1.0,via-hosting:AS62000,asdb:hosting
 205308,downstream,ITI NEOVISION SPOLKA AKCYJNA,PL,Content,2.0,,all-upstreams-hosting
-205309,downstream,Prodec Networks Ltd,GB,Unknown,4.0,,all-upstreams-hosting
+205309,downstream,Prodec Networks Ltd,GB,Unknown,8.0,,all-upstreams-hosting
 205315,downstream,Jean-Remy Buchs,CH,Unknown,1.0,,all-upstreams-hosting
 205344,review,Unixo SARL,FR,Unknown,9.0,via-hosting:AS62000,
 205350,review,CLT GROUP S.R.L.,IT,Unknown,3.0,via-hosting:AS41327,
@@ -7655,7 +7664,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 205436,core,Wintermute Technologies EHF,IS,Content,14.0,via-hosting:AS42708,bgptools:hosting;china:via-hosting:AS42708
 205463,downstream,Pembe Gul Isguzar Karagoz,TR,Unknown,4.0,,customers-mostly-hosting
 205467,core,Base IP B.V.,NL,Unknown,17.0,,bgptools:vpn
-205489,china-adjacent,CODE ASSET LTD,GB,Unknown,164.0,via-hosting:AS52041,peeringdb:content
+205489,china-adjacent,CODE ASSET LTD,GB,Unknown,166.0,via-hosting:AS52041,peeringdb:content
 205493,review,TRASNA CELLULAR S.P.A.,IT,Unknown,4.0,via-hosting:AS41327,
 205498,review,Farecom S.R.L.,IT,Unknown,8.0,via-hosting:AS41327,
 205502,china-adjacent,Inception Hosting Limited,GB,Unknown,6.0,via-hosting:AS62240,name-keyword
@@ -8066,7 +8075,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 208450,core,Megahost Kazakhstan TOO,KZ,Unknown,13.0,,asdb:hosting;name-keyword
 208453,core,Johan Karlsson (SweHosting),SE,Content,5.0,,bgptools:hosting;peeringdb:content;name-keyword
 208458,review,REGION NOUVELLE-AQUITAINE,FR,Unknown,1.0,via-hosting:AS62000,
-208462,downstream,COSMIC STORE LLC,US,Unknown,1.0,,all-upstreams-hosting
+208462,core,COSMIC STORE LLC,US,Unknown,1.0,,bgptools:hosting
 208476,core,Badr Ouseffar trading as Rootlink,IT,Unknown,0.0,,bgptools:hosting
 208479,core,Connectis S.A.,BE,Content,4.0,,bgptools:hosting
 208490,downstream,IOT Unlimited B.V.,NL,Unknown,8.0,via-hosting:AS8455,all-upstreams-hosting
@@ -8163,7 +8172,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 209155,core,Onehostplanet s.r.o.,CZ,Unknown,16.0,,asdb:hosting;peeringdb:content;name-keyword
 209169,review,croit GmbH,DE,Unknown,4.0,via-hosting:AS44066,
 209179,core,AfriCloud LLC,US,Unknown,4.0,,bgptools:hosting;peeringdb:content;name-keyword
-209181,core,Zenex 5ive Limited,GB,Unknown,50.0,,bgptools:hosting;bgptools:vpn;peeringdb:content
+209181,core,Zenex 5ive Limited,GB,Unknown,49.0,,bgptools:hosting;bgptools:vpn;peeringdb:content
 209183,review,AkhaliNet LLC,GE,Unknown,24.0,via-hosting:AS47328,
 209185,review,Tim Niemeyer,DE,Unknown,1.0,via-hosting:AS62000,
 209194,downstream,Hyper Data Transit LTD,MH,Unknown,2.0,,all-upstreams-hosting
@@ -8194,7 +8203,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 209346,review,UMB AG,CH,Unknown,3.0,via-hosting:AS4455,
 209363,downstream,SKINARK LTD,EU,Unknown,3.0,via-hosting:AS63023,asdb:hosting;all-upstreams-hosting
 209365,core,"Brutalsys, S.L.",ES,Unknown,0.0,,bgptools:hosting
-209372,core,WS Telecom Inc,US,Unknown,468.0,via-hosting:AS63023,bgptools:hosting;china:via-hosting:AS63023
+209372,core,WS Telecom Inc,US,Unknown,466.0,via-hosting:AS63023,bgptools:hosting;china:via-hosting:AS63023
 209373,review,SWISSNET LLC,US,Unknown,4.0,via-hosting:AS48314,
 209377,review,4Consult B.V.,NL,Unknown,5.0,via-hosting:AS8455,
 209385,review,VELUMWARE SARL,FR,Unknown,7.0,via-hosting:AS12779,
@@ -8225,7 +8234,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 209588,core,Flyservers S.A.,PA,Unknown,4.0,via-hosting:AS53667,x4b:dc;name-keyword;china:via-hosting:AS53667
 209590,review,ForFarmers Corporate Services B.V.,NL,Unknown,1.0,via-hosting:AS12859,
 209591,review,Fly Network Srl,IT,Unknown,10.0,via-hosting:AS41327,
-209604,core,2E TELEKOMUNIKASYON LTD STI,TR,Unknown,61.0,,bgptools:hosting;asdb:hosting
+209604,core,2E TELEKOMUNIKASYON LTD STI,TR,Unknown,62.0,,bgptools:hosting;asdb:hosting
 209605,core,UAB Host Baltic,LT,Content,9.0,,bgptools:hosting;x4b:dc;asdb:hosting;name-keyword
 209610,downstream,OCKNet GmbH,DE,Unknown,4.0,,all-upstreams-hosting
 209612,core,Curt Joseph Hidalgo trading as Curt Creation Website Hosting Services,PH,Unknown,2.0,,bgptools:hosting;name-keyword
@@ -8255,16 +8264,16 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 209809,downstream,ROCO HOST LTD,GB,Unknown,7.0,,name-keyword;all-upstreams-hosting
 209820,china-adjacent,Bitwise Ops SRL,RO,Unknown,3.0,via-hosting:AS39737,asdb:hosting
 209823,china-adjacent,Enki Multimedia EURL,FR,Unknown,3.0,peer:CT ChinaNet,peeringdb:content
-209824,core,Georg Kroeber,DE,Unknown,10.0,,bgptools:hosting;asdb:hosting
+209824,core,Georg Kroeber,DE,Unknown,11.0,,bgptools:hosting;asdb:hosting
 209827,downstream,Del Andujar,US,Unknown,1.0,via-hosting:AS53667,all-upstreams-hosting
 209828,review,Genc BT Bilisim Teknolojileri Limited Sirketi,TR,Unknown,11.0,via-hosting:AS62000,
-209829,core,Greenhost BV,NL,Unknown,12.0,,asdb:hosting;name-keyword
+209829,core,Greenhost BV,NL,Unknown,11.0,,asdb:hosting;name-keyword
 209836,china-adjacent,Toesegaran Shabakeh Arseh Novin Ltd,IR,Unknown,23.0,via-hosting:AS29066,asdb:hosting
 209837,downstream,Slyde ApS,DK,Unknown,1.0,,all-upstreams-hosting
 209842,review,CybExer Technologies OU,EE,Unknown,4.0,via-hosting:AS6667,
 209845,downstream,Jacob Willem de Vos,NL,Unknown,1.0,,asdb:hosting;all-upstreams-hosting
 209847,core,WorkTitans B.V.,NL,Unknown,50.0,,bgptools:hosting;bgptools:vpn
-209854,mixed,Cyberzone S.A.,PA,Eyeball,356.0,via-hosting:AS20860,bgptools:vpn;x4b:vpn
+209854,mixed,Cyberzone S.A.,PA,Eyeball,364.0,via-hosting:AS20860,bgptools:vpn;x4b:vpn
 209857,downstream,WGC-Systems UG (haftungsbeschraenkt),DE,Content,1.0,,all-upstreams-hosting
 209861,downstream,Christoffer Aasum Unes,NO,Unknown,1.0,,all-upstreams-hosting
 209866,core,Piotr Macha trading as Vort Cloud,PL,Content,3.0,,peeringdb:content;name-keyword
@@ -8309,7 +8318,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 210087,downstream,Ontix Sites No1 Limited,GB,Unknown,4.0,via-hosting:AS35266,all-upstreams-hosting
 210097,core,EXACT DIGITAL LLC,US,Unknown,2.0,,bgptools:hosting;asdb:hosting
 210100,downstream,Adam Chodkowski,PL,Unknown,1.0,,asdb:hosting;all-upstreams-hosting
-210101,downstream,Cyber Pathogen Ltd,GB,Unknown,5.0,,all-upstreams-hosting
+210101,downstream,Cyber Pathogen Ltd,GB,Unknown,4.0,,all-upstreams-hosting
 210105,china-adjacent,COMPUTING SERVICE S.R.L.,IT,Unknown,3.0,via-hosting:AS41327,asdb:hosting
 210110,downstream,"Kvmcloud Network CO., LIMITED",HK,Unknown,3.0,peer:CU Global,name-keyword;all-upstreams-hosting
 210129,review,Atomo Networks SRL,IT,Unknown,40.0,via-hosting:AS41327,
@@ -8410,7 +8419,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 210691,core,ASTROVPN LLC,US,Eyeball,0.0,,bgptools:vpn;peeringdb:content;name-keyword
 210693,downstream,Kamenicanet sh.p.k,AL,Unknown,1.0,,all-upstreams-hosting
 210697,core,SOMETHING SINGLE MEMBER P.C.,GR,Content,2.0,via-hosting:AS16509,bgptools:hosting;china:via-hosting:AS16509
-210699,core,WEDEPLOY SAS,FR,Unknown,14.0,via-hosting:AS399486,bgptools:hosting;china:via-hosting:AS399486
+210699,core,WEDEPLOY SAS,FR,Unknown,15.0,via-hosting:AS399486,bgptools:hosting;china:via-hosting:AS399486
 210701,core,CloudKleyer Frankfurt GmbH,DE,Unknown,0.0,,asdb:hosting;name-keyword
 210705,core,Ali Monfared,IR,Unknown,1.0,,bgptools:hosting
 210715,core,Nik Rozman,SI,Content,0.0,,bgptools:hosting
@@ -8463,8 +8472,8 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 211029,review,XTX Markets Limited,GB,Unknown,11.0,peer:CT Global,
 211033,core,Jose Poyato Prieto,ES,Unknown,1.0,,bgptools:hosting
 211037,core,1Ago CommV,BE,Content,1.0,,bgptools:hosting;peeringdb:content
-211056,core,Amir Hosein Maaref,IR,Unknown,14.0,via-hosting:AS63023,bgptools:hosting;china:via-hosting:AS63023
-211066,core,Simon Mariacher,AT,Content,6.0,,bgptools:hosting;asdb:hosting
+211056,core,Amir Hosein Maaref,IR,Unknown,13.0,via-hosting:AS63023,bgptools:hosting;china:via-hosting:AS63023
+211066,core,Simon Mariacher,AT,Content,4.0,,bgptools:hosting;asdb:hosting
 211083,downstream,ServerGurus UG,DE,Unknown,1.0,,name-keyword;all-upstreams-hosting
 211084,review,RF COM S.R.L.,IT,Unknown,2.0,via-hosting:AS41327,
 211085,downstream,mapnet IT services s.r.o.,CZ,Unknown,1.0,,all-upstreams-hosting
@@ -8480,7 +8489,8 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 211175,review,Caudata Ltd,GB,Unknown,1.0,peer:CT Global,
 211180,review,"""OKLAKO"" SRL",MD,Unknown,1.0,via-hosting:AS43289,
 211183,core,AdminVPS OOO,RU,Unknown,93.0,,asdb:hosting;name-keyword
-211192,review,NetWave Inc.,US,Unknown,107.0,via-hosting:AS6667,
+211192,review,NetWave Inc.,US,Unknown,109.0,via-hosting:AS6667,
+211198,downstream,WhiteSpider Enterprise Services Limited,GB,Unknown,1.0,via-hosting:AS34555,all-upstreams-hosting
 211204,downstream,Hipertech Srl,IT,Unknown,4.0,via-hosting:AS41327,all-upstreams-hosting
 211212,downstream,GBD Software as a Service Private Limited Company,HU,Unknown,8.0,,all-upstreams-hosting
 211217,china-adjacent,VoipQ B.V.,NL,Unknown,2.0,via-hosting:AS8455,asdb:hosting
@@ -8625,7 +8635,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 212226,downstream,Jana Steuber,DE,Unknown,1.0,,all-upstreams-hosting
 212228,china-adjacent,servinga GmbH,DE,Unknown,6.0,via-hosting:AS4455,asdb:hosting
 212237,downstream,Changgong Zhang,CN,Unknown,10.0,via-hosting:AS53667,all-upstreams-hosting
-212238,core,Datacamp Limited,GB,Content,4510.0,via-hosting:AS135377,bgptools:hosting;bgptools:vpn;x4b:dc;x4b:vpn;china:via-hosting:AS135377
+212238,core,Datacamp Limited,GB,Content,4511.0,via-hosting:AS135377,bgptools:hosting;bgptools:vpn;x4b:dc;x4b:vpn;china:via-hosting:AS135377
 212240,downstream,RIK Networks Ltd,GB,Unknown,3.0,via-hosting:AS44684,asdb:hosting;all-upstreams-hosting
 212242,downstream,Shyvan Gielissen trading as Solvento,NL,Content,1.0,,all-upstreams-hosting
 212247,downstream,IT Services Ltd,RU,Unknown,1.0,,asdb:hosting;all-upstreams-hosting
@@ -8643,7 +8653,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 212323,review,Daedalean AG,CH,Unknown,1.0,via-hosting:AS8298,
 212332,core,Agustin Lorenzo Sempere trading as Thinco Telecom,ES,Content,1.0,via-hosting:AS20495,bgptools:hosting;peeringdb:content;china:via-hosting:AS20495
 212335,review,Simoresta UAB,LT,Unknown,88.0,via-hosting:AS62240,
-212336,china-adjacent,ByteVirt LLC,US,Unknown,49.0,via-hosting:AS51847,asdb:hosting
+212336,china-adjacent,ByteVirt LLC,US,Unknown,48.0,via-hosting:AS51847,asdb:hosting
 212352,downstream,Reshenie LLC,RU,Unknown,1.0,,all-upstreams-hosting
 212363,core,ZETTA HOSTING SOLUTIONS LLC.,BG,Unknown,1.0,,asdb:hosting;name-keyword
 212371,downstream,"Huizhou HuiGu CloudTech Co., Ltd.",CN,Unknown,3.0,,name-keyword;all-upstreams-hosting
@@ -8662,7 +8672,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 212441,core,Cloud assets LLC,RU,Unknown,21.0,,asdb:hosting;name-keyword
 212447,review,Seneca B.V.,NL,Unknown,2.0,via-hosting:AS8455,
 212469,core,ServerHouse Ltd,GB,Eyeball,2.0,,asdb:hosting;name-keyword
-212477,core,RoyaleHosting B.V.,NL,Content,238.0,,bgptools:hosting;bgptools:vpn;asdb:hosting;peeringdb:content;name-keyword
+212477,core,RoyaleHosting B.V.,NL,Content,237.0,,bgptools:hosting;bgptools:vpn;asdb:hosting;peeringdb:content;name-keyword
 212496,core,SIA GOOD,LV,Unknown,14.0,,bgptools:hosting
 212504,core,AdKyNet SAS,FR,Content,2.0,,bgptools:hosting;peeringdb:content
 212506,downstream,swizzonic ltd,CH,Unknown,1.0,,asdb:hosting;all-upstreams-hosting
@@ -8783,7 +8793,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 213242,core,Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V.,DE,Unknown,0.0,,asdb:hosting;peeringdb:content
 213243,core,OZGUR EFE YILANCI,TR,Unknown,0.0,,bgptools:hosting
 213246,downstream,CCBill EU Limited,MT,Unknown,3.0,,all-upstreams-hosting
-213250,core,Dominic Scholz trading as ITP-Solutions GmbH & Co. KG,DE,Content,52.0,,bgptools:hosting;bgptools:vpn;peeringdb:content
+213250,core,Dominic Scholz trading as ITP-Solutions GmbH & Co. KG,DE,Content,53.0,,bgptools:hosting;bgptools:vpn;peeringdb:content
 213252,core,Cenuta Telekomunikasyon Anonim Sirketi,TR,Content,2.0,,bgptools:hosting;asdb:hosting
 213272,core,Beeks Financial Cloud Ltd,GB,Unknown,1.0,,asdb:hosting;name-keyword
 213274,core,Verinomi Bilisim Tek. San. ve Tic. Ltd. Sti.,TR,Unknown,4.0,,asdb:hosting;peeringdb:content
@@ -8832,7 +8842,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 213514,downstream,EuroVDC EOOD,BG,Unknown,5.0,,all-upstreams-hosting
 213515,review,Honeybank Studios LTD,GB,Unknown,1.0,via-hosting:AS20495,
 213517,downstream,Association Solidheberg,FR,Unknown,1.0,via-hosting:AS399486,all-upstreams-hosting
-213520,core,Senko Digital LLC,GE,Unknown,87.0,,bgptools:hosting;peeringdb:content
+213520,core,Senko Digital LLC,GE,Unknown,89.0,,bgptools:hosting;peeringdb:content
 213525,downstream,Motion Applied Limited,GB,Unknown,1.0,via-hosting:AS8560,all-upstreams-hosting
 213535,core,YottaSrc,SA,Unknown,59.0,via-hosting:AS399486,bgptools:hosting;china:via-hosting:AS399486
 213539,core,Patryk Pazdro trading as 4Cloud Systems,PL,Unknown,0.0,,asdb:hosting;peeringdb:content;name-keyword
@@ -8858,7 +8868,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 213661,core,BeastHost UG,DE,Unknown,1.0,,bgptools:hosting;peeringdb:content;name-keyword
 213669,core,Varadi Daniel,HU,Content,1.0,,bgptools:hosting
 213671,review,Vision Fibre Media Ltd.,GB,Unknown,43.0,peer:CT Global,
-213683,core,Host.AL Shpk,AL,Unknown,13.0,via-hosting:AS24940,bgptools:hosting;bgptools:vpn;peeringdb:content;name-keyword;china:via-hosting:AS24940
+213683,core,Host.AL Shpk,AL,Unknown,12.0,via-hosting:AS24940,bgptools:hosting;bgptools:vpn;peeringdb:content;name-keyword;china:via-hosting:AS24940
 213684,downstream,Azalea Systems LLC,US,Unknown,2.0,,all-upstreams-hosting
 213690,review,AW SOLUCOES DIGITAIS LTDA,BR,Unknown,28.0,via-hosting:AS63023,
 213692,downstream,CSCM Limited,GB,Unknown,1.0,via-hosting:AS3170,all-upstreams-hosting
@@ -8876,7 +8886,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 213784,review,TNGNET B.V.,NL,Unknown,138.0,via-hosting:AS37153,
 213788,china-adjacent,ROMEO B.V.,NL,Unknown,1.0,via-hosting:AS45014,peeringdb:content
 213790,core,Limited Network LTD,GB,Unknown,5.0,,bgptools:hosting;x4b:dc;asdb:hosting
-213791,core,XeniaGroup SRL,IT,Content,5.0,via-hosting:AS41327,bgptools:hosting;peeringdb:content;china:via-hosting:AS41327
+213791,core,XeniaGroup SRL,IT,Content,6.0,via-hosting:AS41327,bgptools:hosting;peeringdb:content;china:via-hosting:AS41327
 213794,downstream,Subinet Sp. z o.o.,PL,Unknown,2.0,,all-upstreams-hosting
 213796,core,Ahmet Cevik,TR,Unknown,1.0,,bgptools:hosting;bgptools:vpn
 213799,core,CONHOST BILGI TEKNOLOJILERI VERI MERKEZI HIZMETLERI VE DANISMANLIK LIMITED SIRKETI,TR,Unknown,3.0,via-hosting:AS20495,peeringdb:content;name-keyword;china:via-hosting:AS20495
@@ -8886,7 +8896,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 213831,downstream,Toby Dixon,GB,Unknown,1.0,via-hosting:AS44684,all-upstreams-hosting
 213847,review,IREN S.P.A,IT,Unknown,5.0,via-hosting:AS12779,
 213850,core,Justin Harth,DE,Unknown,6.0,,bgptools:hosting
-213861,downstream,Vostrikov Rodion,RU,Unknown,9.0,,all-upstreams-hosting
+213861,downstream,Vostrikov Rodion,RU,Unknown,10.0,,all-upstreams-hosting
 213868,downstream,TAKECLOUD SAS,FR,Unknown,1.0,via-hosting:AS25091,name-keyword;all-upstreams-hosting
 213873,review,MOJI SAS,FR,Unknown,2.0,via-hosting:AS62000,
 213877,core,U1 DIGITAL SERVICES LTD,GB,Unknown,120.0,,bgptools:hosting;peeringdb:content
@@ -8896,7 +8906,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 213896,core,"UAB ""Cherry Servers""",LT,Unknown,43.0,,peeringdb:content;name-keyword
 213900,china-adjacent,RS Computers L.L.C,AL,Unknown,5.0,via-hosting:AS20495,name-keyword
 213905,core,ISPLABS LIMITED,GB,Content,5.0,via-hosting:AS20495,bgptools:hosting;peeringdb:content;china:via-hosting:AS20495
-213915,downstream,HOSTES LTD,GB,Unknown,90.0,,name-keyword;all-upstreams-hosting
+213915,downstream,HOSTES LTD,GB,Unknown,86.0,,name-keyword;all-upstreams-hosting
 213920,core,FONSECA ALVES TECNOLOGIA LTDA,BR,Unknown,6.0,,bgptools:hosting
 213921,downstream,DAVID ASCOTT MOTORS LTD,GB,Unknown,2.0,,all-upstreams-hosting
 213922,core,Volta LLC,RU,Unknown,266.0,,bgptools:hosting;peeringdb:content
@@ -8944,11 +8954,11 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 214138,core,Julian Kempf trading as Host-Zentrum,DE,Content,1.0,,bgptools:hosting;name-keyword
 214139,downstream,Private.coffee- Verein zur Forderung von Privatsphare und digitaler Souveranitat,AT,Unknown,1.0,,all-upstreams-hosting
 214141,downstream,Dudko Artemii Lvovich,RU,Unknown,1.0,,all-upstreams-hosting
-214143,review,SKYDIGITAL TELECOM LTD,GB,Unknown,458.0,via-hosting:AS135377,
+214143,review,SKYDIGITAL TELECOM LTD,GB,Unknown,450.0,via-hosting:AS135377,
 214145,downstream,Seyed Pouria Mousavizadeh Tehrani,IR,Unknown,1.0,,all-upstreams-hosting
 214150,core,Prism Cloud LLC,US,Unknown,5.0,,bgptools:hosting;peeringdb:content;name-keyword
 214154,downstream,Corentin DOULET,FR,Unknown,1.0,via-hosting:AS62000,all-upstreams-hosting
-214159,core,"UAB ""Cherry Servers""",LT,Unknown,76.0,,bgptools:hosting;peeringdb:content;name-keyword
+214159,core,"UAB ""Cherry Servers""",LT,Unknown,77.0,,bgptools:hosting;peeringdb:content;name-keyword
 214169,china-adjacent,Cloudfire s.r.l.,IT,Unknown,28.0,via-hosting:AS41327,name-keyword
 214170,downstream,EVOLONIA LTD.,BG,Unknown,1.0,,peeringdb:content;all-upstreams-hosting
 214172,mixed,DePowered Limited,HK,Eyeball,5.0,,bgptools:hosting
@@ -9036,7 +9046,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 214640,core,Hostup AB,SE,Unknown,52.0,,bgptools:hosting;name-keyword
 214663,downstream,DanBot Hosting LTD,GB,Unknown,3.0,via-hosting:AS3170,name-keyword;all-upstreams-hosting
 214664,downstream,"JSC ""F6""",RU,Unknown,1.0,,all-upstreams-hosting
-214668,core,AxusHost B.V.,NL,Unknown,7.0,,bgptools:hosting;peeringdb:content;name-keyword
+214668,core,AxusHost B.V.,NL,Unknown,8.0,,bgptools:hosting;peeringdb:content;name-keyword
 214669,review,"STARLIGHT TECH TRADING CO., LIMITED",HK,Unknown,14.0,via-hosting:AS979,
 214670,downstream,No Metric Limited,GB,Unknown,3.0,peer:CT Global,all-upstreams-hosting
 214677,core,Matteo Martelloni trading as DELUXHOST,IT,Content,31.0,via-hosting:AS20495,bgptools:hosting;peeringdb:content;name-keyword;china:via-hosting:AS20495
@@ -9044,7 +9054,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 214692,review,"Valtion tieto- ja viestintatekniikkakeskus, TUVE-palvelut",FI,Unknown,512.0,via-hosting:AS6667,
 214693,core,Fusiora OU,EE,Unknown,10.0,,bgptools:hosting;peeringdb:content
 214708,china-adjacent,Cloud Telecom SAS,FR,Unknown,5.0,via-hosting:AS62000,name-keyword
-214716,core,WEYRO LTD,GB,Content,53.0,,bgptools:hosting
+214716,core,WEYRO LTD,GB,Content,51.0,,bgptools:hosting
 214730,downstream,Kedrov Andrii,UA,Unknown,1.0,via-hosting:AS63023,all-upstreams-hosting
 214732,downstream,RATATOSKR LLC,US,Unknown,1.0,via-hosting:AS53587,all-upstreams-hosting
 214735,downstream,Pishro Fannavaran-e Hooshmand Ravesh JSC,IR,Unknown,1.0,,all-upstreams-hosting
@@ -9067,7 +9077,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 214902,core,Philip Fjaera trading as PFWeb Solutions,DK,Content,15.0,,bgptools:hosting
 214913,core,Joel Reis da Conceicao trading as WebTejo,PT,Unknown,3.0,,bgptools:hosting;peeringdb:content
 214915,core,Jan Smyrek,DE,Content,9.0,,bgptools:hosting;peeringdb:content
-214916,downstream,INIsmart Technology Ltd.,VG,Unknown,23.0,via-hosting:AS53587,all-upstreams-hosting
+214916,downstream,INIsmart Technology Ltd.,VG,Unknown,22.0,via-hosting:AS53587,all-upstreams-hosting
 214918,core,ESAGAMES HOSTING SHIELD S.R.L.,RO,Unknown,2.0,,bgptools:hosting;name-keyword
 214922,core,FanAvaran Mihan Mizban PJSC,IR,Unknown,26.0,,bgptools:hosting
 214929,core,Lukas Wenzl trading as LastResponse,AT,Content,2.0,,bgptools:hosting;peeringdb:content
@@ -9080,7 +9090,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 214979,downstream,Dijust Development LTD,CY,Unknown,5.0,via-hosting:AS7979,all-upstreams-hosting
 214988,core,McCloud.nl B.V.,NL,Unknown,6.0,via-hosting:AS8455,asdb:hosting;name-keyword;china:via-hosting:AS8455
 214996,core,netcup GmbH - Manassas,DE,Content,87.0,,bgptools:hosting;name-keyword
-215000,review,Country Connect Ltd,GB,Unknown,16.0,peer:CT Global,
+215000,review,Country Connect Ltd,GB,Unknown,17.0,peer:CT Global,
 215003,downstream,Internet Tubes LTD,GB,Unknown,1.0,,all-upstreams-hosting
 215004,downstream,Sebastian Bruechner,DE,Unknown,1.0,,all-upstreams-hosting
 215008,review,e-volve Solutions Ltd,GB,Unknown,1.0,via-hosting:AS4455,
@@ -9326,7 +9336,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 216458,review,"Hardcore Communication Co., Limited",HK,Unknown,2.0,transit:CT Global,
 216459,downstream,Marketing Mind Online GmbH,DE,Unknown,15.0,via-hosting:AS20495,all-upstreams-hosting
 216473,downstream,Bashinskii Vadim Ruslanovich,KZ,Unknown,1.0,,all-upstreams-hosting
-216475,core,NKtelecom INC,US,Unknown,33.0,via-hosting:AS24940,bgptools:hosting;china:via-hosting:AS24940
+216475,core,NKtelecom INC,US,Unknown,34.0,via-hosting:AS24940,bgptools:hosting;china:via-hosting:AS24940
 218232,downstream,Nexus Partners Limited,BZ,Unknown,8.0,,all-upstreams-hosting
 218241,review,Dawid Kulas,PL,Unknown,1.0,via-hosting:AS62000,
 218259,downstream,Ella Alexandrovna Shakhnazarova,RU,Unknown,1.0,,all-upstreams-hosting
@@ -9345,7 +9355,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 218354,downstream,BIG HOSTING LTD,EU,Unknown,1.0,,name-keyword;all-upstreams-hosting
 218357,core,Streethosting LTDA,EU,Unknown,2.0,,peeringdb:content;name-keyword
 218370,review,TWS technologies GmbH,EU,Unknown,2.0,via-hosting:AS8455,
-218383,review,TELEMERIDIAN WAVES LLC,US,Unknown,9.0,via-hosting:AS29066,
+218383,review,TELEMERIDIAN WAVES LLC,US,Unknown,7.0,via-hosting:AS29066,
 218393,downstream,FSL Software Ltd,GB,Unknown,1.0,via-hosting:AS52041,all-upstreams-hosting
 218410,downstream,MoonNet LC,US,Unknown,1.0,,all-upstreams-hosting
 218415,core,CLOUDER,MA,Unknown,1.0,,peeringdb:content;name-keyword
@@ -9402,7 +9412,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 218642,downstream,LETECHAI LTD,GB,Unknown,2.0,,all-upstreams-hosting
 218644,downstream,Dylan Joseph Ogle,GB,Unknown,1.0,,all-upstreams-hosting
 218652,downstream,Nightcoil Networks LLC,US,Unknown,1.0,,all-upstreams-hosting
-218656,downstream,Oko.Labs LLC,GE,Unknown,5.0,,all-upstreams-hosting
+218656,downstream,Oko.Labs LLC,GE,Unknown,8.0,,all-upstreams-hosting
 218659,core,"Free VPN One Co., Limited",HK,Unknown,0.0,,x4b:vpn;name-keyword
 218661,downstream,ACO TECH SERVICES LTD,GB,Unknown,18.0,,all-upstreams-hosting
 218674,downstream,Daria Sergeevna Biserova,RU,Unknown,2.0,via-hosting:AS63023,all-upstreams-hosting
@@ -9425,7 +9435,6 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 218749,downstream,CYBERLAB LLC,RU,Unknown,6.0,,all-upstreams-hosting
 218751,downstream,"Fontaine, LLC",US,Content,2.0,,all-upstreams-hosting
 218753,downstream,Digitale Suisse AG,EU,Unknown,1.0,via-hosting:AS25091,all-upstreams-hosting
-218754,downstream,Thorn Hosting LTD,GB,Unknown,1.0,,name-keyword;all-upstreams-hosting
 218755,downstream,Easyweb Bt.,EU,Unknown,1.0,,all-upstreams-hosting
 218757,downstream,MYCHEAP LTD,GB,Unknown,1.0,via-hosting:AS24940,all-upstreams-hosting
 218766,downstream,Semjon Horvath,DE,Unknown,1.0,,all-upstreams-hosting
@@ -9481,7 +9490,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 219031,core,RoxyCloud Datacenter e Tecnologia LTDA,BR,Unknown,1.0,,peeringdb:content;name-keyword
 219032,downstream,Papilio Host Ltd,GB,Unknown,1.0,,name-keyword;all-upstreams-hosting
 219040,downstream,Breezenodes Ltd,GB,Content,1.0,via-hosting:AS3170,peeringdb:content;all-upstreams-hosting
-219048,downstream,Sachin Kothawade trading as SUN IT SOLUTIONS,IN,Unknown,9.0,,all-upstreams-hosting
+219048,downstream,Sachin Kothawade trading as SUN IT SOLUTIONS,IN,Unknown,1.0,,all-upstreams-hosting
 219054,downstream,Nakamoto LLP,KZ,Unknown,3.0,,all-upstreams-hosting
 219057,downstream,Viloonmobi Limited,HK,Unknown,1.0,,all-upstreams-hosting
 219059,downstream,Jens Weber,DE,Unknown,2.0,,all-upstreams-hosting
@@ -9489,7 +9498,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 219064,core,Akenai Products LTD,GB,Unknown,24.0,,bgptools:hosting
 219074,review,Fenecon GmbH,DE,Unknown,1.0,via-hosting:AS24940,
 219080,core,MANK TEKNOLOJI HIZMETLERI TIC. A.S.,TR,Unknown,2.0,,bgptools:hosting
-219082,downstream,Bough Limited,US,Unknown,1.0,,all-upstreams-hosting
+219082,downstream,Bough Limited,US,Unknown,2.0,,all-upstreams-hosting
 219084,downstream,Belce Taylan,BE,Unknown,2.0,via-hosting:AS62000,all-upstreams-hosting
 219094,downstream,William McDade,GB,Unknown,1.0,via-hosting:AS3170,peeringdb:content;all-upstreams-hosting
 219097,downstream,Fanth sp. z o.o.,PL,Unknown,1.0,,all-upstreams-hosting
@@ -9539,16 +9548,16 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 219375,downstream,DEEP KNOWLEDGE SAS,FR,Unknown,1.0,,all-upstreams-hosting
 219380,review,Adnaan Siddiqi,GB,Unknown,1.0,via-hosting:AS3170,
 219384,downstream,Satcore LLC,US,Carrier,1.0,,customers-mostly-hosting
-219393,downstream,Deep Blue Edge Limited,HK,Unknown,39.0,,all-upstreams-hosting
+219393,downstream,Deep Blue Edge Limited,HK,Unknown,42.0,,all-upstreams-hosting
 219394,downstream,Red Seek Limited,HK,Unknown,4.0,,all-upstreams-hosting
 219410,downstream,Kingstar(HK)Technology Limited,HK,Unknown,6.0,,all-upstreams-hosting
 219411,review,Key Arg B.V.,NL,Unknown,1.0,via-hosting:AS8455,
 219418,china-adjacent,Jan Hill,DE,Unknown,0.0,via-hosting:AS20495,peeringdb:content
-219427,downstream,VERTEXCORE. PTE. LTD.,SG,Unknown,32.0,,all-upstreams-hosting
+219427,downstream,VERTEXCORE. PTE. LTD.,SG,Unknown,33.0,,all-upstreams-hosting
 219433,downstream,Alan Tri Wibowo,ID,Unknown,2.0,,all-upstreams-hosting
 219436,downstream,Juri Uit,EE,Unknown,4.0,,all-upstreams-hosting
 219443,core,Ints Danebergs,LV,Unknown,11.0,,bgptools:vpn
-219447,downstream,HONG KONG FLASH SPEED LIMITED,HK,Unknown,20.0,,all-upstreams-hosting
+219447,downstream,HONG KONG FLASH SPEED LIMITED,HK,Unknown,19.0,,all-upstreams-hosting
 219450,downstream,VOYAR VERIMERKEZI TEKNOLOJILERI LTD. STI,EU,Unknown,27.0,,all-upstreams-hosting
 219458,review,Volodymyr Puzanov,IE,Unknown,1.0,via-hosting:AS62000,
 219459,downstream,Christoforos Zosimidis,GR,Unknown,1.0,,all-upstreams-hosting
@@ -9612,7 +9621,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 263444,review,Open X Tecnologia Ltda,BR,Unknown,16.0,peer:CT Global,
 263449,downstream,BRASTORAGE COMERCIO E SERVICOS EM INFORMATICA LTDA,BR,Unknown,9.0,,all-upstreams-hosting
 263461,core,ONLINE DATA CENTER CONS EM INF E LOC DE BENS E SER,BR,Unknown,12.0,,bgptools:hosting;name-keyword
-263511,core,Saveincloud Hospedagem na Internet Ltda,BR,Unknown,79.0,,bgptools:hosting;asdb:hosting;name-keyword
+263511,core,Saveincloud Hospedagem na Internet Ltda,BR,Unknown,80.0,,bgptools:hosting;asdb:hosting;name-keyword
 263590,downstream,LOCAWEB SERVICOS DE INTERNET S.A.,BR,Content,96.0,,asdb:hosting;all-upstreams-hosting
 263602,downstream,DITCOM INTERNET LTDA.,BR,Unknown,4.0,,all-upstreams-hosting
 263644,core,FRUGUI TELECOMUNICACOES LTDA,BR,Content,12.0,,bgptools:hosting
@@ -10021,7 +10030,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 329135,review,UNICAST TECHNOLOGY LTD,KE,Unknown,7.0,peer:CM International,
 329166,core,Absolute Hosting (Pty) Ltd,ZA,Unknown,12.0,,bgptools:hosting;peeringdb:content;name-keyword
 329183,review,FLINK TECHNOLOGIES LTD,KE,Unknown,8.0,peer:CM International,
-329184,core,Host Africa (Pty) Ltd,ZA,Unknown,23.0,,x4b:dc;asdb:hosting;peeringdb:content;name-keyword
+329184,core,Host Africa (Pty) Ltd,ZA,Unknown,24.0,,x4b:dc;asdb:hosting;peeringdb:content;name-keyword
 329192,review,Optinode Group LLP,KE,Unknown,8.0,peer:CM International,
 329198,review,CELCOM NETWORKS LIMITED,KE,Unknown,8.0,peer:CM International,
 329199,downstream,STL FIBERCO LTD,NG,Unknown,1.0,,all-upstreams-hosting
@@ -10076,7 +10085,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 329721,core,STRETTCH  CLOUD Limited,RW,Content,1.0,,peeringdb:content;name-keyword
 329729,review,,,,1.0,peer:CM International,
 329773,review,Maisha Home Broadband Limited,KE,Unknown,1.0,peer:CM International,
-329783,review,KEPTIS SYSTEMS LTD,KE,Unknown,6.0,peer:CM International,
+329783,review,KEPTIS SYSTEMS LTD,KE,Unknown,8.0,peer:CM International,
 329808,review,,,,1.0,peer:CM International,
 393245,downstream,Yahoo Holdings Inc.,US,Unknown,3.0,via-hosting:AS10310,all-upstreams-hosting
 393283,downstream,Univar Solutions LLC,US,Unknown,4.0,,all-upstreams-hosting
@@ -10090,7 +10099,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 393404,downstream,Delval Technology Solutions LLC,US,Unknown,1.0,,all-upstreams-hosting
 393406,core,"DigitalOcean, LLC",US,Unknown,31.0,via-hosting:AS14061,bgptools:hosting;asdb:hosting;china:via-hosting:AS14061
 393435,downstream,Lyle Research,US,Unknown,4.0,,all-upstreams-hosting
-393437,review,KLAYER LLC,US,Unknown,10.0,transit:CT CN2,
+393437,review,KLAYER LLC,US,Unknown,15.0,transit:CT CN2,
 393498,china-adjacent,Moonlesshosting LLC,US,Unknown,1.0,via-hosting:AS20495,name-keyword
 393506,review,"MY.COM US, INC.",US,Unknown,6.0,via-hosting:AS7979,
 393520,downstream,"Fulcrum Technology Solutions, LLC",US,Unknown,1.0,,all-upstreams-hosting
@@ -10239,8 +10248,8 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 396503,mixed,WestConnect Communications,CA,Eyeball,5.0,,bgptools:hosting
 396509,core,LETSCLOUD,US,Unknown,28.0,peer:CM International,asdb:hosting;peeringdb:content;name-keyword;china:peer:CM International
 396526,downstream,"UNVIO, LLC",US,Unknown,6.0,,all-upstreams-hosting
-396646,review,Verisign Anycast TZ 0A,US,Unknown,2.0,via-hosting:AS25091,
 396654,review,Verisign Anycast US 2K,US,Unknown,2.0,via-hosting:AS25091,
+396675,review,Verisign Anycast ZA 0B,US,Unknown,2.0,via-hosting:AS25091,
 396686,review,Verisign Anycast RU 0B,US,Unknown,2.0,via-hosting:AS25091,
 396702,review,Verisign Anycast US 3D,US,Unknown,2.0,via-hosting:AS25091,
 396704,review,Verisign Anycast NO 0A,US,Unknown,2.0,via-hosting:AS25091,
@@ -10256,7 +10265,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 396922,review,"Cisco Systems, Inc.",US,Unknown,10.0,via-hosting:AS16509,
 396931,core,HostRoyale LLC,US,Unknown,0.0,,x4b:dc;name-keyword
 396962,downstream,Performance Cloud LLC,US,Unknown,1.0,,name-keyword;all-upstreams-hosting
-396982,core,Google Cloud Platform,US,Content,202233.0,via-hosting:AS15169,bgptools:hosting;x4b:dc;name-keyword;china:via-hosting:AS15169
+396982,core,Google Cloud Platform,US,Content,202237.0,via-hosting:AS15169,bgptools:hosting;x4b:dc;name-keyword;china:via-hosting:AS15169
 396986,core,"Bytedance, Inc. (TikTok)",US,Content,267.0,peer:CT Global,bgptools:cdn;peeringdb:content;china:peer:CT Global
 396993,core,Soraxus Networks Inc.,CA,Unknown,8.0,,bgptools:hosting;peeringdb:content
 396998,core,"Path Network, Inc.",US,Carrier,15.0,,bgptools:hosting;bgptools:vpn;bgptools:cdn
@@ -10425,7 +10434,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 399298,downstream,"HealthAxis Group, LLC",US,Unknown,1.0,,all-upstreams-hosting
 399334,downstream,Skysilk,US,Unknown,5.0,,all-upstreams-hosting
 399341,downstream,Campaign Deputy,US,Unknown,2.0,,all-upstreams-hosting
-399359,downstream,Maxcy Network LLC,US,Unknown,9.0,,all-upstreams-hosting
+399359,downstream,Maxcy Network LLC,US,Unknown,11.0,,all-upstreams-hosting
 399360,review,R2 Unified Technologies,US,Unknown,4.0,via-hosting:AS19151,
 399422,downstream,"Universal Insurance Holdings, Inc.",US,Unknown,1.0,,all-upstreams-hosting
 399452,downstream,Rugged Path Expedition Camping Equipment LLC,US,Unknown,2.0,,all-upstreams-hosting
@@ -10485,7 +10494,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 400175,core,"Microtronix ESolutions, LLC",US,Unknown,30.0,,bgptools:hosting;peeringdb:content
 400177,core,rootcloud LLC,US,Unknown,0.0,,asdb:hosting;name-keyword
 400181,downstream,Sigyn Systems,US,Unknown,1.0,,all-upstreams-hosting
-400194,review,Wire 3 LLC,US,Unknown,331.0,peer:CM International,
+400194,review,Wire 3 LLC,US,Unknown,335.0,peer:CM International,
 400212,downstream,VergeTel Group LLC,US,Carrier,9.0,via-hosting:AS53667,all-upstreams-hosting
 400213,downstream,"COMAND Solutions, Inc",US,Unknown,3.0,,all-upstreams-hosting
 400245,core,AlphaCentri Corporation,US,Content,4.0,,bgptools:hosting;peeringdb:content
@@ -10498,7 +10507,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 400312,downstream,"KHITOMER NETWORKS, LLC",US,Unknown,1.0,via-hosting:AS21700,all-upstreams-hosting
 400318,china-adjacent,"Versa Networks, Inc.",US,Unknown,29.0,peer:CT Global,peeringdb:content
 400322,downstream,NGTel,US,Unknown,15.0,,all-upstreams-hosting
-400342,china-adjacent,EDGENAT CLOUD,US,Unknown,13.0,via-hosting:AS135377,name-keyword
+400342,china-adjacent,EDGENAT CLOUD,US,Unknown,12.0,via-hosting:AS135377,name-keyword
 400366,downstream,Freestyle Services LLC,US,Unknown,1.0,via-hosting:AS21700,all-upstreams-hosting
 400384,downstream,Hostings House,US,Unknown,8.0,via-hosting:AS46475,name-keyword;all-upstreams-hosting
 400402,core,"Hosting Bot, LLC",US,Unknown,57.0,,bgptools:hosting;peeringdb:content;name-keyword
@@ -10527,7 +10536,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 400598,downstream,CANIX Ottawa Services,CA,Content,1.0,,all-upstreams-hosting
 400612,china-adjacent,Qingye Cloud,US,Unknown,0.0,via-hosting:AS979,name-keyword
 400618,review,Prime Security Corp.,US,Unknown,108.0,transit:CT Global,
-400619,china-adjacent,AROSSCLOUD INC.,US,Unknown,925.0,peer:CU Global,name-keyword
+400619,china-adjacent,AROSSCLOUD INC.,US,Unknown,916.0,peer:CU Global,name-keyword
 400642,downstream,NX Edge Network LLC,US,Content,1.0,,asdb:hosting;all-upstreams-hosting
 400644,downstream,BGPKIT LLC,US,Unknown,1.0,,all-upstreams-hosting
 400655,mixed,NixLabs Networks,US,Eyeball,0.0,,bgptools:hosting
@@ -10608,7 +10617,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 401320,downstream,"Globaliser, Inc.",US,Unknown,2.0,,all-upstreams-hosting
 401328,downstream,Fast Wireless LLC,US,Unknown,1.0,,all-upstreams-hosting
 401345,downstream,ErnesTech LLC,US,Unknown,1.0,,peeringdb:content;all-upstreams-hosting
-401362,core,HOST4NERD LLC,US,Unknown,31.0,,peeringdb:content;name-keyword
+401362,core,HOST4NERD LLC,US,Unknown,30.0,,peeringdb:content;name-keyword
 401363,downstream,Lyncross LLC,US,Unknown,2.0,via-hosting:AS21700,all-upstreams-hosting
 401376,downstream,ATLAS NETWORKS INC,US,Unknown,1.0,,all-upstreams-hosting
 401377,downstream,PUMA SERVERS LLC,US,Unknown,16.0,via-hosting:AS398465,name-keyword;all-upstreams-hosting
@@ -10665,7 +10674,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 401748,review,ASR INFOPRO LLC,US,Unknown,1.0,via-hosting:AS62000,
 401753,china-adjacent,BIXCE Inc,VG,Unknown,1.0,peer:CU Global,peeringdb:content
 401762,downstream,Filtered Networks,US,Unknown,1.0,,all-upstreams-hosting
-401783,review,TOKALA COMMUNICATIONS INC.,US,Unknown,548.0,via-hosting:AS135377,
+401783,review,TOKALA COMMUNICATIONS INC.,US,Unknown,544.0,via-hosting:AS135377,
 401807,downstream,"Intuity Consultants, Inc.",US,Unknown,2.0,,all-upstreams-hosting
 401815,downstream,Silis LLC,US,Unknown,1.0,,all-upstreams-hosting
 401824,mixed,Coritan LLC,US,Eyeball,3.0,,bgptools:hosting
@@ -10717,7 +10726,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 402230,downstream,Strato Labs Inc,US,Unknown,1.0,via-hosting:AS140227,all-upstreams-hosting
 402238,downstream,Van Oss Telegraph and Telephone LLC,US,Unknown,1.0,,all-upstreams-hosting
 402256,downstream,"Sean Johns, Sole Proprietorship",US,Unknown,1.0,,all-upstreams-hosting
-402265,downstream,Mutanet LLC,US,Unknown,65.0,,all-upstreams-hosting
+402265,downstream,Mutanet LLC,US,Unknown,66.0,,all-upstreams-hosting
 402267,downstream,Hadoopsky LLC,US,Unknown,9.0,,all-upstreams-hosting
 402268,downstream,YUGS Networks Ltd.,US,Unknown,1.0,,all-upstreams-hosting
 402273,review,Instantly.ai,US,Unknown,6.0,via-hosting:AS29802,
@@ -10742,7 +10751,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 402397,downstream,17 Solutions LLC,US,Unknown,1.0,,all-upstreams-hosting
 402413,downstream,BURSTX TELECOM LLC,US,Unknown,8.0,via-hosting:AS51847,all-upstreams-hosting
 402423,downstream,Luyani Inc.,US,Unknown,2.0,,all-upstreams-hosting
-402425,china-adjacent,QOREXA LABS LLC,US,Unknown,1.0,peer:CT Global,peeringdb:content
+402425,china-adjacent,QOREXA LABS LLC,US,Unknown,0.0,peer:CT Global,peeringdb:content
 402428,downstream,Itsumiku LLC,US,Unknown,1.0,,all-upstreams-hosting
 402430,downstream,Hox Point LLC,US,Unknown,1.0,,all-upstreams-hosting
 402433,downstream,Hourglass ITS LLC,US,Unknown,1.0,,all-upstreams-hosting
@@ -10830,7 +10839,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 402908,downstream,RackWorks LLC,US,Unknown,1.0,,all-upstreams-hosting
 402913,downstream,S Anstey Tech LLC,US,Unknown,1.0,,all-upstreams-hosting
 402919,china-adjacent,Nyallo Informatique,CA,Unknown,0.0,via-hosting:AS62000,peeringdb:content
-402931,china-adjacent,AdaptGroup LLC,US,Unknown,38.0,via-hosting:AS20495,peeringdb:content
+402931,china-adjacent,AdaptGroup LLC,US,Unknown,43.0,via-hosting:AS20495,peeringdb:content
 402948,downstream,"HostFC, LLC",US,Unknown,5.0,,name-keyword;all-upstreams-hosting
 402965,downstream,Pegasus Cloud,US,Unknown,1.0,,name-keyword;all-upstreams-hosting
 402970,downstream,RAVNIX LLC,US,Unknown,1.0,,all-upstreams-hosting
