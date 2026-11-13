@@ -1791,7 +1791,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 28513,mixed,UNINET,MX,Carrier,1.0,,bgptools:hosting
 28572,review,Apoiocom Digital Ltda - EPP,BR,Unknown,20.0,via-hosting:AS135377,
 28604,china-adjacent,Globo Comunicação e Participaçoes SA,BR,Content,77.0,peer:CM International,peeringdb:content
-28663,review,FLYS INTERATIVA LTDA,BR,Unknown,51.0,transit:CT Global,
+28663,review,FLYS INTERATIVA LTDA,BR,Content,51.0,transit:CT Global,
 28666,core,HostLocation Ltda,BR,Content,27.0,,asdb:hosting;name-keyword
 28676,core,WiTCOM Wiesbadener Informations- und Telekommunikations GmbH,DE,Carrier,56.0,,bgptools:hosting;asdb:hosting
 28682,core,Posta Slovenije d.o.o.,SI,Carrier,22.0,,x4b:dc
@@ -7589,7 +7589,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 204951,downstream,Ubicum BVBA,BE,Unknown,1.0,,all-upstreams-hosting
 204957,core,ROUTE 95 LLC,US,Unknown,171.0,via-hosting:AS29222,bgptools:hosting;x4b:dc;asdb:hosting;china:via-hosting:AS29222
 204983,core,Cyberfusion B.V.,NL,Unknown,4.0,via-hosting:AS8455,bgptools:hosting;china:via-hosting:AS8455
-204997,core,FIRST SERVER LIMITED,GB,Unknown,65.0,,asdb:hosting;name-keyword
+204997,core,AI DATACENTER LIMITED,GB,Unknown,65.0,,asdb:hosting;name-keyword
 205001,china-adjacent,XTEK Invest SRL,RO,Unknown,1.0,via-hosting:AS39737,peeringdb:content
 205009,downstream,HDM Solutions LTD,MH,Unknown,9.0,,all-upstreams-hosting
 205010,review,LaNetCie SAS,FR,Unknown,4.0,via-hosting:AS12779,
@@ -7606,7 +7606,7 @@ asn,tier,name,cc,class,v4_24s,china_path,reasons
 205053,core,Asimia Damaskou,GR,Unknown,5.0,,x4b:dc
 205068,downstream,ADVCOM SARL,FR,Unknown,4.0,via-hosting:AS25091,peeringdb:content;all-upstreams-hosting
 205081,core,EasyDataHost S.L.,ES,Unknown,10.0,,asdb:hosting;peeringdb:content;name-keyword
-205090,core,FIRST SERVER LIMITED,GB,Unknown,68.0,,bgptools:hosting;bgptools:vpn;asdb:hosting;name-keyword
+205090,core,AI DATACENTER LIMITED,GB,Unknown,68.0,,bgptools:hosting;bgptools:vpn;asdb:hosting;name-keyword
 205091,review,EuroNet Internet Ltd,GB,Unknown,10.0,via-hosting:AS4455,
 205095,review,Meridian Business Grup SRL,RO,Unknown,1.0,via-hosting:AS39737,
 205098,china-adjacent,Cloud Gateway Limited,GB,Unknown,19.0,peer:CT Global,name-keyword
