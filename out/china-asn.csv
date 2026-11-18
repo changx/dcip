@@ -7703,6 +7703,7 @@ asn,name,reason,dc_tier
 155078,ArcNode (Asia Pacific) Holdings Limited,rir-registered:HK,
 155102,Argsment Limited,rir-registered:CN,
 155103,"Hunan Moming Network Technology Co., Ltd.",rir-registered:CN,
+155109,CNIX Limited,rir-registered:HK,
 197176,Chen Yulin,rir-registered:CN,
 197196,PANSTAR CLOUD LIMITED,rir-registered:HK,china-adjacent
 197200,Key Proxy Limited,rir-registered:HK,
@@ -7743,7 +7744,7 @@ asn,name,reason,dc_tier
 199691,Zhile Gong,rir-registered:CN,
 199707,"HONGKONG XING TONG HUI TECHNOLOGY CO., LIMITED",rir-registered:HK,
 199779,HONGKONG FIAREFAST TECH LIMITED,rir-registered:HK,
-199817,TANG NAIYUAN,rir-registered:CN,
+199817,TANG NAIYUAN,bgptools-cc:CN,
 199832,QUN LIN,rir-registered:CN,
 199932,Tianle Shi,rir-registered:CN,
 199967,Think Huge Ltd,rir-registered:HK,
@@ -8067,7 +8068,7 @@ asn,name,reason,dc_tier
 219037,Meiling Network Technology Limited,rir-registered:HK,
 219046,"Shanghai Liushang Technology Co.,Ltd.",rir-registered:CN,
 219047,HongKong Sparkling Limited,rir-registered:HK,
-219053,HongKong Serene Limited,rir-registered:HK,downstream
+219053,HongKong Serene Limited,rir-registered:HK,
 219057,Viloonmobi Limited,rir-registered:HK,downstream
 219068,Core Network Technologies Limited,rir-registered:HK,
 219075,VSEEK LIMITED,rir-registered:HK,
